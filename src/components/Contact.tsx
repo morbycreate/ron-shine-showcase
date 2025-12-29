@@ -17,17 +17,17 @@ const Contact = () => {
             Let's Connect
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-            Ready to Bring
+            Let's Build
             <br />
-            <span className="text-gradient">Order to Your Chaos?</span>
+            <span className="text-gradient">Something Great</span>
           </h2>
           <p className="text-primary-foreground/70 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
-            Whether you're looking for brand strategy, creative direction, or team leadership,
+            Looking for experience design leadership, platform modernization, or UX strategy?
             I'd love to hear about your challenges and explore how we can work together.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               variant="hero"
               size="xl"
@@ -45,32 +45,6 @@ const Contact = () => {
             >
               <Linkedin className="w-5 h-5" />
               Connect on LinkedIn
-            </Button>
-          </div>
-
-          {/* Divider */}
-          <div className="flex items-center gap-4 mb-12">
-            <div className="flex-1 h-px bg-primary-foreground/10" />
-            <span className="text-primary-foreground/40 text-sm">or explore</span>
-            <div className="flex-1 h-px bg-primary-foreground/10" />
-          </div>
-
-          {/* Morby Create CTA */}
-          <div className="bg-primary-foreground/5 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-primary-foreground/10">
-            <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-              Morby Create
-            </h3>
-            <p className="text-primary-foreground/70 max-w-lg mx-auto mb-6">
-              My creative consultancy focused on brand strategy, messaging, and activation.
-              Therapy for your business—minus the couch.
-            </p>
-            <Button
-              variant="gold"
-              size="lg"
-              onClick={() => window.open("https://morbycreate.com", "_blank")}
-            >
-              Visit Morby Create
-              <ArrowRight className="w-4 h-4" />
             </Button>
           </div>
         </div>

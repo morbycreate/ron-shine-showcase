@@ -33,22 +33,22 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Eyebrow */}
           <p className="text-accent font-medium tracking-widest uppercase text-sm mb-6 opacity-0 animate-fade-up">
-            Creative Director & Brand Strategist
+            Senior Product & Experience Design Leader
           </p>
 
           {/* Main headline */}
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-tight mb-8 opacity-0 animate-fade-up stagger-1">
-            Bringing{" "}
-            <span className="text-gradient italic">Order</span>
+            Turning{" "}
+            <span className="text-gradient italic">Ambiguity</span>
             <br />
-            to Chaos
+            Into Outcomes
           </h1>
 
           {/* Subheadline */}
           <p className="text-primary-foreground/70 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed opacity-0 animate-fade-up stagger-2">
-            I help organizations untangle complexity, align teams around purpose,
-            and build brands that inspire action. From Fortune 500 to ambitious startups,
-            I transform vision into impact.
+            15+ years building and scaling UX organizations in complex, regulated environments.
+            Aligning executives, product, engineering, and delivery teams around clear experience
+            strategy—delivering shipped outcomes and measurable business impact.
           </p>
 
           {/* CTA Buttons */}

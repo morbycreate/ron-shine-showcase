@@ -4,23 +4,23 @@ const About = () => {
   const philosophyItems = [
     {
       icon: Lightbulb,
-      title: "Clarity First",
-      description: "I untangle complex ideas and build strategy, messaging, and brand activation without the fluff.",
+      title: "Experience Strategy",
+      description: "Turning ambiguity into clear, actionable product strategy that aligns stakeholders and drives adoption.",
     },
     {
       icon: Users,
       title: "Team Builder",
-      description: "Setting each person up to win. Building team constitutions that drive exceptional outcomes.",
+      description: "Building and scaling UX organizations from the ground up—growing teams from 3 to 30+ members.",
     },
     {
       icon: Target,
       title: "Results Driven",
-      description: "Using data and analytics to fuel confidence and creative breakthroughs that move the needle.",
+      description: "Delivering measurable business impact through platform modernization and enterprise design systems.",
     },
     {
       icon: Sparkles,
-      title: "RONisms",
-      description: "Known for unique metaphors and analogies that provide clarity and connection within teams.",
+      title: "Cross-Functional Leader",
+      description: "Aligning executives, product, engineering, and delivery teams around shared experience vision.",
     },
   ];
 
@@ -35,28 +35,27 @@ const About = () => {
                 About Me
               </p>
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Therapy for
+                Strategic
                 <br />
-                <span className="text-gradient">Business</span>
+                <span className="text-gradient">Leadership</span>
               </h2>
             </div>
 
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
-                I'm Ron Brissette, founder of <strong className="text-foreground">Morby Create</strong> and 
-                a senior creative leader with nearly two decades of experience transforming how 
-                organizations think, communicate, and connect.
+                I'm Ron Brissette, a <strong className="text-foreground">Senior Product & Experience Design Leader</strong> with 
+                15+ years building and scaling UX organizations in complex, regulated environments.
               </p>
               <p>
-                From leading American Airlines' global rebrand to scaling creative teams at 
-                Slalom, I've made it my mission to help teams align around purpose and 
-                deliver impactful results. I believe the best work happens when strategy 
-                meets storytelling—and when everyone on the team knows exactly why they're there.
+                My career spans financial services, travel, enterprise platforms, and consumer products—from 
+                leading American Airlines' global rebrand and pioneering their first UX team, to driving 
+                $60M in new pipeline opportunities at Slalom. I specialize in platform modernization, 
+                enterprise design systems, and end-to-end product experiences.
               </p>
               <p>
-                My approach? <strong className="text-foreground">Less fluff, more impact.</strong> I 
-                specialize in brand strategy, digital experience, and creative direction that 
-                cuts through noise and drives real business outcomes.
+                My approach? <strong className="text-foreground">Clarity through complexity.</strong> I 
+                align executives, product, engineering, and delivery teams around clear experience 
+                strategy—turning ambiguity into shipped outcomes and measurable business impact.
               </p>
             </div>
           </div>
