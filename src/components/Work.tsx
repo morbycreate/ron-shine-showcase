@@ -33,68 +33,74 @@ const Work = () => {
   ];
 
   return (
-    <section id="work" className="py-24 md:py-32 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="work" className="py-24 md:py-32 bg-primary/50 relative overflow-hidden">
+      {/* Background effects */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-accent/5 rounded-full blur-[150px]" />
+      </div>
+
+      <div className="relative container mx-auto px-6">
         {/* Section header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
           <div>
-            <p className="text-accent font-medium tracking-widest uppercase text-sm mb-4">
-              Selected Work
-            </p>
-            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/5 border border-primary-foreground/10 mb-6">
+              <span className="text-accent text-sm font-medium">Selected Work</span>
+            </div>
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
               Case <span className="text-gradient">Studies</span>
             </h2>
           </div>
-          <p className="text-muted-foreground max-w-md text-lg">
+          <p className="text-primary-foreground/60 max-w-md text-lg">
             A selection of projects that showcase strategic thinking, creative execution,
             and measurable business impact.
           </p>
         </div>
 
         {/* Projects grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => {
             const CardContent = (
               <>
                 {/* Image */}
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden relative">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent 
-                    opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent" />
+                  
+                  {/* Floating category badge */}
+                  <div className="absolute top-4 left-4">
+                    <span className="px-3 py-1 text-xs font-medium text-primary-foreground bg-primary/80 backdrop-blur-md border border-primary-foreground/10 rounded-full">
+                      {project.category}
+                    </span>
+                  </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-medium text-accent uppercase tracking-wider">
-                      {project.category}
-                    </span>
-                    <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded">
-                      {project.impact}
-                    </span>
+                    <h3 className="font-serif text-xl font-bold text-primary-foreground group-hover:text-accent transition-colors">
+                      {project.title}
+                    </h3>
                   </div>
 
-                  <h3 className="font-serif text-xl font-bold text-foreground mb-3 
-                    group-hover:text-accent transition-colors">
-                    {project.title}
-                  </h3>
-
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-primary-foreground/50 text-sm leading-relaxed mb-4">
                     {project.description}
                   </p>
 
-                  {/* Hover arrow */}
-                  {project.link && (
-                    <div className="mt-4 flex items-center gap-2 text-accent opacity-0 
-                      group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="text-sm font-medium">View Details</span>
-                      <ArrowUpRight className="w-4 h-4" />
-                    </div>
-                  )}
+                  <div className="flex items-center justify-between pt-4 border-t border-primary-foreground/10">
+                    <span className="text-xs font-medium text-accent">
+                      {project.impact}
+                    </span>
+                    {project.link && (
+                      <div className="flex items-center gap-2 text-primary-foreground/50 group-hover:text-accent transition-colors">
+                        <span className="text-xs font-medium">View Details</span>
+                        <ArrowUpRight className="w-3 h-3" />
+                      </div>
+                    )}
+                  </div>
                 </div>
               </>
             );
@@ -103,16 +109,16 @@ const Work = () => {
               <Link
                 key={project.title}
                 to={project.link}
-                className="group relative bg-card rounded-2xl overflow-hidden border border-border 
-                  hover:border-accent/50 transition-all duration-500 hover:shadow-elevated cursor-pointer"
+                className="group relative bg-primary-foreground/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-primary-foreground/10 
+                  hover:border-accent/30 transition-all duration-500 hover:bg-primary-foreground/10"
               >
                 {CardContent}
               </Link>
             ) : (
               <div
                 key={project.title}
-                className="group relative bg-card rounded-2xl overflow-hidden border border-border 
-                  hover:border-accent/50 transition-all duration-500 hover:shadow-elevated"
+                className="group relative bg-primary-foreground/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-primary-foreground/10 
+                  hover:border-accent/30 transition-all duration-500 hover:bg-primary-foreground/10"
               >
                 {CardContent}
               </div>
