@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['DM Sans', 'system-ui', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Space Grotesk', 'Inter', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -61,15 +61,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        gold: {
-          DEFAULT: "hsl(217 89% 61%)",
-          light: "hsl(217 89% 71%)",
-          dark: "hsl(217 89% 51%)",
+        teal: {
+          DEFAULT: "hsl(180 70% 45%)",
+          light: "hsl(180 70% 55%)",
+          dark: "hsl(180 70% 35%)",
         },
         navy: {
-          DEFAULT: "hsl(220 25% 12%)",
-          light: "hsl(220 20% 18%)",
-          lighter: "hsl(220 15% 22%)",
+          DEFAULT: "hsl(220 15% 8%)",
+          light: "hsl(220 12% 12%)",
+          lighter: "hsl(220 10% 16%)",
         },
       },
       borderRadius: {
