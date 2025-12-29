@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,8 +14,8 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: "About", href: "#about" },
     { label: "Work", href: "#work" },
+    { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -29,15 +28,15 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 py-6">
+    <header 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled 
+          ? "bg-primary/95 backdrop-blur-xl py-4" 
+          : "bg-transparent py-6"
+      }`}
+    >
       <div className="container mx-auto px-6">
-        <div
-          className={`flex items-center justify-between px-6 py-3 rounded-full transition-all duration-500 ${
-            isScrolled
-              ? "bg-primary/80 backdrop-blur-xl border border-primary-foreground/10 shadow-2xl"
-              : "bg-primary-foreground/5 backdrop-blur-md border border-primary-foreground/10"
-          }`}
-        >
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <a
             href="#"
@@ -45,68 +44,101 @@ const Header = () => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            className="font-serif text-xl font-bold tracking-tight text-primary-foreground hover:text-accent transition-colors"
+            className="font-display text-2xl font-bold tracking-tight text-primary-foreground hover:text-accent transition-colors duration-300"
           >
             Ron<span className="text-accent">.</span>
           </a>
 
-          {/* Desktop Navigation - Pill Style */}
-          <nav className="hidden md:flex items-center gap-1">
+          {/* Desktop Navigation - Minimal */}
+          <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="px-4 py-2 text-sm font-medium text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/5 rounded-full transition-all duration-300"
+                className="relative text-sm font-medium text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-300 hover-underline"
               >
                 {item.label}
               </button>
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button
-              variant="gold"
-              size="sm"
-              className="rounded-full"
-              onClick={() => scrollToSection("#contact")}
-            >
-              Let's Talk
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
+          {/* Hamburger Menu Button */}
           <button
-            className="md:hidden text-primary-foreground p-2 hover:bg-primary-foreground/10 rounded-full transition-colors"
+            className="text-primary-foreground p-2 hover:text-accent transition-colors duration-300"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 p-6 rounded-2xl bg-primary/95 backdrop-blur-xl border border-primary-foreground/10 animate-fade-in">
-            <nav className="flex flex-col gap-2">
-              {navItems.map((item) => (
+        {/* Full Screen Mobile/Desktop Menu Overlay */}
+        <div
+          className={`fixed inset-0 bg-primary z-40 transition-all duration-500 ${
+            isMobileMenuOpen
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
+          }`}
+          style={{ top: "0" }}
+        >
+          <div className="container mx-auto px-6 py-6">
+            <div className="flex items-center justify-between mb-20">
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  setIsMobileMenuOpen(false);
+                }}
+                className="font-display text-2xl font-bold tracking-tight text-primary-foreground"
+              >
+                Ron<span className="text-accent">.</span>
+              </a>
+              <button
+                className="text-primary-foreground p-2 hover:text-accent transition-colors duration-300"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <X size={24} />
+              </button>
+            </div>
+
+            <nav className="flex flex-col gap-4">
+              {navItems.map((item, index) => (
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-left text-lg font-medium text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/5 rounded-xl px-4 py-3 transition-colors"
+                  className={`text-left font-display text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground hover:text-accent transition-colors duration-300 opacity-0 ${
+                    isMobileMenuOpen ? "animate-fade-up" : ""
+                  }`}
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {item.label}
                 </button>
               ))}
-              <Button
-                variant="gold"
-                className="w-full mt-4 rounded-full"
-                onClick={() => scrollToSection("#contact")}
-              >
-                Let's Talk
-              </Button>
             </nav>
+
+            <div className="absolute bottom-12 left-6 right-6">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 text-primary-foreground/50 text-sm">
+                <a
+                  href="mailto:hello@ronbrissette.com"
+                  className="hover:text-accent transition-colors duration-300"
+                >
+                  hello@ronbrissette.com
+                </a>
+                <div className="flex gap-6">
+                  <a
+                    href="https://linkedin.com/in/ronbrissette"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-accent transition-colors duration-300"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        )}
+        </div>
       </div>
     </header>
   );
