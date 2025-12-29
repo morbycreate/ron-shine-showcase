@@ -16,7 +16,6 @@ const Header = () => {
 
   const navItems = [
     { label: "About", href: "#about" },
-    { label: "Experience", href: "#experience" },
     { label: "Work", href: "#work" },
     { label: "Contact", href: "#contact" },
   ];
@@ -30,77 +29,85 @@ const Header = () => {
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-subtle py-4"
-          : "bg-transparent py-6"
-      }`}
-    >
-      <div className="container mx-auto px-6 flex items-center justify-between">
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="font-serif text-2xl font-bold tracking-tight text-foreground hover:text-accent transition-colors"
+    <header className="fixed top-0 left-0 right-0 z-50 py-6">
+      <div className="container mx-auto px-6">
+        <div
+          className={`flex items-center justify-between px-6 py-3 rounded-full transition-all duration-500 ${
+            isScrolled
+              ? "bg-primary/80 backdrop-blur-xl border border-primary-foreground/10 shadow-2xl"
+              : "bg-primary-foreground/5 backdrop-blur-md border border-primary-foreground/10"
+          }`}
         >
-          Ron<span className="text-gradient">.</span>
-        </a>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
-            <button
-              key={item.label}
-              onClick={() => scrollToSection(item.href)}
-              className="line-reveal text-sm font-medium text-muted-foreground hover:text-foreground transition-colors pb-1"
-            >
-              {item.label}
-            </button>
-          ))}
-          <Button
-            variant="gold"
-            size="sm"
-            onClick={() => scrollToSection("#contact")}
+          {/* Logo */}
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="font-serif text-xl font-bold tracking-tight text-primary-foreground hover:text-accent transition-colors"
           >
-            Let's Talk
-          </Button>
-        </nav>
+            Ron<span className="text-accent">.</span>
+          </a>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-foreground"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-
-      {/* Mobile Navigation */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-lg border-b border-border animate-fade-in">
-          <nav className="container mx-auto px-6 py-6 flex flex-col gap-4">
+          {/* Desktop Navigation - Pill Style */}
+          <nav className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="text-left text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+                className="px-4 py-2 text-sm font-medium text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/5 rounded-full transition-all duration-300"
               >
                 {item.label}
               </button>
             ))}
+          </nav>
+
+          {/* CTA Button */}
+          <div className="hidden md:block">
             <Button
               variant="gold"
-              className="w-full mt-2"
+              size="sm"
+              className="rounded-full"
               onClick={() => scrollToSection("#contact")}
             >
               Let's Talk
             </Button>
-          </nav>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-primary-foreground p-2 hover:bg-primary-foreground/10 rounded-full transition-colors"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
         </div>
-      )}
+
+        {/* Mobile Navigation */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 p-6 rounded-2xl bg-primary/95 backdrop-blur-xl border border-primary-foreground/10 animate-fade-in">
+            <nav className="flex flex-col gap-2">
+              {navItems.map((item) => (
+                <button
+                  key={item.label}
+                  onClick={() => scrollToSection(item.href)}
+                  className="text-left text-lg font-medium text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/5 rounded-xl px-4 py-3 transition-colors"
+                >
+                  {item.label}
+                </button>
+              ))}
+              <Button
+                variant="gold"
+                className="w-full mt-4 rounded-full"
+                onClick={() => scrollToSection("#contact")}
+              >
+                Let's Talk
+              </Button>
+            </nav>
+          </div>
+        )}
+      </div>
     </header>
   );
 };
