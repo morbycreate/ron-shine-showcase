@@ -49,8 +49,8 @@ const Hero = () => {
 
           {/* Tagline - Professional approach */}
           <p className="text-primary-foreground/60 text-lg md:text-xl max-w-xl mb-12 leading-relaxed opacity-0 animate-fade-up stagger-2">
-            Still rocking the same confidence from that school photo, just now I turn chaotic roadmaps into shipped products.
-            <span className="text-accent font-medium"> 15+ years of making stakeholders say "yes" and users say "finally."</span>
+            Still rocking the same confidence from that school photo — now I help teams cut through noise, make smart decisions, and deliver work that matters.
+            <span className="text-accent font-medium"> 15+ years of getting stakeholders aligned and users saying "finally."</span>
           </p>
 
           {/* CTA - Email link style like Matt Boston */}
