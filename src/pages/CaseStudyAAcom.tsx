@@ -203,7 +203,7 @@ const CaseStudyAAcom = () => {
                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3] md:col-span-2 md:aspect-[8/3]">
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
               <img 
                 src={aacomAdmiralsClub} 
                 alt="aa.com Admirals Club Dining Experience" 
