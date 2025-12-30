@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import defenderPreview from "@/assets/defender-preview.png";
 
 const Work = () => {
   const projects = [
@@ -17,7 +18,7 @@ const Work = () => {
       category: "Digital Experience",
       description:
         "Reintroduced the iconic Defender watch with 23% YoY eCommerce growth.",
-      image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+      image: defenderPreview,
       link: "/defender",
       size: "small",
     },
