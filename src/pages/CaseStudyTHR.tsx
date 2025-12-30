@@ -13,6 +13,7 @@ import thrEcosystem from "@/assets/thr-ecosystem.webp";
 import thrLocation from "@/assets/thr-location.png";
 import thrServices from "@/assets/thr-services.png";
 import thrMobile from "@/assets/thr-mobile.png";
+import thrMychart from "@/assets/thr-mychart.webp";
 
 const CaseStudyTHR = () => {
   const metrics = [
@@ -307,8 +308,8 @@ const CaseStudyTHR = () => {
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
               <img 
-                src={thrBaby} 
-                alt="Texas Health Patient Experience" 
+                src={thrMychart} 
+                alt="Texas Health MyChart and Multi-device Experience" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
