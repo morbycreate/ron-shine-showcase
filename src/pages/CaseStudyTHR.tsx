@@ -289,35 +289,6 @@ const CaseStudyTHR = () => {
         </div>
       </section>
 
-      {/* Visual Design Gallery */}
-      <section className="py-16 bg-primary">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
-              <img 
-                src={thrQuickGuide} 
-                alt="Texas Health Quick Guide" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
-              <img 
-                src={thrSiteStructure} 
-                alt="Texas Health Site Structure" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
-              <img 
-                src={thrCompetitive} 
-                alt="Texas Health Competitive Analysis" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Results */}
       <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10 relative overflow-hidden">
         {/* Background glow */}
