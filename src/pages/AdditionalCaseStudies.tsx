@@ -3,9 +3,36 @@ import { Link } from "react-router-dom";
 import aaUxTeam from "@/assets/aa-ux-team.png";
 import designAWatch from "@/assets/design-a-watch.png";
 import aacomLaptop from "@/assets/aacom-laptop.png";
+import aaPreview from "@/assets/aa-preview.png";
+import defenderPreview from "@/assets/defender-preview.png";
+import fossilSitePreview from "@/assets/fossil-site-preview.png";
 
 const AdditionalCaseStudies = () => {
   const projects = [
+    {
+      title: "American Airlines Digital Transformation",
+      category: "Digital Experience",
+      description:
+        "Led eight development teams to transform AA's entire digital ecosystem—launched globally in a single day.",
+      image: aaPreview,
+      link: "/american-airlines",
+    },
+    {
+      title: "Fossil Defender Collection",
+      category: "Digital Experience",
+      description:
+        "Reintroduced the iconic Defender watch with 23% YoY eCommerce growth.",
+      image: defenderPreview,
+      link: "/defender",
+    },
+    {
+      title: "Fossil.com Redesign",
+      category: "Digital Experience",
+      description:
+        "Modernized Fossil's digital presence with 23% YoY e-commerce growth and 'Digital Genius' recognition.",
+      image: fossilSitePreview,
+      link: "/fossil",
+    },
     {
       title: "Building American Airlines' First UX Organization",
       category: "Experience Design",
@@ -53,60 +80,71 @@ const AdditionalCaseStudies = () => {
           {/* Section header */}
           <div className="mb-16">
             <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-              More of my work
+              My work
             </p>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
-              Additional
+              Case
               <br />
-              <span className="text-outline">Case Studies</span>
+              <span className="text-outline">Studies</span>
             </h1>
             <p className="mt-6 text-primary-foreground/60 text-lg max-w-2xl">
-              These projects represent additional work across various industries. 
-              Full case study details available upon request.
+              A collection of my work across digital transformation, experience design, and branding. 
+              Additional case study details available upon request.
             </p>
           </div>
 
           {/* Projects grid */}
           <div className="grid md:grid-cols-3 gap-6">
-            {projects.map((project) => (
-              <div 
-                key={project.title}
-                className="group relative overflow-hidden rounded-xl card-hover"
-              >
-                {/* Image */}
-                <div className="relative overflow-hidden aspect-[4/3]">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  {/* Dark overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-                  
-                  {/* Content overlay */}
-                  <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
-                    {/* Category badge */}
-                    <span className="inline-block w-fit px-3 py-1 text-xs font-medium text-primary-foreground bg-primary-foreground/10 backdrop-blur-sm rounded-full mb-4">
-                      {project.category}
-                    </span>
+            {projects.map((project) => {
+              const CardContent = (
+                <div className="group relative overflow-hidden rounded-xl card-hover">
+                  {/* Image */}
+                  <div className="relative overflow-hidden aspect-[4/3]">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
                     
-                    <h3 className="font-display font-bold text-primary-foreground mb-2 text-xl md:text-2xl">
-                      {project.title}
-                    </h3>
-                    
-                    <p className="text-primary-foreground/60 text-sm md:text-base">
-                      {project.description}
-                    </p>
+                    {/* Content overlay */}
+                    <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
+                      {/* Category badge */}
+                      <span className="inline-block w-fit px-3 py-1 text-xs font-medium text-primary-foreground bg-primary-foreground/10 backdrop-blur-sm rounded-full mb-4">
+                        {project.category}
+                      </span>
+                      
+                      <h3 className="font-display font-bold text-primary-foreground mb-2 text-xl md:text-2xl">
+                        {project.title}
+                      </h3>
+                      
+                      <p className="text-primary-foreground/60 text-sm md:text-base">
+                        {project.description}
+                      </p>
 
-                    {/* Request details indicator */}
-                    <div className="mt-4 flex items-center gap-2 text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="text-sm font-medium">Details upon request</span>
-                      <ArrowUpRight className="w-4 h-4" />
+                      {/* Action indicator */}
+                      <div className="mt-4 flex items-center gap-2 text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span className="text-sm font-medium">
+                          {project.link ? "View Project" : "Details upon request"}
+                        </span>
+                        <ArrowUpRight className="w-4 h-4" />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+
+              return project.link ? (
+                <Link key={project.title} to={project.link}>
+                  {CardContent}
+                </Link>
+              ) : (
+                <div key={project.title}>
+                  {CardContent}
+                </div>
+              );
+            })}
           </div>
 
           {/* Contact CTA */}
