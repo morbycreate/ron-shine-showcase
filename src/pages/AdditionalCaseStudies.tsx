@@ -87,7 +87,7 @@ const AdditionalCaseStudies = () => {
       description:
         "Led the enterprise redesign of AA.com, supporting American Airlines' first major rebrand in 40+ years.",
       image: aacomLaptop,
-      link: null,
+      link: "/aacom-redesign",
     },
   ];
 
