@@ -86,8 +86,8 @@ const CaseStudyAA = () => {
             alt="American Airlines 777" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/50 to-primary/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/30" />
         </div>
 
         {/* Decorative grid pattern */}
