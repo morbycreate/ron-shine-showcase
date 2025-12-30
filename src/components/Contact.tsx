@@ -48,19 +48,41 @@ const Contact = () => {
             </div>
           </a>
 
-          {/* Testimonial teaser - Matt Boston style */}
-          <div className="p-8 md:p-12 bg-card/50 backdrop-blur-sm rounded-2xl border border-primary-foreground/10">
-            <blockquote className="text-primary-foreground/80 text-lg md:text-xl italic leading-relaxed mb-6">
-              "Ron brings a rare combination of strategic thinking and creative execution. 
-              His ability to translate complex challenges into elegant solutions is exceptional."
-            </blockquote>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">
-                BC
+          {/* Testimonials - Matt Boston style */}
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 md:p-8 bg-card/50 backdrop-blur-sm rounded-2xl border border-primary-foreground/10">
+              <blockquote className="text-primary-foreground/80 text-base md:text-lg italic leading-relaxed mb-6">
+                "His ability to listen deeply, synthesize ideas, and articulate a vision with clarity and creativity is unmatched."
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold text-sm">
+                  GT
+                </div>
+                <p className="text-primary-foreground font-medium">Gabrielle T.</p>
               </div>
-              <div>
-                <p className="text-primary-foreground font-medium">Ben Citron</p>
-                <p className="text-primary-foreground/50 text-sm">Creative Director, VaynerMedia</p>
+            </div>
+
+            <div className="p-6 md:p-8 bg-card/50 backdrop-blur-sm rounded-2xl border border-primary-foreground/10">
+              <blockquote className="text-primary-foreground/80 text-base md:text-lg italic leading-relaxed mb-6">
+                "Ron doesn't just direct teams, he inspires them. His ability to seamlessly blend strategic vision with creative execution is unmatched, and he has an incredible knack for turning complex challenges into elegant, impactful solutions."
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold text-sm">
+                  GL
+                </div>
+                <p className="text-primary-foreground font-medium">Greg L.</p>
+              </div>
+            </div>
+
+            <div className="p-6 md:p-8 bg-card/50 backdrop-blur-sm rounded-2xl border border-primary-foreground/10">
+              <blockquote className="text-primary-foreground/80 text-base md:text-lg italic leading-relaxed mb-6">
+                "His ability to take a complex, multi-layered topic, distill it to its core essence, and craft a concept that resonates—from C-suite executives to end users—is truly unmatched."
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold text-sm">
+                  MH
+                </div>
+                <p className="text-primary-foreground font-medium">Mary H.</p>
               </div>
             </div>
           </div>
