@@ -153,6 +153,16 @@ const Work = () => {
           })}
         </div>
 
+        {/* Additional Case Studies Link */}
+        <div className="mt-12 text-center">
+          <Link 
+            to="/case-studies"
+            className="inline-flex items-center gap-2 text-primary-foreground/60 hover:text-accent transition-colors duration-300 text-lg"
+          >
+            <span className="hover-underline">Additional Case Studies available upon request</span>
+          </Link>
+        </div>
+
         {/* Clients section */}
         <div className="mt-20 pt-12 border-t border-primary-foreground/10">
           <p className="text-accent font-medium tracking-wide mb-8 text-sm">
