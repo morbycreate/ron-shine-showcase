@@ -1,5 +1,5 @@
 import { ArrowRight, Mail } from "lucide-react";
-import heroPortrait from "@/assets/hero-portrait.jpeg";
+import heroPortrait from "@/assets/hero-fridge.png";
 
 const Hero = () => {
   const scrollToWork = () => {
