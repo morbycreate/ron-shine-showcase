@@ -14,6 +14,7 @@ import thrLocation from "@/assets/thr-location.png";
 import thrServices from "@/assets/thr-services.png";
 import thrMobile from "@/assets/thr-mobile.png";
 import thrMychart from "@/assets/thr-mychart.webp";
+import thrHero from "@/assets/thr-hero.png";
 
 const CaseStudyTHR = () => {
   const metrics = [
@@ -81,9 +82,9 @@ const CaseStudyTHR = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src={thrPreview} 
+            src={thrHero} 
             alt="Texas Health Resources Website" 
-            className="w-full h-full object-cover object-[50%_30%]"
+            className="w-full h-full object-cover object-[70%_20%]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/50" />
