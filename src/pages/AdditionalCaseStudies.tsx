@@ -58,7 +58,7 @@ const AdditionalCaseStudies = () => {
       description:
         "Redesigned the digital ecosystem for one of the largest faith-based nonprofit health systems in the US.",
       image: thrPreview,
-      link: null,
+      link: "/texas-health",
     },
     {
       title: "Building American Airlines' First UX Organization",
