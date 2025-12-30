@@ -24,7 +24,7 @@ const Footer = () => {
                 Location
               </p>
               <p className="text-primary-foreground text-sm">
-                San Francisco, CA
+                Dallas, TX
               </p>
             </div>
             <div>
@@ -32,10 +32,10 @@ const Footer = () => {
                 Email
               </p>
               <a
-                href="mailto:hello@ronbrissette.com"
+                href="mailto:ronbrissette@gmail.com"
                 className="text-primary-foreground text-sm hover:text-accent transition-colors duration-300"
               >
-                hello@ronbrissette.com
+                ronbrissette@gmail.com
               </a>
             </div>
             <div>
