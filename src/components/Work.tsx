@@ -176,12 +176,6 @@ const Work = () => {
           <p className="text-accent font-medium tracking-wide mb-8 text-sm">
             The brands that trusted me to do the work.
           </p>
-          
-          <h3 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-8">
-            Some friends that have
-            <br />
-            <span className="text-outline-thin">leveraged my talents</span>
-          </h3>
 
           <div className="flex flex-wrap items-center gap-8 md:gap-12">
             {clientLogos.map((client) => (
