@@ -191,11 +191,11 @@ const CaseStudyHasbro = () => {
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-1 gap-6 max-w-4xl mx-auto">
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[16/10]">
               <img 
                 src={hasbroPreview} 
                 alt="Hasbro PULSE Platform" 
-                className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
           </div>
