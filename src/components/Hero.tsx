@@ -17,7 +17,7 @@ const Hero = () => {
           className="absolute inset-0 bg-cover bg-no-repeat"
           style={{
             backgroundImage: `url(${heroPortrait})`,
-            backgroundPosition: '25% 35%',
+            backgroundPosition: '25% 55%',
           }}
         />
         {/* Gradient overlays */}
