@@ -9,11 +9,10 @@ import fossilLogo from "@/assets/logos/fossil.png";
 
 const About = () => {
   const accomplishments = [
-    "Drove 23% YoY ecommerce growth through full-funnel UX and PDP optimization at Fossil",
-    "Led Ashley Stewart brand transformation, amplifying body-confidence storytelling, elevating product narrative — to differentiate from competitors and build recognition with new customers",
-    "Led American Airlines' enterprise rebrand, contributing to +11.4 YouGov Buzz, the strongest gain in the airline sector",
-    "Built Slalom's Global Creative Services capability from zero, generating $60M in new pipeline in six months",
-    "Scaled creative and experience teams 2 → 10 and 3 → 30+ while maintaining craft, speed, and accountability",
+    "Led the enterprise redesign of AA.com, supporting American Airlines' first major rebrand in 40+ years and contributing to an +11.4 lift in YouGov Brand Buzz.",
+    "Drove $60M in pipeline by building and leading experience capabilities for Fortune 500 clients across industries (Slalom).",
+    "Delivered a 23% YoY e-commerce lift through full-funnel UX and platform optimization, contributing to industry recognition as a digital leader (Fossil).",
+    "Built and scaled UX organizations (3 → 30; 2 → 10), establishing design systems, governance, and operating models that enabled enterprise delivery at scale (American Airlines, Slalom).",
   ];
 
   const clientLogos = [
