@@ -10,6 +10,9 @@ import thrScreens from "@/assets/thr-screens.webp";
 import thrJourney from "@/assets/thr-journey.webp";
 import thrWorkshops from "@/assets/thr-workshops.webp";
 import thrEcosystem from "@/assets/thr-ecosystem.webp";
+import thrLocation from "@/assets/thr-location.png";
+import thrServices from "@/assets/thr-services.png";
+import thrMobile from "@/assets/thr-mobile.png";
 
 const CaseStudyTHR = () => {
   const metrics = [
@@ -307,6 +310,27 @@ const CaseStudyTHR = () => {
                 src={thrBaby} 
                 alt="Texas Health Patient Experience" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={thrLocation} 
+                alt="Texas Health Location Page" 
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={thrServices} 
+                alt="Texas Health Services Page" 
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={thrMobile} 
+                alt="Texas Health Mobile Appointments" 
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />
             </div>
           </div>
