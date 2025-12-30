@@ -14,7 +14,7 @@ import aaSocial from "@/assets/aa-social.jpg";
 import aaKiosks from "@/assets/aa-kiosks.jpg";
 import aaMobileApp from "@/assets/aa-mobile-app.jpg";
 import aaGateDisplays from "@/assets/aa-gate-displays.jpg";
-import aaEnvironments from "@/assets/aa-environments.jpg";
+import aaTerminal from "@/assets/aa-terminal.webp";
 
 const CaseStudyAA = () => {
   const metrics = [
@@ -262,7 +262,7 @@ const CaseStudyAA = () => {
               <img src={aaGateDisplays} alt="Gate Displays" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-2xl overflow-hidden aspect-[4/3] md:col-span-3">
-              <img src={aaEnvironments} alt="Airport Environments" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src={aaTerminal} alt="Airport Terminal" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>
