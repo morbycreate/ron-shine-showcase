@@ -174,7 +174,7 @@ const Work = () => {
         {/* Clients section */}
         <div className="mt-20 pt-12 border-t border-primary-foreground/10">
           <p className="text-accent font-medium tracking-wide mb-8 text-sm">
-            Big-Name Logos Make Me Look Good
+            The brands that trusted me to do the work.
           </p>
           
           <h3 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-8">
