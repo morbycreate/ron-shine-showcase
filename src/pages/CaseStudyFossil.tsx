@@ -252,41 +252,6 @@ const CaseStudyFossil = () => {
         </div>
       </section>
 
-      {/* Design A Watch Feature */}
-      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div>
-              <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-                Featured Innovation
-              </p>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
-                Design A
-                <br />
-                <span className="text-outline">Watch.</span>
-              </h2>
-              <div className="space-y-5 text-primary-foreground/60 text-lg leading-relaxed">
-                <p>
-                  Building on the success of the Defender build-a-watch launch, we expanded product customization globally on Fossil.com.
-                </p>
-                <p>
-                  The feature included <strong className="text-primary-foreground">component logic, engraving options, and sophisticated configuration flows</strong> that let customers create truly personalized timepieces.
-                </p>
-                <p>
-                  This innovation drove engagement and conversion while reinforcing Fossil's position as a leader in accessible luxury.
-                </p>
-              </div>
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
-              <img 
-                src={designAWatch} 
-                alt="Design A Watch Customization Interface" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Results */}
       <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10 relative overflow-hidden">
