@@ -159,7 +159,7 @@ const Work = () => {
             to="/case-studies"
             className="inline-flex items-center gap-2 text-primary-foreground/60 hover:text-accent transition-colors duration-300 text-lg"
           >
-            <span className="hover-underline">Additional Case Studies available upon request</span>
+            <span className="hover-underline">View Additional Case Studies</span>
           </Link>
         </div>
 
