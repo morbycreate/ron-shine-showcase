@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, Target, TrendingUp, Users, Layers, Palette, Zap, G
 import { Link } from "react-router-dom";
 import aacomHome from "@/assets/aacom-home.png";
 import aacomInterior from "@/assets/aacom-interior.png";
+import aacomAdmiralsClub from "@/assets/aacom-admirals-club.png";
 
 const CaseStudyAAcom = () => {
   useEffect(() => {
@@ -199,6 +200,13 @@ const CaseStudyAAcom = () => {
               <img 
                 src={aacomInterior} 
                 alt="aa.com Admirals Club Page" 
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3] md:col-span-2 md:aspect-[8/3]">
+              <img 
+                src={aacomAdmiralsClub} 
+                alt="aa.com Admirals Club Dining Experience" 
                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />
             </div>
