@@ -62,9 +62,9 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         teal: {
-          DEFAULT: "hsl(180 70% 45%)",
-          light: "hsl(180 70% 55%)",
-          dark: "hsl(180 70% 35%)",
+          DEFAULT: "hsl(200 100% 50%)",
+          light: "hsl(200 100% 60%)",
+          dark: "hsl(200 100% 40%)",
         },
         navy: {
           DEFAULT: "hsl(220 15% 8%)",
