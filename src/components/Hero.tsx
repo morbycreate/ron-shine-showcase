@@ -25,14 +25,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-primary/20" />
       </div>
 
-      {/* Decorative grid pattern */}
-      <div className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: `linear-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px),
-            linear-gradient(90deg, hsl(var(--primary-foreground)) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
-        }}
-      />
 
       {/* Content */}
       <div className="relative container mx-auto px-6 py-32 lg:py-40">
