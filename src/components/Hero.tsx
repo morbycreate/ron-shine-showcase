@@ -1,4 +1,5 @@
 import { ArrowRight, Mail } from "lucide-react";
+import heroPortrait from "@/assets/hero-portrait.jpeg";
 
 const Hero = () => {
   const scrollToWork = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80')`,
+            backgroundImage: `url(${heroPortrait})`,
           }}
         />
         {/* Gradient overlays */}
