@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import aaUxTeam from "@/assets/aa-ux-team.png";
@@ -11,6 +12,9 @@ import hasbroPreview from "@/assets/hasbro-preview.png";
 import hudsonEnergyPreview from "@/assets/hudson-energy-preview.jpg";
 
 const AdditionalCaseStudies = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const projects = [
     {
       title: "American Airlines Digital Transformation",
