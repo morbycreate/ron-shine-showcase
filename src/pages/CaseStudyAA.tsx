@@ -1,51 +1,65 @@
-import { ArrowLeft, Calendar, Target, TrendingUp, Award, Plane, Users, Globe, Palette } from "lucide-react";
+import { ArrowLeft, Calendar, Target, Monitor, Smartphone, Users, Globe, Palette, Layers, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import aaHero from "@/assets/aa-hero.png";
+import aaGateSign from "@/assets/aa-gate-sign.png";
+import aaLaptop from "@/assets/aa-laptop.png";
+import aaKiosk from "@/assets/aa-kiosk.png";
+import aaBoarding from "@/assets/aa-boarding.png";
 
 const CaseStudyAA = () => {
   const metrics = [
-    { label: "Fleet Redesigned", value: "900+", icon: Plane },
-    { label: "Global Rollout", value: "50+ Countries", icon: Globe },
-    { label: "UX Team Growth", value: "3→30", icon: Users },
+    { label: "Kiosks Launched", value: "5,000+", icon: Monitor },
+    { label: "Development Teams", value: "8", icon: Users },
+    { label: "Launch Timeline", value: "1 Day", icon: Zap },
   ];
 
   const approach = [
     {
       icon: Target,
-      title: "Define the Vision",
+      title: "New Visual Direction",
       points: [
-        "Partnered with Futurebrand to establish a new brand identity",
-        "Aligned stakeholders across marketing, operations, and executive leadership",
-        "Set clear goals for modernization while honoring heritage",
+        "Established comprehensive visual guidelines for all digital platforms",
+        "Created cohesive design language across web, mobile, and physical touchpoints",
+        "Ensured brand consistency from aa.com to airport displays",
       ],
     },
     {
       icon: Palette,
-      title: "Redesign the Identity",
+      title: "New UX Patterns",
       points: [
-        "Developed new aircraft livery featuring the iconic tail design",
-        "Created comprehensive brand guidelines for global consistency",
-        "Designed new typography, color palette, and visual language",
+        "Redesigned user flows for booking, check-in, and travel management",
+        "Developed intuitive interfaces for self-service kiosks",
+        "Standardized interaction patterns across iOS and Android apps",
       ],
     },
     {
-      icon: Users,
-      title: "Build the UX Team",
+      icon: Layers,
+      title: "New Content Standards",
       points: [
-        "Pioneered and scaled the first UX team from 3 to 30 members",
-        "Established UX processes and design standards across the organization",
-        "Created a culture of user-centered design thinking",
+        "Defined voice and tone guidelines for all customer communications",
+        "Created templates for 20+ marketing emails",
+        "Established social media content frameworks",
       ],
     },
     {
       icon: Globe,
-      title: "Execute Globally",
+      title: "Fully Redesigned Interfaces",
       points: [
-        "Coordinated rollout across 900+ aircraft worldwide",
-        "Managed brand implementation across all customer touchpoints",
-        "Ensured consistency from airports to digital experiences",
+        "Transformed aa.com with the new brand identity",
+        "Rebuilt mobile apps for iOS and Android",
+        "Redesigned system-wide gate displays and boarding screens",
       ],
     },
+  ];
+
+  const platforms = [
+    "American's corporate website - aa.com",
+    "5,000 network-wide self-service kiosks",
+    "Mobile apps, both iOS and Android",
+    "System-wide gate displays",
+    "Over 20 marketing emails",
+    "All social media touch points",
+    "Corporate Intranet",
   ];
 
   return (
@@ -90,7 +104,7 @@ const CaseStudyAA = () => {
             {/* Meta info */}
             <div className="flex flex-wrap items-center gap-4 mb-8 opacity-0 animate-fade-up">
               <span className="px-4 py-1.5 text-xs font-medium bg-accent/10 text-accent rounded-full border border-accent/20">
-                Creative Direction
+                Digital Transformation
               </span>
               <span className="flex items-center gap-2 text-sm text-primary-foreground/50">
                 <Calendar className="w-4 h-4" />
@@ -100,16 +114,16 @@ const CaseStudyAA = () => {
 
             {/* Main headline - Matt Boston style */}
             <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[7rem] font-bold leading-[0.95] mb-8 opacity-0 animate-fade-up stagger-1">
-              <span className="text-primary-foreground">American</span>
+              <span className="text-primary-foreground">A digital</span>
               <br />
-              <span className="text-outline">Airlines</span>
+              <span className="text-outline">transformation,</span>
               <br />
-              <span className="text-accent">Rebrand</span>
+              <span className="text-accent">in one day.</span>
             </h1>
 
             <p className="text-primary-foreground/60 text-xl md:text-2xl max-w-2xl leading-relaxed opacity-0 animate-fade-up stagger-2">
-              Leading the massive global rebrand including aircraft livery in partnership with
-              <span className="text-accent font-medium"> Futurebrand.</span>
+              American understood digital would play a major role in the launch of their new brand—reaching
+              <span className="text-accent font-medium"> millions of customers daily.</span>
             </p>
           </div>
         </div>
@@ -152,16 +166,16 @@ const CaseStudyAA = () => {
                 The Challenge
               </p>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
-                Reinventing an
+                Leading digital
                 <br />
-                <span className="text-outline">American icon.</span>
+                <span className="text-outline">across all platforms.</span>
               </h2>
               <div className="space-y-5 text-primary-foreground/60 text-lg leading-relaxed">
                 <p>
-                  After decades with the same identity, <strong className="text-primary-foreground">American Airlines</strong> needed a complete brand transformation that would signal a new era while honoring its storied heritage.
+                  I oversaw the creative development for all customer-facing digital experiences—<strong className="text-primary-foreground">aa.com, mobile web, mobile apps, and airport infrastructure.</strong>
                 </p>
                 <p>
-                  The challenge was immense: redesign one of the world's most recognized airline brands across 900+ aircraft, hundreds of airport locations, and every customer touchpoint—all while maintaining operational continuity.
+                  American's digital touchpoints reach millions of customers a day, and American wanted to ensure the new brand was reflected in every part of the digital customer journey.
                 </p>
               </div>
             </div>
@@ -172,19 +186,71 @@ const CaseStudyAA = () => {
                 The Solution
               </p>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
-                Bold vision,
+                Eight teams,
                 <br />
-                <span className="text-outline">global execution.</span>
+                <span className="text-outline">one vision.</span>
               </h2>
               <div className="space-y-5 text-primary-foreground/60 text-lg leading-relaxed">
                 <p>
-                  In partnership with <strong className="text-primary-foreground">Futurebrand</strong>, we led the complete brand transformation—from the iconic new tail design to comprehensive brand guidelines.
+                  I led <strong className="text-primary-foreground">eight development teams</strong> to implement the new identity across American's entire digital ecosystem.
                 </p>
                 <p>
-                  Simultaneously, I pioneered and scaled the first UX team from just 3 members to 30, establishing user-centered design practices that transformed how the airline approached digital experiences.
+                  All culminating in the unprecedented launch of the brand—<strong className="text-accent">rolled out globally in a single day.</strong>
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Gallery */}
+      <section className="py-12 bg-primary">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="rounded-2xl overflow-hidden">
+              <img src={aaGateSign} alt="American Airlines Gate Sign" className="w-full h-full object-cover" />
+            </div>
+            <div className="rounded-2xl overflow-hidden">
+              <img src={aaBoarding} alt="American Airlines Boarding Screen" className="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Digital Platforms */}
+      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div>
+              <p className="text-accent font-medium tracking-wide mb-4 text-sm">
+                Digital Platforms
+              </p>
+              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
+                Every touchpoint,
+                <br />
+                <span className="text-outline">reimagined.</span>
+              </h2>
+              <ul className="space-y-4">
+                {platforms.map((platform, index) => (
+                  <li key={index} className="flex items-start gap-4 text-primary-foreground/60 text-lg">
+                    <span className="w-2 h-2 rounded-full bg-accent mt-2.5 flex-shrink-0" />
+                    {platform}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-2xl overflow-hidden">
+              <img src={aaLaptop} alt="AA.com on Laptop" className="w-full h-auto" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Kiosk Image */}
+      <section className="py-12 bg-primary">
+        <div className="container mx-auto px-6">
+          <div className="rounded-2xl overflow-hidden max-w-4xl mx-auto">
+            <img src={aaKiosk} alt="American Airlines Self-Service Kiosk" className="w-full h-auto" />
           </div>
         </div>
       </section>
@@ -238,31 +304,31 @@ const CaseStudyAA = () => {
               Results & Impact
             </p>
             <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
-              A new era
+              Launched globally
               <br />
-              <span className="text-outline-accent">takes flight.</span>
+              <span className="text-outline-accent">in a single day.</span>
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
             <div className="bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-10 text-center hover:border-accent/30 transition-colors duration-300">
-              <p className="text-5xl md:text-6xl font-display font-bold text-gradient mb-3">900+</p>
-              <p className="text-primary-foreground/60">Aircraft redesigned with the new livery worldwide</p>
+              <p className="text-5xl md:text-6xl font-display font-bold text-gradient mb-3">5,000+</p>
+              <p className="text-primary-foreground/60">Self-service kiosks launched network-wide</p>
             </div>
             <div className="bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-10 text-center hover:border-accent/30 transition-colors duration-300">
-              <p className="text-5xl md:text-6xl font-display font-bold text-gradient mb-3">10x</p>
-              <p className="text-primary-foreground/60">UX team growth from 3 to 30 members</p>
+              <p className="text-5xl md:text-6xl font-display font-bold text-gradient mb-3">8</p>
+              <p className="text-primary-foreground/60">Development teams coordinated for launch</p>
             </div>
             <div className="bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-10 text-center hover:border-accent/30 transition-colors duration-300">
-              <p className="text-5xl md:text-6xl font-display font-bold text-gradient mb-3">50+</p>
-              <p className="text-primary-foreground/60">Countries with consistent brand presence</p>
+              <p className="text-5xl md:text-6xl font-display font-bold text-gradient mb-3">1 Day</p>
+              <p className="text-primary-foreground/60">Global rollout across all digital platforms</p>
             </div>
           </div>
 
           <div className="max-w-3xl mx-auto bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-10 text-center">
-            <h3 className="font-display text-2xl font-bold text-primary-foreground mb-4">Legacy & Impact</h3>
+            <h3 className="font-display text-2xl font-bold text-primary-foreground mb-4">Unprecedented Coordination</h3>
             <p className="text-primary-foreground/60 leading-relaxed text-lg">
-              The rebrand marked a pivotal moment in American Airlines' history—a bold statement of innovation and renewed commitment to customers. The UX team I built became the foundation for the airline's digital transformation, influencing experiences across web, mobile, and in-airport touchpoints.
+              The digital launch was an unprecedented feat of coordination—transforming aa.com, all mobile apps, 5,000+ airport kiosks, system-wide gate displays, 20+ marketing emails, and all social channels simultaneously, ensuring millions of customers experienced the new American Airlines brand on day one.
             </p>
           </div>
         </div>
