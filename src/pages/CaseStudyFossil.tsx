@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { ArrowLeft, Calendar, Target, TrendingUp, Users, Search, Layers, Palette, ShoppingCart, Watch } from "lucide-react";
 import { Link } from "react-router-dom";
 import fossilPreview from "@/assets/fossil-site-preview.png";
+import fossilHp from "@/assets/fossil-hp.png";
 import designAWatch from "@/assets/design-a-watch.png";
 import fossilAd from "@/assets/fossil-ad.jpg";
 import fossilPdp from "@/assets/fossil-pdp.jpg";
@@ -201,8 +202,8 @@ const CaseStudyFossil = () => {
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
               <img 
-                src={designAWatch} 
-                alt="Design A Watch Feature" 
+                src={fossilHp} 
+                alt="Fossil Homepage on Multiple Devices" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
