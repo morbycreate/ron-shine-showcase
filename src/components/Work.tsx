@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import defenderPreview from "@/assets/defender-preview.png";
 import aaPreview from "@/assets/aa-preview.png";
+import fossilSitePreview from "@/assets/fossil-site-preview.png";
 
 const Work = () => {
   const projects = [
@@ -24,12 +25,12 @@ const Work = () => {
       size: "small",
     },
     {
-      title: "Slalom Creative Services",
-      category: "Team Building",
+      title: "Fossil.com Redesign",
+      category: "Digital Experience",
       description:
-        "Built a creative team generating $60M in new pipeline opportunities.",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
-      link: null,
+        "Modernized Fossil's digital presence with 23% YoY e-commerce growth and 'Digital Genius' recognition.",
+      image: fossilSitePreview,
+      link: "/fossil",
       size: "small",
     },
   ];
