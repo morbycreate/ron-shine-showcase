@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { ArrowLeft, ArrowRight, Calendar, Target, TrendingUp, Award, Palette, Layers, Users, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import defenderHero from "@/assets/defender-hero.png";
+import defenderStory from "@/assets/defender-story.png";
+import defenderWatchBar from "@/assets/defender-watch-bar.jpg";
+import defenderTablets from "@/assets/defender-tablets.png";
 
 const CaseStudyDefender = () => {
   useEffect(() => {
@@ -181,6 +184,33 @@ const CaseStudyDefender = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* 2-Column Image Gallery */}
+          <div className="grid md:grid-cols-2 gap-6 mt-16">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={defenderStory} 
+                alt="The Spirit of the Defender - brand story document" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={defenderWatchBar} 
+                alt="Fossil Watch Bar retail experience" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Full-width tablets image */}
+          <div className="mt-6 rounded-2xl overflow-hidden border border-primary-foreground/10">
+            <img 
+              src={defenderTablets} 
+              alt="Defender digital experience on tablets" 
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </section>
