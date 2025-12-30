@@ -192,7 +192,7 @@ const CaseStudyDefender = () => {
               <img 
                 src={defenderStory} 
                 alt="The Spirit of the Defender - brand story document" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
