@@ -53,19 +53,6 @@ const Hero = () => {
             <span className="text-accent font-medium"> 15+ years of getting stakeholders aligned and users saying "finally."</span>
           </p>
 
-          {/* CTA - Email link style like Matt Boston */}
-          <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-up stagger-3">
-            <a
-              href="mailto:hello@ronbrissette.com"
-              className="group inline-flex items-center gap-3 text-primary-foreground font-medium text-lg hover:text-accent transition-colors duration-300"
-            >
-              <span className="flex items-center justify-center w-12 h-12 rounded-full bg-accent text-accent-foreground group-hover:scale-110 transition-transform duration-300">
-                <Mail className="w-5 h-5" />
-              </span>
-              <span className="hover-underline">Let's Hang Out</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
-            </a>
-          </div>
 
           {/* Scroll hint */}
           <div className="mt-20 opacity-0 animate-fade-up stagger-4">
