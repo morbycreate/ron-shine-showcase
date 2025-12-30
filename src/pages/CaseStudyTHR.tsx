@@ -194,7 +194,7 @@ const CaseStudyTHR = () => {
       {/* Image Gallery - Competitive Analysis */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
               <img 
                 src={thrCompetitive} 
@@ -206,6 +206,13 @@ const CaseStudyTHR = () => {
               <img 
                 src={thrSiteStructure} 
                 alt="Site Structure Planning" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img 
+                src={thrPreview} 
+                alt="Texas Health Website Preview" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -254,7 +261,7 @@ const CaseStudyTHR = () => {
       {/* Visual Design Gallery */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
               <img 
                 src={thrBaby} 
@@ -266,6 +273,13 @@ const CaseStudyTHR = () => {
               <img 
                 src={thrQuickGuide} 
                 alt="Texas Health Quick Guide" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img 
+                src={thrCompetitive} 
+                alt="Texas Health Competitive Analysis" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
