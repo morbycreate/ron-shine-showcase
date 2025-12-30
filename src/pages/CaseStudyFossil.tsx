@@ -3,7 +3,7 @@ import { ArrowLeft, Calendar, Target, TrendingUp, Users, Search, Layers, Palette
 import { Link } from "react-router-dom";
 import fossilPreview from "@/assets/fossil-site-preview.png";
 import fossilHp from "@/assets/fossil-hp.png";
-import fossilMobileHome from "@/assets/fossil-mobile-home.png";
+import fossil2upDesktop from "@/assets/fossil-2up-desktop.png";
 import fossilMobile3up from "@/assets/fossil-mobile-3up.png";
 import designAWatch from "@/assets/design-a-watch.png";
 import fossilAd from "@/assets/fossil-ad.jpg";
@@ -239,9 +239,9 @@ const CaseStudyFossil = () => {
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
               <img 
-                src={fossilMobileHome} 
-                alt="Fossil Mobile Homepage" 
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+                src={fossil2upDesktop} 
+                alt="Fossil Desktop Experience" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
