@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import aaUxTeam from "@/assets/aa-ux-team.png";
 import designAWatch from "@/assets/design-a-watch.png";
 import aacomLaptop from "@/assets/aacom-laptop.png";
-import sabrePreview from "@/assets/sabre-preview.png";
 
 const AdditionalCaseStudies = () => {
   const projects = [
@@ -29,14 +28,6 @@ const AdditionalCaseStudies = () => {
       description:
         "Led the enterprise redesign of AA.com, supporting American Airlines' first major rebrand in 40+ years.",
       image: aacomLaptop,
-      link: null,
-    },
-    {
-      title: "Sabre Rebrand",
-      category: "Branding",
-      description:
-        "Contributed to the strategic rebrand of Sabre, a global technology company powering the travel industry.",
-      image: sabrePreview,
       link: null,
     },
   ];
