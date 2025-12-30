@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import { ArrowLeft, Calendar, Target, TrendingUp, Users, Search, Layers, Palette, ShoppingCart, Watch } from "lucide-react";
 import { Link } from "react-router-dom";
 import fossilPreview from "@/assets/fossil-site-preview.png";
 import designAWatch from "@/assets/design-a-watch.png";
 
 const CaseStudyFossil = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const metrics = [
     { label: "E-commerce Growth", value: "+23%", icon: TrendingUp },
     { label: "Industry Recognition", value: "L2 Digital Genius", icon: Target },
