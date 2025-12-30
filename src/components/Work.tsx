@@ -184,7 +184,7 @@ const Work = () => {
                 <img 
                   src={client.logo} 
                   alt={client.name} 
-                  className="h-10 md:h-12 w-auto object-contain"
+                  className="h-20 md:h-24 w-auto object-contain"
                 />
               </div>
             ))}
