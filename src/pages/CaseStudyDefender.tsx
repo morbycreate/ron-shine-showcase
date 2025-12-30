@@ -1,10 +1,6 @@
-import { ArrowLeft, Calendar, Target, TrendingUp, Award, Palette, Layers, Users, Zap } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Target, TrendingUp, Award, Palette, Layers, Users, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import defenderHero from "@/assets/defender-hero.png";
-import defenderTablets from "@/assets/defender-tablets.png";
-import defenderStory from "@/assets/defender-story.png";
-import defenderWatchBar from "@/assets/defender-watch-bar.jpg";
-import defenderConcept from "@/assets/defender-concept.jpg";
 
 const CaseStudyDefender = () => {
   const metrics = [
@@ -131,7 +127,7 @@ const CaseStudyDefender = () => {
       <section className="py-12 border-y border-primary-foreground/10 bg-primary">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {metrics.map((metric) => (
+            {metrics.map((metric, index) => (
               <div key={metric.label} className="flex items-center gap-5 group">
                 <div className="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center group-hover:bg-accent/20 transition-colors duration-300">
                   <metric.icon className="w-7 h-7 text-accent" />
@@ -143,17 +139,6 @@ const CaseStudyDefender = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Full-width Tablets Image */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-6">
-          <img 
-            src={defenderTablets}
-            alt="Fossil Defender digital experience across devices"
-            className="w-full h-auto rounded-2xl shadow-2xl"
-          />
         </div>
       </section>
 
@@ -181,89 +166,25 @@ const CaseStudyDefender = () => {
               </div>
             </div>
 
-            {/* Watch Bar Image */}
-            <div className="flex items-center">
-              <img 
-                src={defenderWatchBar}
-                alt="Fossil Watch Bar retail experience"
-                className="w-full h-auto rounded-2xl shadow-xl"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* The Spirit of Defender - Story Section */}
-      <section className="py-24 md:py-32 bg-muted/20 border-t border-primary-foreground/10">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            {/* Story Document Image */}
-            <div className="order-2 lg:order-1">
-              <img 
-                src={defenderStory}
-                alt="The Spirit of the Defender story document"
-                className="w-full max-w-md mx-auto h-auto rounded-lg shadow-2xl rotate-[-2deg] hover:rotate-0 transition-transform duration-500"
-              />
-            </div>
-
-            {/* Story Content */}
-            <div className="order-1 lg:order-2">
+            {/* Solution */}
+            <div>
               <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-                The Story
+                The Solution
               </p>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
-                Never Give Up.
+                Modular
                 <br />
-                <span className="text-outline">Always Move Forward.</span>
+                <span className="text-outline">at scale.</span>
               </h2>
               <div className="space-y-5 text-primary-foreground/60 text-lg leading-relaxed">
                 <p>
-                  Born from the pioneer days of aviation, Defender celebrated the men who dared to go first—those who charted new courses through the unknown skies.
+                  Our team led the strategy and end-to-end execution of the Defender Series relaunch, designing and building a <strong className="text-primary-foreground">modular product system</strong> that enabled true customization at scale.
                 </p>
                 <p>
-                  Every detail carried that spirit: the rugged cases, the vintage dials, the names that told their own stories—<strong className="text-primary-foreground">Spitfire, Spinnaker, Streamliner, Avion, Starboard.</strong>
-                </p>
-                <p>
-                  The Defender Collection returns not as a throwback, but as a reminder of who we are when we refuse to quit.
+                  We created the underlying framework that allowed customers to mix and match cases and bands, while ensuring consistency across materials, finishes, and fit.
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Solution Section */}
-      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mb-16">
-            <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-              The Solution
-            </p>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
-              Modular
-              <br />
-              <span className="text-outline">at scale.</span>
-            </h2>
-            <div className="space-y-5 text-primary-foreground/60 text-lg leading-relaxed max-w-3xl">
-              <p>
-                Our team led the strategy and end-to-end execution of the Defender Series relaunch, designing and building a <strong className="text-primary-foreground">modular product system</strong> that enabled true customization at scale.
-              </p>
-              <p>
-                We created the underlying framework that allowed customers to mix and match cases and bands, while ensuring consistency across materials, finishes, and fit.
-              </p>
-            </div>
-          </div>
-
-          {/* Concept Wireframe Image */}
-          <div className="bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-6 md:p-10">
-            <img 
-              src={defenderConcept}
-              alt="Defender Watch Builder concept wireframe"
-              className="w-full h-auto rounded-lg"
-            />
-            <p className="text-center text-primary-foreground/40 text-sm mt-6">
-              Early concept exploration for the Watch Builder interface
-            </p>
           </div>
         </div>
       </section>
@@ -283,7 +204,7 @@ const CaseStudyDefender = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {approach.map((item) => (
+            {approach.map((item, index) => (
               <div
                 key={item.title}
                 className="group bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-8 hover:border-accent/30 hover:bg-primary-foreground/[0.05] transition-all duration-300"
