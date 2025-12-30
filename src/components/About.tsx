@@ -1,29 +1,9 @@
-import americanAirlinesLogo from "@/assets/logos/american-airlines.svg";
-import attLogo from "@/assets/logos/att.png";
-import jaguarsLogo from "@/assets/logos/jaguars.png";
-import sabreLogo from "@/assets/logos/sabre.png";
-import firehouseSubsLogo from "@/assets/logos/firehouse-subs.png";
-import nikeLogo from "@/assets/logos/nike.png";
-import awsLogo from "@/assets/logos/aws.png";
-import fossilLogo from "@/assets/logos/fossil.png";
-
 const About = () => {
   const accomplishments = [
     "Led the enterprise redesign of AA.com, supporting American Airlines' first major rebrand in 40+ years and contributing to an +11.4 lift in YouGov Brand Buzz.",
     "Drove $60M in pipeline by building and leading experience capabilities for Fortune 500 clients across industries (Slalom).",
     "Delivered a 23% YoY e-commerce lift through full-funnel UX and platform optimization, contributing to industry recognition as a digital leader (Fossil).",
     "Built and scaled UX organizations (3 → 30; 2 → 10), establishing design systems, governance, and operating models that enabled enterprise delivery at scale (American Airlines, Slalom).",
-  ];
-
-  const clientLogos = [
-    { name: "American Airlines", logo: americanAirlinesLogo },
-    { name: "AT&T", logo: attLogo },
-    { name: "Jacksonville Jaguars", logo: jaguarsLogo },
-    { name: "Sabre", logo: sabreLogo },
-    { name: "Firehouse Subs", logo: firehouseSubsLogo },
-    { name: "Nike", logo: nikeLogo },
-    { name: "AWS", logo: awsLogo },
-    { name: "Fossil", logo: fossilLogo },
   ];
 
   return (
@@ -53,7 +33,7 @@ const About = () => {
         </div>
 
         {/* Accomplishments list */}
-        <div className="max-w-4xl mb-20">
+        <div className="max-w-4xl">
           <ul className="space-y-6">
             {accomplishments.map((item, index) => (
               <li 
@@ -69,34 +49,6 @@ const About = () => {
               </li>
             ))}
           </ul>
-        </div>
-
-        {/* Clients section */}
-        <div className="pt-12 border-t border-primary-foreground/10">
-          <p className="text-accent font-medium tracking-wide mb-8 text-sm">
-            Big-Name Logos Make Me Look Good
-          </p>
-          
-          <h3 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-8">
-            Some friends that have
-            <br />
-            <span className="text-outline-thin">leveraged my talents</span>
-          </h3>
-
-          <div className="flex flex-wrap items-center gap-8 md:gap-12">
-            {clientLogos.map((client) => (
-              <div
-                key={client.name}
-                className="opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
-              >
-                <img 
-                  src={client.logo} 
-                  alt={client.name} 
-                  className="h-10 md:h-12 w-auto object-contain"
-                />
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
