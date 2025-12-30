@@ -59,8 +59,8 @@ const Hero = () => {
 
           {/* Tagline - Professional approach */}
           <p className="text-primary-foreground/60 text-lg md:text-xl max-w-xl mb-12 leading-relaxed opacity-0 animate-fade-up stagger-2">
-            Turning ambiguity into shipped outcomes across financial services, travel, and enterprise platforms.
-            <span className="text-accent font-medium"> Aligning teams. Driving adoption. Delivering measurable impact.</span>
+            Still rocking the same confidence from that school photo, just with fewer bowl cuts and more design systems.
+            <span className="text-accent font-medium"> Making enterprise software less painful since 2009.</span>
           </p>
 
           {/* CTA - Email link style like Matt Boston */}
