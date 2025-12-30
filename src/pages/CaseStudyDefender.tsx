@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { ArrowLeft, ArrowRight, Calendar, Target, TrendingUp, Award, Palette, Layers, Users, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import defenderHero from "@/assets/defender-hero.png";
 
 const CaseStudyDefender = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const metrics = [
     { label: "YoY Sales Growth", value: "23%", icon: TrendingUp },
     { label: "Industry Recognition", value: "Digital Genius", icon: Award },
