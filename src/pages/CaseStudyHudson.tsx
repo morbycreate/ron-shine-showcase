@@ -1,12 +1,8 @@
 import { useEffect } from "react";
-import { ArrowLeft, Calendar, Target, TrendingUp, Users, Lightbulb, Layers, Palette, Zap, Building2 } from "lucide-react";
+import { ArrowLeft, Calendar, Target, TrendingUp, Users, Layers, Palette, Zap, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import hudsonHero from "@/assets/hudson-hero.png";
 import hudsonDevices from "@/assets/hudson-devices.png";
-import hudsonSchedule from "@/assets/hudson-schedule.png";
-import hudsonDashboard from "@/assets/hudson-dashboard.png";
-import hudsonSettings from "@/assets/hudson-settings.png";
-import hudsonReporting from "@/assets/hudson-reporting.png";
 
 const CaseStudyHudson = () => {
   useEffect(() => {
@@ -239,41 +235,6 @@ const CaseStudyHudson = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
-      <section className="py-16 bg-primary">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
-              <img 
-                src={hudsonDashboard} 
-                alt="EdgePower Dashboard" 
-                className="w-full h-auto hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
-              <img 
-                src={hudsonSchedule} 
-                alt="EdgePower Schedule Settings" 
-                className="w-full h-auto hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
-              <img 
-                src={hudsonSettings} 
-                alt="EdgePower Settings List" 
-                className="w-full h-auto hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
-              <img 
-                src={hudsonReporting} 
-                alt="EdgePower Reporting" 
-                className="w-full h-auto hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Key Deliverables */}
       <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
