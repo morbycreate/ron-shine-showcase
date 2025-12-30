@@ -6,6 +6,7 @@ import aacomLaptop from "@/assets/aacom-laptop.png";
 import aaPreview from "@/assets/aa-preview.png";
 import defenderPreview from "@/assets/defender-preview.png";
 import fossilSitePreview from "@/assets/fossil-site-preview.png";
+import thrPreview from "@/assets/thr-preview.jpg";
 
 const AdditionalCaseStudies = () => {
   const projects = [
@@ -32,6 +33,14 @@ const AdditionalCaseStudies = () => {
         "Modernized Fossil's digital presence with 23% YoY e-commerce growth and 'Digital Genius' recognition.",
       image: fossilSitePreview,
       link: "/fossil",
+    },
+    {
+      title: "Texas Health Resources Website Redesign",
+      category: "Digital Experience",
+      description:
+        "Redesigned the digital ecosystem for one of the largest faith-based nonprofit health systems in the US.",
+      image: thrPreview,
+      link: null,
     },
     {
       title: "Building American Airlines' First UX Organization",
