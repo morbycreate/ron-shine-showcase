@@ -17,7 +17,7 @@ const Hero = () => {
           className="absolute inset-0 bg-cover bg-no-repeat scale-110"
           style={{
             backgroundImage: `url(${heroPortrait})`,
-            backgroundPosition: '25% 55%',
+            backgroundPosition: '60% 55%',
             transform: 'rotate(-3deg)',
           }}
         />
