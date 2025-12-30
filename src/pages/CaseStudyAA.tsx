@@ -7,6 +7,14 @@ import aaKiosk from "@/assets/aa-kiosk.png";
 import aaBoarding from "@/assets/aa-boarding.png";
 import aaMobile1 from "@/assets/aa-mobile-1.jpg";
 import aaMobile2 from "@/assets/aa-mobile-2.jpg";
+import aaGuiKits from "@/assets/aa-gui-kits.jpg";
+import aaWeb from "@/assets/aa-web.jpg";
+import aaEmail from "@/assets/aa-email.jpg";
+import aaSocial from "@/assets/aa-social.jpg";
+import aaKiosks from "@/assets/aa-kiosks.jpg";
+import aaMobileApp from "@/assets/aa-mobile-app.jpg";
+import aaGateDisplays from "@/assets/aa-gate-displays.jpg";
+import aaEnvironments from "@/assets/aa-environments.jpg";
 
 const CaseStudyAA = () => {
   const metrics = [
@@ -232,11 +240,29 @@ const CaseStudyAA = () => {
             <div className="rounded-2xl overflow-hidden aspect-[4/3] md:col-span-2">
               <img src={aaLaptop} alt="AA.com on Laptop" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-2xl overflow-hidden aspect-[3/4] bg-primary-foreground/5 flex items-center justify-center">
-              <img src={aaMobile1} alt="American Airlines Mobile App - Trips" className="h-full w-auto object-contain hover:scale-105 transition-transform duration-500" />
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+              <img src={aaGuiKits} alt="Digital GUI Kits" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-2xl overflow-hidden aspect-[3/4] bg-primary-foreground/5 flex items-center justify-center">
-              <img src={aaMobile2} alt="American Airlines Mobile App - Profile" className="h-full w-auto object-contain hover:scale-105 transition-transform duration-500" />
+            <div className="rounded-2xl overflow-hidden aspect-[4/3] md:col-span-2">
+              <img src={aaWeb} alt="AA.com Website" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+              <img src={aaEmail} alt="Email Marketing" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+              <img src={aaSocial} alt="Social Media" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+              <img src={aaKiosks} alt="Kiosk Interfaces" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-2xl overflow-hidden aspect-[4/3] md:col-span-2">
+              <img src={aaMobileApp} alt="Mobile App iOS7" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+              <img src={aaGateDisplays} alt="Gate Displays" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-2xl overflow-hidden aspect-[4/3] md:col-span-3">
+              <img src={aaEnvironments} alt="Airport Environments" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>
