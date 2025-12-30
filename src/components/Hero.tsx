@@ -48,8 +48,7 @@ const Hero = () => {
             <br />
             <span className="text-outline">strategist.</span>
             <br />
-            <span className="text-accent">Design</span>
-            <br />
+            <span className="text-accent">Design </span>
             <span className="text-outline-accent">leader.</span>
             <br />
             <span className="text-primary-foreground">Team</span>
