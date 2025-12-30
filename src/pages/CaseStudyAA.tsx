@@ -237,13 +237,13 @@ const CaseStudyAA = () => {
             <div className="rounded-2xl overflow-hidden aspect-[4/3]">
               <img src={aaKiosk} alt="American Airlines Self-Service Kiosk" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-2xl overflow-hidden aspect-[4/3] md:col-span-2">
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
               <img src={aaLaptop} alt="AA.com on Laptop" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-2xl overflow-hidden aspect-[4/3]">
               <img src={aaGuiKits} alt="Digital GUI Kits" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-2xl overflow-hidden aspect-[4/3] md:col-span-2">
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
               <img src={aaWeb} alt="AA.com Website" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-2xl overflow-hidden aspect-[4/3]">
@@ -255,13 +255,13 @@ const CaseStudyAA = () => {
             <div className="rounded-2xl overflow-hidden aspect-[4/3]">
               <img src={aaKiosks} alt="Kiosk Interfaces" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-2xl overflow-hidden aspect-[4/3] md:col-span-2">
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
               <img src={aaMobileApp} alt="Mobile App iOS7" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-2xl overflow-hidden aspect-[4/3]">
               <img src={aaGateDisplays} alt="Gate Displays" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-2xl overflow-hidden aspect-[4/3] md:col-span-3">
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
               <img src={aaTerminal} alt="Airport Terminal" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
