@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { ArrowLeft, Calendar, Target, TrendingUp, Users, Search, Layers, Palette, Gamepad2, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import hasbroPreview from "@/assets/hasbro-preview.png";
 
 const CaseStudyHasbro = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const metrics = [
     { label: "Target Audience", value: "Fans & Collectors", icon: Star },
     { label: "Experience Type", value: "Immersive", icon: Gamepad2 },
