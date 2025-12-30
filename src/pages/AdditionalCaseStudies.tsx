@@ -63,6 +63,7 @@ const AdditionalCaseStudies = () => {
         "Redesigned the digital ecosystem for one of the largest faith-based nonprofit health systems in the US.",
       image: thrPreview,
       link: "/texas-health",
+      imagePosition: "object-top",
     },
     {
       title: "Building American Airlines' First UX Organization",
@@ -134,7 +135,7 @@ const AdditionalCaseStudies = () => {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${project.imagePosition || ''}`}
                     />
                     {/* Dark overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-primary/30 opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
