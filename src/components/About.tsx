@@ -8,10 +8,12 @@ import awsLogo from "@/assets/logos/aws.png";
 import fossilLogo from "@/assets/logos/fossil.png";
 
 const About = () => {
-  const stats = [
-    { value: "18+", label: "Years Of Experience" },
-    { value: "50+", label: "Projects Delivered" },
-    { value: "$60M", label: "Pipeline Generated" },
+  const accomplishments = [
+    "Drove 23% YoY ecommerce growth through full-funnel UX and PDP optimization at Fossil",
+    "Led Ashley Stewart brand transformation, amplifying body-confidence storytelling, elevating product narrative — to differentiate from competitors and build recognition with new customers",
+    "Led American Airlines' enterprise rebrand, contributing to +11.4 YouGov Buzz, the strongest gain in the airline sector",
+    "Built Slalom's Global Creative Services capability from zero, generating $60M in new pipeline in six months",
+    "Scaled creative and experience teams 2 → 10 and 3 → 30+ while maintaining craft, speed, and accountability",
   ];
 
   const clientLogos = [
@@ -39,40 +41,38 @@ const About = () => {
 
       <div className="relative container mx-auto px-6">
         {/* Section intro */}
-        <div className="max-w-4xl mb-20">
+        <div className="max-w-4xl mb-16">
           <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-            About Me
+            Career Highlights
           </p>
           
-          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-8">
-            I'm always seeking genuine,
+          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
+            Driving Results
             <br />
-            <span className="text-outline">authentic connections.</span>
+            <span className="text-outline">That Matter</span>
           </h2>
-
-          <p className="text-primary-foreground/60 text-lg md:text-xl leading-relaxed max-w-2xl">
-            With my team, with brands, and with your business. My career spans 
-            financial services, travel, enterprise platforms, and consumer products—from 
-            leading <span className="text-primary-foreground">American Airlines' global rebrand</span> to driving 
-            <span className="text-accent"> $60M in new pipeline opportunities</span> at Slalom.
-          </p>
         </div>
 
-        {/* Stats row */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {stats.map((stat) => (
-            <div key={stat.label} className="border-l-2 border-accent pl-6">
-              <p className="font-display text-5xl md:text-6xl font-bold text-primary-foreground mb-2">
-                {stat.value}
-              </p>
-              <p className="text-primary-foreground/50 text-sm uppercase tracking-wider">
-                {stat.label}
-              </p>
-            </div>
-          ))}
+        {/* Accomplishments list */}
+        <div className="max-w-4xl mb-20">
+          <ul className="space-y-6">
+            {accomplishments.map((item, index) => (
+              <li 
+                key={index}
+                className="flex gap-4 items-start group"
+              >
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center text-accent font-display font-bold text-sm group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300">
+                  {index + 1}
+                </span>
+                <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed pt-0.5">
+                  {item}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
 
-        {/* Clients section - Matt Boston's "Big-Name Logos" style */}
+        {/* Clients section */}
         <div className="pt-12 border-t border-primary-foreground/10">
           <p className="text-accent font-medium tracking-wide mb-8 text-sm">
             Big-Name Logos Make Me Look Good
