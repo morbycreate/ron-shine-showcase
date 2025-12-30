@@ -5,7 +5,7 @@ import aaPreview from "@/assets/aa-preview.png";
 import fossilSitePreview from "@/assets/fossil-site-preview.png";
 import americanAirlinesLogo from "@/assets/logos/american-airlines.svg";
 import attLogo from "@/assets/logos/att.png";
-import jaguarsLogo from "@/assets/logos/jaguars.png";
+import jaguarsLogo from "@/assets/logos/jaguars-full.png";
 import sabreLogo from "@/assets/logos/sabre.png";
 import firehouseSubsLogo from "@/assets/logos/firehouse-subs.png";
 import nikeLogo from "@/assets/logos/nike.png";
