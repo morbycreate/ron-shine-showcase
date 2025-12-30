@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { ArrowLeft, Calendar, Target, TrendingUp, Users, Layers, Palette, Zap, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
-import aacomLaptop from "@/assets/aacom-laptop.png";
 import aacomHome from "@/assets/aacom-home.png";
 import aacomInterior from "@/assets/aacom-interior.png";
 
@@ -75,7 +74,7 @@ const CaseStudyAAcom = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src={aacomLaptop} 
+            src={aacomHome} 
             alt="aa.com Website Redesign" 
             className="w-full h-full object-cover object-center"
           />
@@ -185,15 +184,24 @@ const CaseStudyAAcom = () => {
         </div>
       </section>
 
-      {/* Device Mockup */}
+      {/* Image Gallery */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <img 
-              src={aacomLaptop} 
-              alt="aa.com on laptop" 
-              className="w-full h-auto"
-            />
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={aacomHome} 
+                alt="aa.com Homepage Redesign" 
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={aacomInterior} 
+                alt="aa.com Admirals Club Page" 
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -232,28 +240,6 @@ const CaseStudyAAcom = () => {
                 </ul>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Image Gallery */}
-      <section className="py-16 bg-primary">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
-              <img 
-                src={aacomHome} 
-                alt="aa.com Homepage Redesign" 
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
-              <img 
-                src={aacomInterior} 
-                alt="aa.com Admirals Club Page" 
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
-              />
-            </div>
           </div>
         </div>
       </section>
