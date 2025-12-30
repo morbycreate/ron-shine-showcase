@@ -42,7 +42,7 @@ const AdditionalCaseStudies = () => {
       description:
         "Reimagined Hasbro's PULSE microsite to target fans and collectors with an immersive, insider experience.",
       image: hasbroPreview,
-      link: null,
+      link: "/hasbro",
     },
     {
       title: "Hudson Energy Digital Strategy",
