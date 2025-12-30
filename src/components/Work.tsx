@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import defenderPreview from "@/assets/defender-preview.png";
 import aaPreview from "@/assets/aa-preview.png";
 import fossilSitePreview from "@/assets/fossil-site-preview.png";
-import americanAirlinesLogo from "@/assets/logos/american-airlines.svg";
+import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
 import attLogo from "@/assets/logos/att.png";
 import jaguarsLogo from "@/assets/logos/jaguars-full.png";
 import sabreLogo from "@/assets/logos/sabre.png";
