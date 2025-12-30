@@ -1,54 +1,42 @@
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import aaUxTeam from "@/assets/aa-ux-team.png";
+import designAWatch from "@/assets/design-a-watch.png";
+import aacomLaptop from "@/assets/aacom-laptop.png";
+import sabrePreview from "@/assets/sabre-preview.png";
 
 const AdditionalCaseStudies = () => {
   const projects = [
     {
-      title: "Ashley Stewart Brand Transformation",
-      category: "Brand Strategy",
+      title: "Building American Airlines' First UX Organization",
+      category: "Experience Design",
       description:
-        "Amplified body-confidence storytelling and elevated product narrative to differentiate from competitors.",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
+        "Scaled UX team from 3 to 30+, establishing design systems, governance, and operating models for enterprise delivery.",
+      image: aaUxTeam,
       link: null,
     },
     {
-      title: "AT&T Enterprise Platform",
-      category: "UX Strategy",
+      title: "Design-A-Watch App",
+      category: "Experience Design",
       description:
-        "Led experience strategy for enterprise-scale platform modernization.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+        "Created an interactive customization tool allowing customers to personalize their Fossil watch, driving engagement and sales.",
+      image: designAWatch,
       link: null,
     },
     {
-      title: "Nike Digital Experience",
-      category: "Digital Experience",
+      title: "aa.com Redesign",
+      category: "Experience Design",
       description:
-        "Contributed to digital experience initiatives for global athletic brand.",
-      image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80",
+        "Led the enterprise redesign of AA.com, supporting American Airlines' first major rebrand in 40+ years.",
+      image: aacomLaptop,
       link: null,
     },
     {
-      title: "Jacksonville Jaguars",
-      category: "Brand Experience",
+      title: "Sabre Rebrand",
+      category: "Branding",
       description:
-        "Developed fan engagement experiences for NFL franchise.",
-      image: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&q=80",
-      link: null,
-    },
-    {
-      title: "Firehouse Subs Digital",
-      category: "Digital Strategy",
-      description:
-        "Enhanced digital ordering and customer experience for QSR brand.",
-      image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80",
-      link: null,
-    },
-    {
-      title: "AWS Partner Solutions",
-      category: "Enterprise UX",
-      description:
-        "Designed partner-facing solutions for cloud services platform.",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+        "Contributed to the strategic rebrand of Sabre, a global technology company powering the travel industry.",
+      image: sabrePreview,
       link: null,
     },
   ];
@@ -88,7 +76,7 @@ const AdditionalCaseStudies = () => {
           </div>
 
           {/* Projects grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project) => (
               <div 
                 key={project.title}
