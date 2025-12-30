@@ -203,15 +203,32 @@ const CaseStudyAA = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
-      <section className="py-12 bg-primary">
+      {/* Image Gallery - 3 column grid */}
+      <section className="py-24 md:py-32 bg-primary">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="rounded-2xl overflow-hidden">
-              <img src={aaGateSign} alt="American Airlines Gate Sign" className="w-full h-full object-cover" />
+          <div className="mb-12">
+            <p className="text-accent font-medium tracking-wide mb-4 text-sm">
+              The Experience
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
+              Across every
+              <br />
+              <span className="text-outline">touchpoint.</span>
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+              <img src={aaGateSign} alt="American Airlines Gate Sign" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-2xl overflow-hidden">
-              <img src={aaBoarding} alt="American Airlines Boarding Screen" className="w-full h-full object-cover" />
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+              <img src={aaBoarding} alt="American Airlines Boarding Screen" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+              <img src={aaKiosk} alt="American Airlines Self-Service Kiosk" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-2xl overflow-hidden aspect-[4/3] md:col-span-2">
+              <img src={aaLaptop} alt="AA.com on Laptop" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>
@@ -220,37 +237,23 @@ const CaseStudyAA = () => {
       {/* Digital Platforms */}
       <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
         <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div>
-              <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-                Digital Platforms
-              </p>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
-                Every touchpoint,
-                <br />
-                <span className="text-outline">reimagined.</span>
-              </h2>
-              <ul className="space-y-4">
-                {platforms.map((platform, index) => (
-                  <li key={index} className="flex items-start gap-4 text-primary-foreground/60 text-lg">
-                    <span className="w-2 h-2 rounded-full bg-accent mt-2.5 flex-shrink-0" />
-                    {platform}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-2xl overflow-hidden">
-              <img src={aaLaptop} alt="AA.com on Laptop" className="w-full h-auto" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Kiosk Image */}
-      <section className="py-12 bg-primary">
-        <div className="container mx-auto px-6">
-          <div className="rounded-2xl overflow-hidden max-w-4xl mx-auto">
-            <img src={aaKiosk} alt="American Airlines Self-Service Kiosk" className="w-full h-auto" />
+          <div className="max-w-3xl">
+            <p className="text-accent font-medium tracking-wide mb-4 text-sm">
+              Digital Platforms
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
+              Every touchpoint,
+              <br />
+              <span className="text-outline">reimagined.</span>
+            </h2>
+            <ul className="space-y-4">
+              {platforms.map((platform, index) => (
+                <li key={index} className="flex items-start gap-4 text-primary-foreground/60 text-lg">
+                  <span className="w-2 h-2 rounded-full bg-accent mt-2.5 flex-shrink-0" />
+                  {platform}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
