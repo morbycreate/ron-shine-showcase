@@ -21,8 +21,8 @@ const Hero = () => {
           }}
         />
         {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-primary/30" />
       </div>
 
       {/* Decorative grid pattern */}
