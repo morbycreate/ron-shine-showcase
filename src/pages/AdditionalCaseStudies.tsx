@@ -76,7 +76,7 @@ const AdditionalCaseStudies = () => {
           </div>
 
           {/* Projects grid */}
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {projects.map((project) => (
               <div 
                 key={project.title}
