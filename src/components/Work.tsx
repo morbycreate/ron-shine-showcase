@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 import defenderPreview from "@/assets/defender-preview.png";
 import aaPreview from "@/assets/aa-preview.png";
 import fossilSitePreview from "@/assets/fossil-site-preview.png";
+import americanAirlinesLogo from "@/assets/logos/american-airlines.svg";
+import attLogo from "@/assets/logos/att.png";
+import jaguarsLogo from "@/assets/logos/jaguars.png";
+import sabreLogo from "@/assets/logos/sabre.png";
+import firehouseSubsLogo from "@/assets/logos/firehouse-subs.png";
+import nikeLogo from "@/assets/logos/nike.png";
+import awsLogo from "@/assets/logos/aws.png";
+import fossilLogo from "@/assets/logos/fossil.png";
 
 const Work = () => {
   const projects = [
@@ -33,6 +41,17 @@ const Work = () => {
       link: "/fossil",
       size: "small",
     },
+  ];
+
+  const clientLogos = [
+    { name: "American Airlines", logo: americanAirlinesLogo },
+    { name: "AT&T", logo: attLogo },
+    { name: "Jacksonville Jaguars", logo: jaguarsLogo },
+    { name: "Sabre", logo: sabreLogo },
+    { name: "Firehouse Subs", logo: firehouseSubsLogo },
+    { name: "Nike", logo: nikeLogo },
+    { name: "AWS", logo: awsLogo },
+    { name: "Fossil", logo: fossilLogo },
   ];
 
   const filters = [
@@ -132,6 +151,34 @@ const Work = () => {
               </div>
             );
           })}
+        </div>
+
+        {/* Clients section */}
+        <div className="mt-20 pt-12 border-t border-primary-foreground/10">
+          <p className="text-accent font-medium tracking-wide mb-8 text-sm">
+            Big-Name Logos Make Me Look Good
+          </p>
+          
+          <h3 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-8">
+            Some friends that have
+            <br />
+            <span className="text-outline-thin">leveraged my talents</span>
+          </h3>
+
+          <div className="flex flex-wrap items-center gap-8 md:gap-12">
+            {clientLogos.map((client) => (
+              <div
+                key={client.name}
+                className="opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+              >
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="h-10 md:h-12 w-auto object-contain"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
