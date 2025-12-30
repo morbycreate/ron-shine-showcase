@@ -1,3 +1,12 @@
+import americanAirlinesLogo from "@/assets/logos/american-airlines.svg";
+import attLogo from "@/assets/logos/att.png";
+import jaguarsLogo from "@/assets/logos/jaguars.png";
+import sabreLogo from "@/assets/logos/sabre.png";
+import firehouseSubsLogo from "@/assets/logos/firehouse-subs.png";
+import nikeLogo from "@/assets/logos/nike.png";
+import awsLogo from "@/assets/logos/aws.png";
+import fossilLogo from "@/assets/logos/fossil.png";
+
 const About = () => {
   const stats = [
     { value: "18+", label: "Years Of Experience" },
@@ -5,13 +14,15 @@ const About = () => {
     { value: "$60M", label: "Pipeline Generated" },
   ];
 
-  const clients = [
-    "American Airlines",
-    "Fossil",
-    "Slalom",
-    "Workday",
-    "VaynerMedia",
-    "2K Games",
+  const clientLogos = [
+    { name: "American Airlines", logo: americanAirlinesLogo },
+    { name: "AT&T", logo: attLogo },
+    { name: "Jacksonville Jaguars", logo: jaguarsLogo },
+    { name: "Sabre", logo: sabreLogo },
+    { name: "Firehouse Subs", logo: firehouseSubsLogo },
+    { name: "Nike", logo: nikeLogo },
+    { name: "AWS", logo: awsLogo },
+    { name: "Fossil", logo: fossilLogo },
   ];
 
   return (
@@ -73,14 +84,18 @@ const About = () => {
             <span className="text-outline-thin">leveraged my talents</span>
           </h3>
 
-          <div className="flex flex-wrap gap-x-8 gap-y-4">
-            {clients.map((client) => (
-              <span
-                key={client}
-                className="text-primary-foreground/40 text-lg md:text-xl font-medium hover:text-accent transition-colors duration-300 cursor-default"
+          <div className="flex flex-wrap items-center gap-8 md:gap-12">
+            {clientLogos.map((client) => (
+              <div
+                key={client.name}
+                className="opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
               >
-                {client}
-              </span>
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="h-10 md:h-12 w-auto object-contain"
+                />
+              </div>
             ))}
           </div>
         </div>
