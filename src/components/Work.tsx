@@ -9,7 +9,7 @@ const Work = () => {
       description:
         "Led the massive global rebrand including aircraft livery in partnership with Futurebrand.",
       image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
-      link: null,
+      link: "/american-airlines",
       size: "large",
     },
     {
