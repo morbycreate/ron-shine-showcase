@@ -14,9 +14,10 @@ const Hero = () => {
       {/* Background Image - Right Side */}
       <div className="absolute inset-y-0 right-0 w-full lg:w-1/2">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-no-repeat"
           style={{
             backgroundImage: `url(${heroPortrait})`,
+            backgroundPosition: '70% center',
           }}
         />
         {/* Gradient overlays */}
