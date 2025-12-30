@@ -7,6 +7,8 @@ import aaPreview from "@/assets/aa-preview.png";
 import defenderPreview from "@/assets/defender-preview.png";
 import fossilSitePreview from "@/assets/fossil-site-preview.png";
 import thrPreview from "@/assets/thr-preview.jpg";
+import hasbroPreview from "@/assets/hasbro-preview.png";
+import hudsonEnergyPreview from "@/assets/hudson-energy-preview.jpg";
 
 const AdditionalCaseStudies = () => {
   const projects = [
@@ -33,6 +35,22 @@ const AdditionalCaseStudies = () => {
         "Modernized Fossil's digital presence with 23% YoY e-commerce growth and 'Digital Genius' recognition.",
       image: fossilSitePreview,
       link: "/fossil",
+    },
+    {
+      title: "Hasbro PULSE Microsite",
+      category: "Digital Experience",
+      description:
+        "Reimagined Hasbro's PULSE microsite to target fans and collectors with an immersive, insider experience.",
+      image: hasbroPreview,
+      link: null,
+    },
+    {
+      title: "Hudson Energy Digital Strategy",
+      category: "Digital Experience",
+      description:
+        "Led digital transformation for one of North America's largest B2B energy suppliers, managing over $3B in annual revenue.",
+      image: hudsonEnergyPreview,
+      link: null,
     },
     {
       title: "Texas Health Resources Website Redesign",
