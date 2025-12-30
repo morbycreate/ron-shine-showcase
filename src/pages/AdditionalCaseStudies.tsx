@@ -54,7 +54,7 @@ const AdditionalCaseStudies = () => {
       description:
         "Led digital transformation for one of North America's largest B2B energy suppliers, managing over $3B in annual revenue.",
       image: hudsonEnergyPreview,
-      link: null,
+      link: "/hudson-energy",
     },
     {
       title: "Texas Health Resources Website Redesign",
