@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import defenderPreview from "@/assets/defender-preview.png";
+import aaPreview from "@/assets/aa-preview.png";
 
 const Work = () => {
   const projects = [
@@ -9,7 +10,7 @@ const Work = () => {
       category: "Creative Direction",
       description:
         "Led the massive global rebrand including aircraft livery in partnership with Futurebrand.",
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
+      image: aaPreview,
       link: "/american-airlines",
       size: "large",
     },
