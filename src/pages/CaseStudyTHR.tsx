@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { ArrowLeft, Calendar, Target, TrendingUp, Users, Search, Layers, Palette, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import thrPreview from "@/assets/thr-preview.jpg";
@@ -17,6 +18,9 @@ import thrMychart from "@/assets/thr-mychart.webp";
 import thrHero from "@/assets/thr-hero.png";
 
 const CaseStudyTHR = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const metrics = [
     { label: "Health System Size", value: "Top 10", icon: TrendingUp },
     { label: "Network Locations", value: "350+", icon: MapPin },

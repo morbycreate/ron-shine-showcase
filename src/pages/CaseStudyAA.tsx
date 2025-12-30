@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { ArrowLeft, Calendar, Target, Monitor, Smartphone, Users, Globe, Palette, Layers, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import aaHero from "@/assets/aa-hero.png";
@@ -17,6 +18,9 @@ import aaGateDisplays from "@/assets/aa-gate-displays.jpg";
 import aaTerminal from "@/assets/aa-terminal.webp";
 
 const CaseStudyAA = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const metrics = [
     { label: "Kiosks Launched", value: "5,000+", icon: Monitor },
     { label: "Development Teams", value: "8", icon: Users },
