@@ -226,20 +226,6 @@ const CaseStudyFossil = () => {
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
               <img 
-                src={fossilSocial} 
-                alt="Fossil Social Media Campaign" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
-              <img 
-                src={fossilAnalytics} 
-                alt="Fossil.com Analytics Dashboard" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
-              <img 
                 src={fossil2upDesktop} 
                 alt="Fossil Desktop Experience" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
@@ -249,6 +235,20 @@ const CaseStudyFossil = () => {
               <img 
                 src={fossilMobile3up} 
                 alt="Fossil Mobile Experience" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={fossilSocial} 
+                alt="Fossil Social Media Campaign" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={fossilAnalytics} 
+                alt="Fossil.com Analytics Dashboard" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
