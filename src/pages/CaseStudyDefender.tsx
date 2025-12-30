@@ -5,6 +5,8 @@ import defenderHero from "@/assets/defender-hero.png";
 import defenderStory from "@/assets/defender-story.png";
 import defenderWatchBar from "@/assets/defender-watch-bar.jpg";
 import defenderTablets from "@/assets/defender-tablets.png";
+import defenderInfluencer from "@/assets/defender-influencer.webp";
+import defenderShare from "@/assets/defender-share.webp";
 
 const CaseStudyDefender = () => {
   useEffect(() => {
@@ -211,6 +213,24 @@ const CaseStudyDefender = () => {
               alt="Defender digital experience on tablets" 
               className="w-full h-auto object-cover"
             />
+          </div>
+
+          {/* 2-Column Image Gallery - Row 2 */}
+          <div className="grid md:grid-cols-2 gap-6 mt-6">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={defenderInfluencer} 
+                alt="Defender influencer campaign featuring Sabir Peele" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={defenderShare} 
+                alt="Share your Defender watch design feature" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
           </div>
         </div>
       </section>
