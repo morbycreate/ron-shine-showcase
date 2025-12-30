@@ -5,6 +5,8 @@ import thrCompetitive from "@/assets/thr-competitive.png";
 import thrSiteStructure from "@/assets/thr-site-structure.png";
 import thrBaby from "@/assets/thr-baby.png";
 import thrQuickGuide from "@/assets/thr-quick-guide.jpg";
+import thrDevices from "@/assets/thr-devices.webp";
+import thrScreens from "@/assets/thr-screens.webp";
 
 const CaseStudyTHR = () => {
   const metrics = [
@@ -254,6 +256,28 @@ const CaseStudyTHR = () => {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* New Image Gallery - Below How we delivered */}
+      <section className="py-16 bg-primary">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img 
+                src={thrDevices} 
+                alt="Texas Health Website on Multiple Devices" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img 
+                src={thrScreens} 
+                alt="Texas Health Provider and Location Pages" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
           </div>
         </div>
       </section>
