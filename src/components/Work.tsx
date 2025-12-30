@@ -15,10 +15,10 @@ import fossilLogo from "@/assets/logos/fossil.png";
 const Work = () => {
   const projects = [
     {
-      title: "American Airlines Global Rebrand",
-      category: "Creative Direction",
+      title: "American Airlines Digital Transformation",
+      category: "Digital Experience",
       description:
-        "Led the massive global rebrand including aircraft livery in partnership with Futurebrand.",
+        "Led eight development teams to transform AA's entire digital ecosystem—launched globally in a single day.",
       image: aaPreview,
       link: "/american-airlines",
       size: "large",
