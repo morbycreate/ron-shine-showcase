@@ -14,16 +14,15 @@ const Hero = () => {
       {/* Background Image - Right Side */}
       <div className="absolute inset-y-0 right-0 w-full lg:w-1/2">
         <div 
-          className="absolute inset-0 bg-cover bg-no-repeat scale-110"
+          className="absolute inset-0 bg-cover bg-no-repeat"
           style={{
             backgroundImage: `url(${heroPortrait})`,
             backgroundPosition: '60% 55%',
-            transform: 'rotate(-3deg)',
           }}
         />
         {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/70 to-transparent scale-110 -rotate-3" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/40 scale-110 -rotate-3" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/40" />
       </div>
 
       {/* Decorative grid pattern */}
