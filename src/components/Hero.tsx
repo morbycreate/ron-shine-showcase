@@ -43,8 +43,8 @@ const Hero = () => {
             <span className="text-accent">Design </span>
             <span className="text-outline-accent">leader.</span>
             <br />
-            <span className="text-primary-foreground">Team </span>
-            <span className="text-outline">builder.</span>
+            <span className="text-primary-foreground">Culture </span>
+            <span className="text-outline">Builder.</span>
           </h1>
 
           {/* Tagline - Professional approach */}
