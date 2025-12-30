@@ -5,6 +5,8 @@ import aaGateSign from "@/assets/aa-gate-sign.png";
 import aaLaptop from "@/assets/aa-laptop.png";
 import aaKiosk from "@/assets/aa-kiosk.png";
 import aaBoarding from "@/assets/aa-boarding.png";
+import aaMobile1 from "@/assets/aa-mobile-1.jpg";
+import aaMobile2 from "@/assets/aa-mobile-2.jpg";
 
 const CaseStudyAA = () => {
   const metrics = [
@@ -229,6 +231,12 @@ const CaseStudyAA = () => {
             </div>
             <div className="rounded-2xl overflow-hidden aspect-[4/3] md:col-span-2">
               <img src={aaLaptop} alt="AA.com on Laptop" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-2xl overflow-hidden aspect-[3/4] bg-primary-foreground/5 flex items-center justify-center">
+              <img src={aaMobile1} alt="American Airlines Mobile App - Trips" className="h-full w-auto object-contain hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-2xl overflow-hidden aspect-[3/4] bg-primary-foreground/5 flex items-center justify-center">
+              <img src={aaMobile2} alt="American Airlines Mobile App - Profile" className="h-full w-auto object-contain hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>
