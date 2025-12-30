@@ -300,21 +300,6 @@ const CaseStudyHasbro = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
-            <div className="bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-8 text-center hover:border-accent/30 transition-colors duration-300">
-              <p className="text-4xl md:text-5xl font-display font-bold text-gradient mb-3">Premium</p>
-              <p className="text-primary-foreground/60">Membership program driving recurring revenue</p>
-            </div>
-            <div className="bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-8 text-center hover:border-accent/30 transition-colors duration-300">
-              <p className="text-4xl md:text-5xl font-display font-bold text-gradient mb-3">Exclusive</p>
-              <p className="text-primary-foreground/60">Product drops selling out in minutes</p>
-            </div>
-            <div className="bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-8 text-center hover:border-accent/30 transition-colors duration-300">
-              <p className="text-4xl md:text-5xl font-display font-bold text-gradient mb-3">Engaged</p>
-              <p className="text-primary-foreground/60">Community of passionate brand advocates</p>
-            </div>
-          </div>
-
           <div className="max-w-3xl mx-auto bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-10 text-center">
             <h3 className="font-display text-2xl font-bold text-primary-foreground mb-4">The Ultimate Fan Destination</h3>
             <p className="text-primary-foreground/60 leading-relaxed text-lg">
