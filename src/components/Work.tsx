@@ -14,6 +14,7 @@ import fossilLogo from "@/assets/logos/fossil.png";
 import toryBurchLogo from "@/assets/logos/tory-burch.png";
 import wtaLogo from "@/assets/logos/wta.png";
 import pgaTourLogo from "@/assets/logos/pga-tour.png";
+import citiLogo from "@/assets/logos/citi.png";
 
 const Work = () => {
   const projects = [
@@ -58,6 +59,7 @@ const Work = () => {
     { name: "Tory Burch", logo: toryBurchLogo },
     { name: "WTA", logo: wtaLogo },
     { name: "PGA Tour", logo: pgaTourLogo },
+    { name: "Citi", logo: citiLogo },
   ];
 
   const filters = [
