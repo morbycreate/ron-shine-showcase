@@ -205,8 +205,8 @@ const CaseStudyFossil = () => {
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
               <img 
-                src={fossilHp} 
-                alt="Fossil Homepage on Multiple Devices" 
+                src={fossil2upDesktop} 
+                alt="Fossil Desktop Experience" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -226,8 +226,8 @@ const CaseStudyFossil = () => {
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
               <img 
-                src={fossil2upDesktop} 
-                alt="Fossil Desktop Experience" 
+                src={fossilHp} 
+                alt="Fossil Homepage on Multiple Devices" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
