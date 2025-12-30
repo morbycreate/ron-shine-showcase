@@ -48,9 +48,9 @@ const Hero = () => {
             <br />
             <span className="text-outline">strategist.</span>
             <br />
-            <span className="text-primary-foreground">Platform</span>
+            <span className="text-primary-foreground">Team</span>
             <br />
-            <span className="text-outline">modernizer.</span>
+            <span className="text-outline">builder.</span>
             <br />
             <span className="text-accent">Design</span>
             <br />
