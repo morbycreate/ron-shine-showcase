@@ -84,7 +84,7 @@ const CaseStudyAA = () => {
           <img 
             src={aaHero} 
             alt="American Airlines 777" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-[center_70%]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/50 to-primary/30" />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/30" />
