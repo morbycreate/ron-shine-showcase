@@ -217,7 +217,7 @@ const CaseStudyFossil = () => {
               <img 
                 src={fossilPdp} 
                 alt="Fossil Product Detail Page" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
