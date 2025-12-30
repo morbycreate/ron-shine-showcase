@@ -7,6 +7,9 @@ import thrBaby from "@/assets/thr-baby.png";
 import thrQuickGuide from "@/assets/thr-quick-guide.jpg";
 import thrDevices from "@/assets/thr-devices.webp";
 import thrScreens from "@/assets/thr-screens.webp";
+import thrJourney from "@/assets/thr-journey.webp";
+import thrWorkshops from "@/assets/thr-workshops.webp";
+import thrEcosystem from "@/assets/thr-ecosystem.webp";
 
 const CaseStudyTHR = () => {
   const metrics = [
@@ -215,6 +218,27 @@ const CaseStudyTHR = () => {
               <img 
                 src={thrPreview} 
                 alt="Texas Health Website Preview" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={thrJourney} 
+                alt="Consumer Journey Map" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={thrWorkshops} 
+                alt="Content Workshops" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={thrEcosystem} 
+                alt="Digital Ecosystem Strategy" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
