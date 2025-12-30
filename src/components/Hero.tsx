@@ -37,29 +37,28 @@ const Hero = () => {
         <div className="max-w-4xl">
           {/* Eyebrow */}
           <p className="text-accent font-medium tracking-wide mb-8 opacity-0 animate-fade-up text-sm md:text-base">
-            Senior Product & Experience Design Leader
+            15+ Years Building & Scaling UX Organizations
           </p>
 
           {/* Main headline - Matt Boston style with mixed solid/outline text */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-bold leading-[0.95] mb-8 opacity-0 animate-fade-up stagger-1">
-            <span className="text-primary-foreground">Brand</span>
+            <span className="text-primary-foreground">Experience</span>
             <br />
-            <span className="text-outline">architect.</span>
+            <span className="text-outline">strategist.</span>
             <br />
-            <span className="text-primary-foreground">Thoughtful</span>
+            <span className="text-primary-foreground">Platform</span>
             <br />
-            <span className="text-outline">designer.</span>
+            <span className="text-outline">modernizer.</span>
             <br />
-            <span className="text-accent">Strategic</span>
+            <span className="text-accent">Design</span>
             <br />
-            <span className="text-outline-accent">storyteller.</span>
+            <span className="text-outline-accent">leader.</span>
           </h1>
 
-          {/* Playful tagline - Matt Boston's personality-driven approach */}
+          {/* Tagline - Professional approach */}
           <p className="text-primary-foreground/60 text-lg md:text-xl max-w-xl mb-12 leading-relaxed opacity-0 animate-fade-up stagger-2">
-            I don't subscribe to the belief that we have to be uptight and boring 
-            in order to come across as viable professionals. 
-            <span className="text-accent font-medium"> Let's get to know one another. For real.</span>
+            Turning ambiguity into shipped outcomes across financial services, travel, and enterprise platforms.
+            <span className="text-accent font-medium"> Aligning teams. Driving adoption. Delivering measurable impact.</span>
           </p>
 
           {/* CTA - Email link style like Matt Boston */}
