@@ -7,7 +7,7 @@ import aacomLaptop from "@/assets/aacom-laptop.png";
 import aaPreview from "@/assets/aa-preview.png";
 import defenderPreview from "@/assets/defender-preview.png";
 import fossilSitePreview from "@/assets/fossil-site-preview.png";
-import thrPreview from "@/assets/thr-preview.jpg";
+import thrPreview from "@/assets/thr-preview-new.png";
 import hasbroPreview from "@/assets/hasbro-preview.png";
 import hudsonEnergyPreview from "@/assets/hudson-energy-preview.jpg";
 
