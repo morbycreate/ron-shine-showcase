@@ -11,6 +11,9 @@ import firehouseSubsLogo from "@/assets/logos/firehouse-subs.png";
 import nikeLogo from "@/assets/logos/nike.png";
 import awsLogo from "@/assets/logos/aws.png";
 import fossilLogo from "@/assets/logos/fossil.png";
+import toryBurchLogo from "@/assets/logos/tory-burch.png";
+import wtaLogo from "@/assets/logos/wta.png";
+import pgaTourLogo from "@/assets/logos/pga-tour.png";
 
 const Work = () => {
   const projects = [
@@ -52,6 +55,9 @@ const Work = () => {
     { name: "Nike", logo: nikeLogo },
     { name: "AWS", logo: awsLogo },
     { name: "Fossil", logo: fossilLogo },
+    { name: "Tory Burch", logo: toryBurchLogo },
+    { name: "WTA", logo: wtaLogo },
+    { name: "PGA Tour", logo: pgaTourLogo },
   ];
 
   const filters = [
