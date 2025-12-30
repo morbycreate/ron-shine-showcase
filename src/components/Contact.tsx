@@ -33,7 +33,7 @@ const Contact = () => {
 
           {/* Contact CTA - Large email link */}
           <a
-            href="mailto:hello@ronbrissette.com"
+            href="mailto:ronbrissette@gmail.com"
             className="group inline-flex items-center gap-4 mb-16"
           >
             <span className="flex items-center justify-center w-16 h-16 rounded-full bg-accent text-accent-foreground group-hover:scale-110 transition-transform duration-300">
@@ -42,7 +42,7 @@ const Contact = () => {
             <div>
               <p className="text-primary-foreground/50 text-sm mb-1">Email me at</p>
               <p className="font-display text-2xl md:text-3xl font-bold text-primary-foreground group-hover:text-accent transition-colors duration-300 flex items-center gap-2">
-                hello@ronbrissette.com
+                ronbrissette@gmail.com
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
               </p>
             </div>
