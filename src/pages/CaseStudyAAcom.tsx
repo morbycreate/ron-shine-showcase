@@ -206,6 +206,20 @@ const CaseStudyAAcom = () => {
         </div>
       </section>
 
+      {/* Testimonial */}
+      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <blockquote className="font-display text-2xl md:text-3xl lg:text-4xl font-medium text-primary-foreground leading-relaxed mb-8">
+              "Site navigation has been greatly improved. Key tasks, like flight booking, account log-in, and flight check-in, now appear in the same navigation menu... The result is a home page that looks more like a travel retailer than 'just' an airline Web site."
+            </blockquote>
+            <cite className="text-primary-foreground/60 text-lg not-italic">
+              — <strong className="text-primary-foreground">Henry Harteveldt</strong>, Forrester Research
+            </cite>
+          </div>
+        </div>
+      </section>
+
       {/* Strategic Approach */}
       <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
         <div className="container mx-auto px-6">
@@ -240,20 +254,6 @@ const CaseStudyAAcom = () => {
                 </ul>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial */}
-      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <blockquote className="font-display text-2xl md:text-3xl lg:text-4xl font-medium text-primary-foreground leading-relaxed mb-8">
-              "Site navigation has been greatly improved. Key tasks, like flight booking, account log-in, and flight check-in, now appear in the same navigation menu... The result is a home page that looks more like a travel retailer than 'just' an airline Web site."
-            </blockquote>
-            <cite className="text-primary-foreground/60 text-lg not-italic">
-              — <strong className="text-primary-foreground">Henry Harteveldt</strong>, Forrester Research
-            </cite>
           </div>
         </div>
       </section>
