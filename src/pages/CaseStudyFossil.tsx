@@ -3,6 +3,10 @@ import { ArrowLeft, Calendar, Target, TrendingUp, Users, Search, Layers, Palette
 import { Link } from "react-router-dom";
 import fossilPreview from "@/assets/fossil-site-preview.png";
 import designAWatch from "@/assets/design-a-watch.png";
+import fossilAd from "@/assets/fossil-ad.jpg";
+import fossilPdp from "@/assets/fossil-pdp.jpg";
+import fossilSocial from "@/assets/fossil-social.jpg";
+import fossilAnalytics from "@/assets/fossil-analytics.png";
 
 const CaseStudyFossil = () => {
   useEffect(() => {
@@ -207,6 +211,34 @@ const CaseStudyFossil = () => {
               <img 
                 src={designAWatch} 
                 alt="Design A Watch Feature" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={fossilAd} 
+                alt="Fossil Watch Advertisement" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={fossilPdp} 
+                alt="Fossil Product Detail Page" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={fossilSocial} 
+                alt="Fossil Social Media Campaign" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={fossilAnalytics} 
+                alt="Fossil.com Analytics Dashboard" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
