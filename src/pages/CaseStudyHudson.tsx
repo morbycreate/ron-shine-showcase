@@ -3,6 +3,9 @@ import { ArrowLeft, Calendar, Target, TrendingUp, Users, Layers, Palette, Zap, B
 import { Link } from "react-router-dom";
 import hudsonHero from "@/assets/hudson-warehouse.jpeg";
 import hudsonDevices from "@/assets/hudson-devices.png";
+import hudsonSchedule from "@/assets/hudson-schedule.png";
+import hudsonSettings from "@/assets/hudson-settings.png";
+import hudsonDashboard from "@/assets/hudson-dashboard.png";
 
 const CaseStudyHudson = () => {
   useEffect(() => {
@@ -193,6 +196,35 @@ const CaseStudyHudson = () => {
               alt="EdgePower across devices" 
               className="w-full h-auto scale-[1.2]"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Image Gallery */}
+      <section className="py-16 bg-primary">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-xl overflow-hidden">
+              <img 
+                src={hudsonSchedule} 
+                alt="EdgePower Schedule Settings" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden">
+              <img 
+                src={hudsonSettings} 
+                alt="EdgePower Settings Navigation" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden">
+              <img 
+                src={hudsonDashboard} 
+                alt="EdgePower Mobile Dashboard" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
