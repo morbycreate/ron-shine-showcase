@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { ArrowLeft, Calendar, Target, TrendingUp, Users, Layers, Palette, Zap, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import hudsonHero from "@/assets/hudson-hero.png";
+import hudsonHero from "@/assets/hudson-warehouse.jpeg";
 import hudsonDevices from "@/assets/hudson-devices.png";
 
 const CaseStudyHudson = () => {
