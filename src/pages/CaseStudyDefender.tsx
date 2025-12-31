@@ -7,6 +7,8 @@ import defenderWatchBar from "@/assets/defender-watch-bar.jpg";
 import defenderTablets from "@/assets/defender-tablets.png";
 import defenderInfluencer from "@/assets/defender-influencer.webp";
 import defenderShare from "@/assets/defender-share.webp";
+import defenderCart from "@/assets/defender-cart.png";
+import defenderHome from "@/assets/defender-home.png";
 
 const CaseStudyDefender = () => {
   useEffect(() => {
@@ -229,6 +231,24 @@ const CaseStudyDefender = () => {
                 src={defenderShare} 
                 alt="Share your Defender watch design feature" 
                 className="w-full h-full object-cover object-top"
+              />
+            </div>
+          </div>
+
+          {/* 2-Column Image Gallery - Row 3 */}
+          <div className="grid md:grid-cols-2 gap-6 mt-6">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={defenderHome} 
+                alt="Defender watch builder home screen" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={defenderCart} 
+                alt="Defender watch builder cart and menu" 
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
