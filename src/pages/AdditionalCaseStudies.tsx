@@ -79,7 +79,7 @@ const AdditionalCaseStudies = () => {
       description:
         "Created an interactive customization tool allowing customers to personalize their Fossil watch, driving engagement and sales.",
       image: designAWatch,
-      link: null,
+      link: "/design-a-watch",
     },
     {
       title: "aa.com Redesign",
