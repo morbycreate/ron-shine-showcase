@@ -49,10 +49,10 @@ const AdditionalCaseStudies = () => {
       link: "/hasbro",
     },
     {
-      title: "Hudson Energy Digital Strategy",
-      category: "Digital Experience",
+      title: "Hudson Energy EdgePower",
+      category: "Product Strategy",
       description:
-        "Led digital transformation for one of North America's largest B2B energy suppliers, managing over $3B in annual revenue.",
+        "Delivered customer strategy, validated product vision, and development-ready design assets for EdgePower's building energy management platform.",
       image: hudsonEnergyPreview,
       link: "/hudson-energy",
     },
