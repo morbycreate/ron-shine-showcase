@@ -13,6 +13,7 @@ import fossilDigitalDesign from "@/assets/fossil-digital-design.jpg";
 import fossilLifestyle from "@/assets/fossil-lifestyle.png";
 import fossilCheckout from "@/assets/fossil-checkout.png";
 import fossilPage2 from "@/assets/fossil-page2.webp";
+import fossilPdpMobile from "@/assets/fossil-pdp-mobile.jpg";
 
 const CaseStudyFossil = () => {
   useEffect(() => {
@@ -265,6 +266,13 @@ const CaseStudyFossil = () => {
               <img 
                 src={fossilPage2} 
                 alt="Fossil Curious Set Campaign" 
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={fossilPdpMobile} 
+                alt="Fossil Mobile Product Detail Page" 
                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />
             </div>
