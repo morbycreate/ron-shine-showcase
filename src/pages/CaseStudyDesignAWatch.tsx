@@ -219,8 +219,8 @@ const CaseStudyDesignAWatch = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
             <div className="aspect-[3/5] rounded-2xl overflow-hidden border border-primary-foreground/10">
               <img 
-                src={designAWatchConcept1} 
-                alt="Design A Watch dial customization" 
+                src={designAWatchConcept2} 
+                alt="Design A Watch case selection" 
                 className="w-full h-full object-cover object-top"
               />
             </div>
@@ -233,8 +233,8 @@ const CaseStudyDesignAWatch = () => {
             </div>
             <div className="aspect-[3/5] rounded-2xl overflow-hidden border border-primary-foreground/10">
               <img 
-                src={designAWatchConcept2} 
-                alt="Design A Watch case selection" 
+                src={designAWatchConcept1} 
+                alt="Design A Watch dial customization" 
                 className="w-full h-full object-cover object-top"
               />
             </div>
