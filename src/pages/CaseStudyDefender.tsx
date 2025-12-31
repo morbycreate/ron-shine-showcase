@@ -221,24 +221,6 @@ const CaseStudyDefender = () => {
           <div className="grid md:grid-cols-2 gap-6 mt-6">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
               <img 
-                src={defenderInfluencer} 
-                alt="Defender influencer campaign featuring Sabir Peele" 
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
-              <img 
-                src={defenderShare} 
-                alt="Share your Defender watch design feature" 
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-          </div>
-
-          {/* 2-Column Image Gallery - Row 3 */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
-              <img 
                 src={defenderHome} 
                 alt="Defender watch builder home screen" 
                 className="w-full h-full object-cover"
@@ -249,6 +231,24 @@ const CaseStudyDefender = () => {
                 src={defenderCart} 
                 alt="Defender watch builder cart and menu" 
                 className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* 2-Column Image Gallery - Row 3 */}
+          <div className="grid md:grid-cols-2 gap-6 mt-6">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={defenderInfluencer} 
+                alt="Defender influencer campaign featuring Sabir Peele" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={defenderShare} 
+                alt="Share your Defender watch design feature" 
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </div>
