@@ -191,7 +191,7 @@ const CaseStudyHudson = () => {
             <img 
               src={hudsonDevices} 
               alt="EdgePower across devices" 
-              className="w-full h-auto"
+              className="w-full h-auto scale-[1.2]"
             />
           </div>
         </div>
