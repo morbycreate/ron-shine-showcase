@@ -11,6 +11,7 @@ import fossilPdp from "@/assets/fossil-pdp.jpg";
 import fossilSocial from "@/assets/fossil-social.jpg";
 import fossilDigitalDesign from "@/assets/fossil-digital-design.jpg";
 import fossilLifestyle from "@/assets/fossil-lifestyle.png";
+import fossilCheckout from "@/assets/fossil-checkout.png";
 
 const CaseStudyFossil = () => {
   useEffect(() => {
@@ -250,6 +251,13 @@ const CaseStudyFossil = () => {
                 src={fossilLifestyle} 
                 alt="Fossil lifestyle photography" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={fossilCheckout} 
+                alt="Fossil Checkout Experience" 
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />
             </div>
           </div>
