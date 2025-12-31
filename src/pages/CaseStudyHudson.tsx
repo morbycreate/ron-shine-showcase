@@ -76,7 +76,7 @@ const CaseStudyHudson = () => {
           <img 
             src={hudsonHero} 
             alt="Hudson Energy EdgePower Platform" 
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center scale-[1.3]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/70" />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/50" />
