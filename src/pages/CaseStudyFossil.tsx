@@ -262,20 +262,6 @@ const CaseStudyFossil = () => {
                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
-              <img 
-                src={fossilPage2} 
-                alt="Fossil Curious Set Campaign" 
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
-              <img 
-                src={fossilPdpMobile} 
-                alt="Fossil Mobile Product Detail Page" 
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
-              />
-            </div>
           </div>
         </div>
       </section>
