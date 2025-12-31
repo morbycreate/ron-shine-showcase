@@ -5,6 +5,10 @@ import designAWatchHero from "@/assets/design-a-watch.png";
 import designAWatchTablet from "@/assets/design-a-watch-tablet.png";
 import designAWatchDesktop from "@/assets/design-a-watch-desktop.png";
 import designAWatchMobile from "@/assets/design-a-watch-mobile.png";
+import designAWatchConcept1 from "@/assets/design-a-watch-concept1.jpg";
+import designAWatchConcept2 from "@/assets/design-a-watch-concept2.jpg";
+import designAWatchConcept3 from "@/assets/design-a-watch-concept3.jpg";
+import designAWatchConcept4 from "@/assets/design-a-watch-concept4.jpg";
 
 const CaseStudyDesignAWatch = () => {
   useEffect(() => {
@@ -206,6 +210,38 @@ const CaseStudyDesignAWatch = () => {
               <img 
                 src={designAWatchMobile} 
                 alt="Design A Watch mobile layouts" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+          </div>
+
+          {/* 4-Column Concept Gallery */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+            <div className="aspect-[3/5] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={designAWatchConcept1} 
+                alt="Design A Watch dial customization" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="aspect-[3/5] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={designAWatchConcept2} 
+                alt="Design A Watch case selection" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="aspect-[3/5] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={designAWatchConcept3} 
+                alt="Design A Watch engraving feature" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="aspect-[3/5] rounded-2xl overflow-hidden border border-primary-foreground/10">
+              <img 
+                src={designAWatchConcept4} 
+                alt="Design A Watch strap options" 
                 className="w-full h-full object-cover object-top"
               />
             </div>
