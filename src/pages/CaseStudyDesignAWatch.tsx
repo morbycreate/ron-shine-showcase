@@ -226,15 +226,15 @@ const CaseStudyDesignAWatch = () => {
             </div>
             <div className="aspect-[3/5] rounded-2xl overflow-hidden border border-primary-foreground/10">
               <img 
-                src={designAWatchConcept2} 
-                alt="Design A Watch case selection" 
+                src={designAWatchConcept3} 
+                alt="Design A Watch engraving feature" 
                 className="w-full h-full object-cover object-top"
               />
             </div>
             <div className="aspect-[3/5] rounded-2xl overflow-hidden border border-primary-foreground/10">
               <img 
-                src={designAWatchConcept3} 
-                alt="Design A Watch engraving feature" 
+                src={designAWatchConcept2} 
+                alt="Design A Watch case selection" 
                 className="w-full h-full object-cover object-top"
               />
             </div>
