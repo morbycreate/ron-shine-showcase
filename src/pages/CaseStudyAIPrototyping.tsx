@@ -55,14 +55,14 @@ const CaseStudyAIPrototyping = () => {
       ],
     },
     {
-      title: "Morby Demo",
-      subtitle: "Brand & Experience Exploration",
-      url: "https://morby.lovable.app/",
-      description: "A fast-turn branded experience to explore tone, layout, and storytelling through interaction.",
+      title: "Archelon Advisor Portal",
+      subtitle: "Working Dashboard Concept",
+      url: "https://archelon.lovable.app/",
+      description: "A working Advisor Portal concept built entirely in Lovable by 'vibe coding' the experience from prompt to clickable app. Rather than a static mockup, it showcases how an advisor dashboard could behave—with navigable sections, key client insights, and functional screens.",
       points: [
-        "AI-assisted layout and content generation",
-        "Visual and experiential direction in hours, not weeks",
-        "Used to spark alignment and creative momentum",
+        "From idea to interactive prototype in hours",
+        "Navigable sections and functional screens",
+        "Aligns expectations early without traditional UI code",
       ],
     },
   ];
