@@ -13,6 +13,7 @@ import CaseStudyHasbro from "./pages/CaseStudyHasbro";
 import CaseStudyHudson from "./pages/CaseStudyHudson";
 import CaseStudyAAcom from "./pages/CaseStudyAAcom";
 import CaseStudyDesignAWatch from "./pages/CaseStudyDesignAWatch";
+import CaseStudyAIPrototyping from "./pages/CaseStudyAIPrototyping";
 import AdditionalCaseStudies from "./pages/AdditionalCaseStudies";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/hudson-energy" element={<CaseStudyHudson />} />
           <Route path="/aacom-redesign" element={<CaseStudyAAcom />} />
           <Route path="/design-a-watch" element={<CaseStudyDesignAWatch />} />
+          <Route path="/ai-prototyping" element={<CaseStudyAIPrototyping />} />
           <Route path="/case-studies" element={<AdditionalCaseStudies />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
