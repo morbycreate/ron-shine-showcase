@@ -10,6 +10,7 @@ import fossilSitePreview from "@/assets/fossil-site-preview.png";
 import thrPreview from "@/assets/thr-preview-new.png";
 import hasbroPreview from "@/assets/hasbro-preview-new.webp";
 import hudsonEnergyPreview from "@/assets/hudson-warehouse.jpeg";
+import aiPrototypingHero from "@/assets/ai-prototyping-hero.png";
 
 const AdditionalCaseStudies = () => {
   useEffect(() => {
@@ -29,9 +30,8 @@ const AdditionalCaseStudies = () => {
       category: "AI-Powered Design",
       description:
         "Turning ambiguity into working experiences—fast. Using AI as a creative accelerator to build testable prototypes in hours.",
-      image: null,
+      image: aiPrototypingHero,
       link: "/ai-prototyping",
-      gradient: true,
     },
     {
       title: "Fossil Defender Collection",
@@ -141,18 +141,11 @@ const AdditionalCaseStudies = () => {
                 <div className="group relative overflow-hidden rounded-xl card-hover">
                   {/* Image */}
                   <div className="relative overflow-hidden aspect-[4/3]">
-                    {project.gradient ? (
-                      <div className="w-full h-full bg-gradient-to-br from-primary via-accent/20 to-primary relative">
-                        <div className="absolute top-1/4 right-1/4 w-[150px] h-[150px] bg-accent/20 rounded-full blur-3xl" />
-                        <div className="absolute bottom-1/4 left-1/4 w-[100px] h-[100px] bg-accent/10 rounded-full blur-3xl" />
-                      </div>
-                    ) : (
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${project.imagePosition || ''}`}
-                      />
-                    )}
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${project.imagePosition || ''}`}
+                    />
                     {/* Dark overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-primary/30 opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
                     

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { ArrowLeft, Zap, Clock, Target, TrendingUp, Bot, Workflow, Lightbulb, Rocket, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import aiPrototypingHero from "@/assets/ai-prototyping-hero.png";
 
 const CaseStudyAIPrototyping = () => {
   useEffect(() => {
@@ -91,10 +92,14 @@ const CaseStudyAIPrototyping = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Background gradient with animated elements */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-accent/10">
-          <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-accent/10 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        {/* Background image with overlay */}
+        <div className="absolute inset-0">
+          <img 
+            src={aiPrototypingHero} 
+            alt="AI Prototyping" 
+            className="w-full h-full object-cover object-right"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent" />
         </div>
 
         <div className="relative container mx-auto px-6 pt-32 pb-24">
