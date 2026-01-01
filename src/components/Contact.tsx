@@ -26,7 +26,47 @@ const Contact = () => {
             <span className="text-outline">think of me.</span>
           </h2>
 
-          <p className="text-primary-foreground/60 text-lg md:text-xl leading-relaxed mb-12 max-w-2xl">
+          {/* Testimonials - Blue background cards */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <div className="p-6 md:p-8 bg-accent rounded-2xl">
+              <blockquote className="text-accent-foreground/90 text-base md:text-lg italic leading-relaxed mb-6">
+                "His ability to listen deeply, synthesize ideas, and articulate a vision with clarity and creativity is unmatched."
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent-foreground/20 flex items-center justify-center text-accent-foreground font-bold text-sm">
+                  GT
+                </div>
+                <p className="text-accent-foreground font-medium">Gabrielle T.</p>
+              </div>
+            </div>
+
+            <div className="p-6 md:p-8 bg-accent rounded-2xl">
+              <blockquote className="text-accent-foreground/90 text-base md:text-lg italic leading-relaxed mb-6">
+                "Ron doesn't just direct teams, he inspires them. His ability to seamlessly blend strategic vision with creative execution is unmatched, and he has an incredible knack for turning complex challenges into elegant, impactful solutions."
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent-foreground/20 flex items-center justify-center text-accent-foreground font-bold text-sm">
+                  GL
+                </div>
+                <p className="text-accent-foreground font-medium">Greg L.</p>
+              </div>
+            </div>
+
+            <div className="p-6 md:p-8 bg-accent rounded-2xl">
+              <blockquote className="text-accent-foreground/90 text-base md:text-lg italic leading-relaxed mb-6">
+                "His ability to take a complex, multi-layered topic, distill it to its core essence, and craft a concept that resonates—from C-suite executives to end users—is truly unmatched."
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent-foreground/20 flex items-center justify-center text-accent-foreground font-bold text-sm">
+                  MH
+                </div>
+                <p className="text-accent-foreground font-medium">Mary H.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact info below testimonials */}
+          <p className="text-primary-foreground/60 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
             Looking for experience design leadership, platform modernization, or UX strategy?
             I'd love to hear about your challenges and explore how we can work together.
           </p>
@@ -34,7 +74,7 @@ const Contact = () => {
           {/* Contact CTA - Large email link */}
           <a
             href="mailto:ronbrissette@gmail.com"
-            className="group inline-flex items-center gap-4 mb-16"
+            className="group inline-flex items-center gap-4"
           >
             <span className="flex items-center justify-center w-16 h-16 rounded-full bg-accent text-accent-foreground group-hover:scale-110 transition-transform duration-300">
               <Mail className="w-6 h-6" />
@@ -47,45 +87,6 @@ const Contact = () => {
               </p>
             </div>
           </a>
-
-          {/* Testimonials - Matt Boston style */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="p-6 md:p-8 bg-card/50 backdrop-blur-sm rounded-2xl border border-primary-foreground/10">
-              <blockquote className="text-primary-foreground/80 text-base md:text-lg italic leading-relaxed mb-6">
-                "His ability to listen deeply, synthesize ideas, and articulate a vision with clarity and creativity is unmatched."
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold text-sm">
-                  GT
-                </div>
-                <p className="text-primary-foreground font-medium">Gabrielle T.</p>
-              </div>
-            </div>
-
-            <div className="p-6 md:p-8 bg-card/50 backdrop-blur-sm rounded-2xl border border-primary-foreground/10">
-              <blockquote className="text-primary-foreground/80 text-base md:text-lg italic leading-relaxed mb-6">
-                "Ron doesn't just direct teams, he inspires them. His ability to seamlessly blend strategic vision with creative execution is unmatched, and he has an incredible knack for turning complex challenges into elegant, impactful solutions."
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold text-sm">
-                  GL
-                </div>
-                <p className="text-primary-foreground font-medium">Greg L.</p>
-              </div>
-            </div>
-
-            <div className="p-6 md:p-8 bg-card/50 backdrop-blur-sm rounded-2xl border border-primary-foreground/10">
-              <blockquote className="text-primary-foreground/80 text-base md:text-lg italic leading-relaxed mb-6">
-                "His ability to take a complex, multi-layered topic, distill it to its core essence, and craft a concept that resonates—from C-suite executives to end users—is truly unmatched."
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold text-sm">
-                  MH
-                </div>
-                <p className="text-primary-foreground font-medium">Mary H.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
