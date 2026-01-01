@@ -49,7 +49,7 @@ const Hero = () => {
 
           {/* Tagline - Professional approach */}
           <p className="text-primary-foreground/60 text-lg md:text-xl max-w-xl mb-12 leading-relaxed opacity-0 animate-fade-up stagger-2">
-            Still rocking the same confidence from that school photo — now I help teams cut through noise, make smart decisions, deliver work that matters and get stakeholders aligned and users saying "finally."
+            Still rocking the same confidence from that school photo—only now I help teams cut through the noise, make smarter decisions, align stakeholders, and deliver work that makes users say, "finally."
           </p>
 
 
