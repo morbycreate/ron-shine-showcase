@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="max-w-4xl">
           {/* Eyebrow */}
           <p className="text-accent font-medium tracking-wide mb-8 opacity-0 animate-fade-up text-sm md:text-base">
-            15+ Years Building & Scaling UX Organizations
+            15+ Years Building & Leading UX Organizations
           </p>
 
           {/* Main headline - Matt Boston style with mixed solid/outline text */}
