@@ -29,15 +29,6 @@ const Work = () => {
       size: "large",
     },
     {
-      title: "AI-Powered Prototyping",
-      category: "AI-Powered Design",
-      description:
-        "Turning ambiguity into working experiences—fast. Using AI as a creative accelerator to build testable prototypes in hours.",
-      image: aiPrototypingHero,
-      link: "/ai-prototyping",
-      size: "large",
-    },
-    {
       title: "Fossil Defender Collection",
       category: "Digital Experience",
       description:
@@ -54,6 +45,15 @@ const Work = () => {
       image: fossilSitePreview,
       link: "/fossil",
       size: "small",
+    },
+    {
+      title: "AI-Powered Prototyping",
+      category: "AI-Powered Design",
+      description:
+        "Turning ambiguity into working experiences—fast. Using AI as a creative accelerator to build testable prototypes in hours.",
+      image: aiPrototypingHero,
+      link: "/ai-prototyping",
+      size: "large",
     },
   ];
 
