@@ -371,7 +371,7 @@ const CaseStudyAA = () => {
       <section className="py-16 bg-primary border-t border-primary-foreground/10">
         <div className="container mx-auto px-6 text-center">
           <Link 
-            to="/#work"
+            to="/case-studies"
             className="group inline-flex items-center gap-3 text-primary-foreground font-medium text-lg hover:text-accent transition-colors duration-300"
           >
             <ArrowLeft className="w-5 h-5 group-hover:-translate-x-2 transition-transform duration-300" />
