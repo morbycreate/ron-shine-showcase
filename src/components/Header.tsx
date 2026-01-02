@@ -46,7 +46,7 @@ const Header = () => {
             }}
             className="font-display text-2xl font-bold tracking-tight text-primary-foreground hover:text-accent transition-colors duration-300"
           >
-            Ron<span className="text-accent">.</span>
+            Ron Brissette
           </a>
 
           {/* Desktop Navigation - Minimal */}
@@ -92,7 +92,7 @@ const Header = () => {
                 }}
                 className="font-display text-2xl font-bold tracking-tight text-primary-foreground"
               >
-                Ron<span className="text-accent">.</span>
+                Ron Brissette
               </a>
               <button
                 className="text-primary-foreground p-2 hover:text-accent transition-colors duration-300"
