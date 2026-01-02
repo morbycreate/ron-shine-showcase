@@ -79,7 +79,7 @@ const CaseStudyAAcom = () => {
           <img 
             src={aacomHeroPlane} 
             alt="American Airlines 737" 
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-bottom"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/70" />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/50" />
