@@ -48,6 +48,9 @@ const Hero = () => {
             <span className="block text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-primary-foreground/60 mt-2">
               & Design Leader
             </span>
+            <span className="block text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-primary-foreground/40 mt-2">
+              Culture Builder
+            </span>
           </h1>
 
           {/* Tagline - More refined with better measure */}
