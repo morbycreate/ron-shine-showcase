@@ -1,5 +1,5 @@
 import { ArrowRight, Mail } from "lucide-react";
-import heroPortrait from "@/assets/hero-fridge.png";
+import heroVideo from "@/assets/hero-video.mp4";
 
 const Hero = () => {
   const scrollToWork = () => {
@@ -11,15 +11,17 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center bg-primary overflow-hidden">
-      {/* Background Image - Right Side */}
+      {/* Background Video - Right Side */}
       <div className="absolute inset-y-0 right-0 w-full lg:w-1/2">
-        <div 
-          className="absolute inset-0 bg-cover bg-no-repeat"
-          style={{
-            backgroundImage: `url(${heroPortrait})`,
-            backgroundPosition: '80% 30%',
-          }}
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
         {/* Gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/50 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-primary/20" />
