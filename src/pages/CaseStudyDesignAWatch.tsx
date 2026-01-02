@@ -229,7 +229,10 @@ const CaseStudyDesignAWatch = () => {
           </div>
 
           {/* 4-Column Concept Gallery */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+          <p className="text-primary-foreground/50 text-sm mt-12 mb-4">
+            Initial Concept Screens — Built to Spark Direction
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="aspect-[3/5] rounded-2xl overflow-hidden border border-primary-foreground/10">
               <img 
                 src={designAWatchConcept2} 
