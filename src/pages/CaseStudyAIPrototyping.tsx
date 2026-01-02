@@ -55,17 +55,6 @@ const CaseStudyAIPrototyping = () => {
         "Built to test UX direction before engineering investment",
       ],
     },
-    {
-      title: "Archelon Advisor Portal",
-      subtitle: "Working Dashboard Concept",
-      url: "https://archelon.lovable.app/",
-      description: "A working Advisor Portal concept built entirely in Lovable by 'vibe coding' the experience from prompt to clickable app. Rather than a static mockup, it showcases how an advisor dashboard could behave—with navigable sections, key client insights, and functional screens.",
-      points: [
-        "From idea to interactive prototype in hours",
-        "Navigable sections and functional screens",
-        "Aligns expectations early without traditional UI code",
-      ],
-    },
   ];
 
   const benefits = [
