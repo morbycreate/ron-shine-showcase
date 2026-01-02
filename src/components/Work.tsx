@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import defenderPreview from "@/assets/defender-preview.png";
+import designAWatchPreview from "@/assets/design-a-watch.png";
 import aaPreview from "@/assets/aa-preview.png";
 import fossilSitePreview from "@/assets/fossil-site-preview.png";
 import aiPrototypingHero from "@/assets/ai-prototyping-hero.png";
@@ -29,12 +29,12 @@ const Work = () => {
       size: "large",
     },
     {
-      title: "Fossil Defender Collection",
-      category: "Digital Experience",
+      title: "Design-A-Watch Customizer",
+      category: "Product Innovation",
       description:
-        "Reintroduced the iconic Defender watch with 23% YoY eCommerce growth.",
-      image: defenderPreview,
-      link: "/defender",
+        "Built an interactive watch customization experience letting users design their perfect timepiece.",
+      image: designAWatchPreview,
+      link: "/design-a-watch",
       size: "small",
     },
     {
