@@ -12,7 +12,7 @@ const Hero = () => {
     <section className="relative min-h-[80vh] flex items-center bg-primary overflow-hidden">
       {/* Background Video - Right Side */}
       <div className="absolute inset-y-0 right-0 w-full lg:w-[83%] overflow-hidden">
-        <div style={{ position: 'relative', height: '100%', width: '100%' }}>
+        <div style={{ padding: '75% 0 0 0', position: 'relative', height: '100%', minHeight: '100%' }}>
           <iframe
             src="https://player.vimeo.com/video/1151072387?badge=0&autopause=0&player_id=0&app_id=58479&loop=1&background=1&autoplay=1&muted=1"
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
