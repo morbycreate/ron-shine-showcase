@@ -52,7 +52,7 @@ const Experience = () => {
           <p className="text-accent font-medium tracking-widest uppercase text-sm mb-4">
             Career Journey
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
             Building <span className="text-gradient">Impact</span>
             <br />
             Across Industries
@@ -84,7 +84,7 @@ const Experience = () => {
                   group-hover:border-accent/30 group-hover:shadow-elevated transition-all duration-500">
                   <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                     <div>
-                      <h3 className="font-serif text-2xl font-bold text-foreground group-hover:text-accent transition-colors">
+                      <h3 className="font-display text-2xl font-bold text-foreground group-hover:text-accent transition-colors">
                         {exp.company}
                       </h3>
                       <p className="text-muted-foreground font-medium">{exp.role}</p>
