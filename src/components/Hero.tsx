@@ -46,7 +46,7 @@ const Hero = () => {
               strategist.
             </span>
             <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold">
-              <span className="italic text-accent">Design</span>{" "}
+              <span className="text-accent">Design</span>{" "}
               <span className="text-outline">leader.</span>
             </span>
             <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold">
