@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { ArrowLeft, Calendar, Target, TrendingUp, Users, Layers, Palette, Zap, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import aacomHeroPlane from "@/assets/aacom-hero-plane.jpg";
 import aacomHome from "@/assets/aacom-home.png";
 import aacomInterior from "@/assets/aacom-interior.png";
 import aacomAdmiralsClub from "@/assets/aacom-admirals-club.png";
@@ -76,8 +77,8 @@ const CaseStudyAAcom = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src={aacomHome} 
-            alt="aa.com Website Redesign" 
+            src={aacomHeroPlane} 
+            alt="American Airlines 737" 
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/70" />
