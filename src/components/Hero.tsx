@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-[80vh] flex items-center bg-primary overflow-hidden">
       {/* Background Video - Right Side */}
-      <div className="absolute inset-y-0 right-0 w-full lg:w-[42%]">
+      <div className="absolute inset-y-0 right-0 w-full lg:w-[59%]">
         <video
           autoPlay
           muted
