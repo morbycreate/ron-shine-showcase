@@ -9,6 +9,7 @@ import designAWatchConcept1 from "@/assets/design-a-watch-concept1.jpg";
 import designAWatchConcept2 from "@/assets/design-a-watch-concept2.jpg";
 import designAWatchConcept3 from "@/assets/design-a-watch-concept3.jpg";
 import designAWatchConcept4 from "@/assets/design-a-watch-concept4.jpg";
+import designAWatchVideo from "@/assets/design-a-watch-video.mov";
 
 const CaseStudyDesignAWatch = () => {
   useEffect(() => {
@@ -188,8 +189,20 @@ const CaseStudyDesignAWatch = () => {
             </div>
           </div>
 
-          {/* Image Gallery */}
+          {/* Video */}
           <div className="mt-16 rounded-2xl overflow-hidden border border-primary-foreground/10">
+            <video 
+              src={designAWatchVideo} 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="w-full h-auto object-cover"
+            />
+          </div>
+
+          {/* Image Gallery */}
+          <div className="mt-6 rounded-2xl overflow-hidden border border-primary-foreground/10">
             <img 
               src={designAWatchTablet} 
               alt="Design A Watch tablet experience" 
