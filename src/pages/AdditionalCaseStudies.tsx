@@ -80,7 +80,7 @@ const AdditionalCaseStudies = () => {
       description:
         "Scaled UX team from 3 to 30+, establishing design systems, governance, and operating models for enterprise delivery.",
       image: aaUxTeam,
-      link: null,
+      link: "/aa-ux-organization",
     },
     {
       title: "Design-A-Watch App",
