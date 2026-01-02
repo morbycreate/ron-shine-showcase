@@ -198,21 +198,12 @@ const CaseStudyHasbro = () => {
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[10/9]">
-              <img 
-                src={hasbroPulseHomepage} 
-                alt="Hasbro PULSE Homepage" 
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[10/9]">
-              <img 
-                src={hasbroPreview} 
-                alt="Hasbro PULSE Platform" 
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
-              />
-            </div>
+          <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[10/9]">
+            <img 
+              src={hasbroPreview} 
+              alt="Hasbro PULSE Platform" 
+              className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+            />
           </div>
         </div>
       </section>
