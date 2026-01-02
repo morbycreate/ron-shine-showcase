@@ -5,7 +5,8 @@ import aacomHeroPlane from "@/assets/aacom-hero-plane.jpg";
 import aacomHome from "@/assets/aacom-home.png";
 import aacomInterior from "@/assets/aacom-interior.png";
 import aacomAdmiralsClub from "@/assets/aacom-admirals-club.png";
-import aacomDealFinder from "@/assets/aacom-deal-finder.png";
+import aacomBookFlights from "@/assets/aacom-book-flights.png";
+import aacomMyAccount from "@/assets/aacom-my-account.png";
 
 const CaseStudyAAcom = () => {
   useEffect(() => {
@@ -214,8 +215,15 @@ const CaseStudyAAcom = () => {
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
               <img 
-                src={aacomDealFinder} 
-                alt="aa.com Deal Finder" 
+                src={aacomBookFlights} 
+                alt="aa.com Choose Flights" 
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={aacomMyAccount} 
+                alt="aa.com My Account" 
                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />
             </div>
