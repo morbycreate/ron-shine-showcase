@@ -23,8 +23,8 @@ const Hero = () => {
           <source src={heroVideo} type="video/mp4" />
         </video>
         {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/50 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-primary/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
       </div>
 
 
