@@ -1,5 +1,4 @@
 import { ArrowRight, Mail } from "lucide-react";
-import heroVideo from "@/assets/hero-video.mp4";
 
 const Hero = () => {
   const scrollToWork = () => {
@@ -13,15 +12,13 @@ const Hero = () => {
     <section className="relative min-h-[80vh] flex items-center bg-primary overflow-hidden">
       {/* Background Video - Right Side */}
       <div className="absolute inset-y-0 right-0 w-full lg:w-[83%]">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover scale-[0.72]"
-        >
-          <source src={heroVideo} type="video/mp4" />
-        </video>
+        <iframe
+          src="https://player.vimeo.com/video/1151068330?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&loop=1&muted=1"
+          className="absolute inset-0 w-full h-full scale-[1.2]"
+          style={{ border: 'none' }}
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+          title="hero_banner"
+        />
         {/* Gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/30 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
