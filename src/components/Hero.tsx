@@ -14,11 +14,11 @@ const Hero = () => {
       <div className="absolute inset-y-0 right-0 w-full lg:w-[83%] overflow-hidden">
         <div style={{ position: 'relative', height: '100%', width: '100%' }}>
           <iframe
-            src="https://player.vimeo.com/video/1151068330?badge=0&autopause=0&player_id=0&app_id=58479&loop=1&background=1&autoplay=1&muted=1"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            src="https://player.vimeo.com/video/1151072387?badge=0&autopause=0&player_id=0&app_id=58479&loop=1&background=1&autoplay=1&muted=1"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '180%', height: '180%', border: 'none' }}
-            title="hero_banner test"
+            title="Banner_Hero_New"
           />
         </div>
         {/* Gradient overlays */}
