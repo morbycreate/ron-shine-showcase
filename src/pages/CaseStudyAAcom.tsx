@@ -81,8 +81,8 @@ const CaseStudyAAcom = () => {
             alt="American Airlines 737" 
             className="w-full h-full object-cover object-bottom"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/30 via-primary/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-primary/20" />
         </div>
 
         <div className="relative container mx-auto px-6 pt-32 pb-24">
