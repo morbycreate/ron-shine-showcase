@@ -70,7 +70,7 @@ const CaseStudyHasbro = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
