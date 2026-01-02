@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { ArrowLeft, Calendar, Target, TrendingUp, Users, Search, Layers, Palette, Gamepad2, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import hasbroPreview from "@/assets/hasbro-preview.png";
+import hasbroPulseHomepage from "@/assets/hasbro-pulse-homepage.jpg";
 
 const CaseStudyHasbro = () => {
   useEffect(() => {
@@ -186,12 +187,30 @@ const CaseStudyHasbro = () => {
       {/* Image Gallery */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-1 gap-6 max-w-4xl mx-auto">
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+          <div className="mb-12">
+            <p className="text-accent font-medium tracking-wide mb-4 text-sm">
+              The Experience
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
+              Designed for
+              <br />
+              <span className="text-outline">collectors.</span>
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
+              <img 
+                src={hasbroPulseHomepage} 
+                alt="Hasbro PULSE Homepage" 
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 aspect-[4/3]">
               <img 
                 src={hasbroPreview} 
                 alt="Hasbro PULSE Platform" 
-                className="w-full h-auto hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />
             </div>
           </div>
