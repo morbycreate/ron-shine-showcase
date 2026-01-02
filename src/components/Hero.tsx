@@ -38,18 +38,20 @@ const Hero = () => {
           </div>
 
           {/* Main headline - Refined typography with better rhythm */}
-          <h1 className="font-display leading-[1] mb-10 opacity-0 animate-fade-up stagger-1">
-            <span className="block text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-primary-foreground/90 mb-2">
+          <h1 className="font-display leading-[0.95] mb-10 opacity-0 animate-fade-up stagger-1">
+            <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-primary-foreground">
               Experience
             </span>
-            <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-primary-foreground">
-              Strategist
+            <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-outline">
+              strategist.
             </span>
-            <span className="block text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-primary-foreground/60 mt-2">
-              & Design Leader
+            <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold">
+              <span className="italic text-accent">Design</span>{" "}
+              <span className="text-outline">leader.</span>
             </span>
-            <span className="block text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-primary-foreground/40 mt-2">
-              Culture Builder
+            <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold">
+              <span className="text-primary-foreground">Culture</span>{" "}
+              <span className="text-outline-accent">Builder.</span>
             </span>
           </h1>
 
