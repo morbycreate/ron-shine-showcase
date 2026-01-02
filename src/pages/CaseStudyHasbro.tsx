@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, Target, TrendingUp, Users, Search, Layers, Palette
 import { Link } from "react-router-dom";
 import hasbroPreview from "@/assets/hasbro-preview.png";
 import hasbroPulseHomepage from "@/assets/hasbro-pulse-homepage.jpg";
+import hasbroHero from "@/assets/hasbro-hero.png";
 
 const CaseStudyHasbro = () => {
   useEffect(() => {
@@ -73,9 +74,9 @@ const CaseStudyHasbro = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src={hasbroPreview} 
+            src={hasbroHero} 
             alt="Hasbro PULSE Microsite" 
-            className="w-full h-full object-cover object-[50%_20%]"
+            className="w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/50" />
