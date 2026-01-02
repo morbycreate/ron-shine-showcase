@@ -72,14 +72,6 @@ const Work = () => {
     { name: "Citi", logo: citiLogo },
   ];
 
-  const filters = [
-    "All",
-    "Creative Direction",
-    "Branding",
-    "Digital",
-    "Strategy",
-  ];
-
   return (
     <section id="work" className="py-24 md:py-32 bg-primary relative">
       <div className="container mx-auto px-6">
@@ -93,22 +85,6 @@ const Work = () => {
             <br />
             <span className="text-outline">Creative Work</span>
           </h2>
-        </div>
-
-        {/* Filter tabs */}
-        <div className="flex flex-wrap gap-3 mb-12">
-          {filters.map((filter, index) => (
-            <button
-              key={filter}
-              className={`px-4 py-2 text-sm font-medium rounded-full border transition-all duration-300 ${
-                index === 0
-                  ? "bg-accent text-accent-foreground border-accent"
-                  : "text-primary-foreground/60 border-primary-foreground/20 hover:border-accent hover:text-accent"
-              }`}
-            >
-              {filter}
-            </button>
-          ))}
         </div>
 
         {/* Projects grid - Masonry style */}
