@@ -11,14 +11,16 @@ const Hero = () => {
   return (
     <section className="relative min-h-[80vh] flex items-center bg-primary overflow-hidden">
       {/* Background Video - Right Side */}
-      <div className="absolute inset-y-0 right-0 w-full lg:w-[83%]">
-        <iframe
-          src="https://player.vimeo.com/video/1151068330?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&loop=1&muted=1"
-          className="absolute inset-0 w-full h-full scale-[1.2]"
-          style={{ border: 'none' }}
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-          title="hero_banner"
-        />
+      <div className="absolute inset-y-0 right-0 w-full lg:w-[83%] overflow-hidden">
+        <div style={{ padding: '33.14% 0 0 0', position: 'relative', height: '100%', minHeight: '100%' }}>
+          <iframe
+            src="https://player.vimeo.com/video/1151068330?badge=0&autopause=0&player_id=0&app_id=58479&loop=1&background=1&autoplay=1&muted=1"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            referrerPolicy="strict-origin-when-cross-origin"
+            style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', height: '100%', minHeight: '100vh', border: 'none' }}
+            title="hero_banner test"
+          />
+        </div>
         {/* Gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/30 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
