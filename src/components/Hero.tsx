@@ -12,13 +12,13 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center bg-primary overflow-hidden">
       {/* Background Video - Full bleed */}
       <div className="absolute inset-0 overflow-hidden">
-        <div style={{ padding: '56.25% 0 0 0', position: 'relative', height: '100%', minHeight: '100%' }}>
+        <div style={{ padding: '31.76% 0 0 0', position: 'relative', height: '100%', minHeight: '100%' }}>
           <iframe
-            src="https://player.vimeo.com/video/1151072387?badge=0&autopause=0&player_id=0&app_id=58479&loop=1&background=1&autoplay=1&muted=1"
+            src="https://player.vimeo.com/video/1151229134?badge=0&autopause=0&player_id=0&app_id=58479&loop=1&background=1&autoplay=1&muted=1"
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '180%', height: '180%', border: 'none' }}
-            title="Banner_Hero_New"
+            title="Home Page Hero Banner-2"
           />
         </div>
         {/* Refined gradient overlays */}
