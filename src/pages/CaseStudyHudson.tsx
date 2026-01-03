@@ -201,32 +201,32 @@ const CaseStudyHudson = () => {
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="rounded-xl overflow-hidden h-64">
+            <div className="rounded-xl overflow-hidden">
               <img 
                 src={hudsonSchedule} 
                 alt="EdgePower Schedule Settings" 
-                className="w-full h-full object-cover object-top"
+                className="w-full h-auto object-contain"
               />
             </div>
-            <div className="rounded-xl overflow-hidden h-64">
+            <div className="rounded-xl overflow-hidden">
               <img 
                 src={hudsonSettings} 
                 alt="EdgePower Settings Navigation" 
-                className="w-full h-full object-cover object-top"
+                className="w-full h-auto object-contain"
               />
             </div>
-            <div className="rounded-xl overflow-hidden h-64">
+            <div className="rounded-xl overflow-hidden">
               <img 
                 src={hudsonDashboard} 
                 alt="EdgePower Mobile Dashboard" 
-                className="w-full h-full object-cover object-top"
+                className="w-full h-auto object-contain"
               />
             </div>
-            <div className="rounded-xl overflow-hidden h-64">
+            <div className="rounded-xl overflow-hidden">
               <img 
                 src={hudson3dMock} 
                 alt="EdgePower 3D Facility View" 
-                className="w-full h-full object-cover object-top"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>
