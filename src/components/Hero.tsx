@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-primary overflow-hidden">
+    <section className="relative min-h-[80vh] flex items-center bg-primary overflow-hidden">
       {/* Background Video - Full bleed */}
       <div className="absolute inset-0 overflow-hidden">
         <div style={{ padding: '31.76% 0 0 0', position: 'relative', height: '100%', minHeight: '100%' }}>
