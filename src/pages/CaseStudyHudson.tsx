@@ -6,6 +6,7 @@ import hudsonDevices from "@/assets/hudson-devices.png";
 import hudsonSchedule from "@/assets/hudson-schedule.png";
 import hudsonSettings from "@/assets/hudson-settings.png";
 import hudsonDashboard from "@/assets/hudson-dashboard.png";
+import hudson3dMock from "@/assets/hudson-3d-mock.png";
 
 const CaseStudyHudson = () => {
   useEffect(() => {
@@ -199,7 +200,7 @@ const CaseStudyHudson = () => {
       {/* Image Gallery */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <div className="rounded-xl overflow-hidden h-64">
               <img 
                 src={hudsonSchedule} 
@@ -218,6 +219,13 @@ const CaseStudyHudson = () => {
               <img 
                 src={hudsonDashboard} 
                 alt="EdgePower Mobile Dashboard" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden h-64">
+              <img 
+                src={hudson3dMock} 
+                alt="EdgePower 3D Facility View" 
                 className="w-full h-full object-cover object-top"
               />
             </div>
