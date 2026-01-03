@@ -77,9 +77,6 @@ const Work = () => {
       <div className="container mx-auto px-6">
         {/* Section header - Matt Boston style */}
         <div className="mb-16">
-          <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-            I know why you're here. Let's get to the point.
-          </p>
           <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
             My Portfolio of
             <br />
