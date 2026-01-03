@@ -228,9 +228,6 @@ const CaseStudyAA = () => {
               <img src={aaGateSign} alt="American Airlines Gate Sign" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-2xl overflow-hidden aspect-[4/3]">
-              <img src={aaBoarding} alt="American Airlines Boarding Screen" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
               <img src={aaKiosk} alt="American Airlines Self-Service Kiosk" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-2xl overflow-hidden aspect-[4/3]">
