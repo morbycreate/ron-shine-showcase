@@ -164,7 +164,6 @@ const Work = () => {
             {clientLogos.map((client) => (
               <div
                 key={client.name}
-                className="opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
               >
                 <img 
                   src={client.logo} 
