@@ -108,7 +108,7 @@ const Work = () => {
                       {project.category}
                     </span>
                     
-                    <h3 className={`font-display font-bold text-primary-foreground mb-2 ${isLarge ? "text-3xl md:text-4xl" : "text-xl md:text-2xl"}`}>
+                    <h3 className={`font-display font-bold text-primary-foreground mb-2 ${isLarge ? "text-2xl md:text-4xl" : "text-xl md:text-2xl"}`}>
                       {project.title}
                     </h3>
                     
