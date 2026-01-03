@@ -95,7 +95,7 @@ const Work = () => {
             const CardContent = (
               <div className={`group relative overflow-hidden rounded-xl card-hover ${isLarge ? "md:col-span-2" : ""}`}>
                 {/* Image Background */}
-                <div className={`relative overflow-hidden ${isLarge ? "aspect-[21/9]" : "aspect-[4/3]"}`}>
+                <div className={`relative overflow-hidden ${isLarge ? "aspect-[4/3] md:aspect-[21/9]" : "aspect-[4/3]"}`}>
                   <img
                     src={project.image}
                     alt={project.title}
