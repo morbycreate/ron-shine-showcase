@@ -95,10 +95,6 @@ const CaseStudyDefender = () => {
               <span className="px-4 py-1.5 text-xs font-medium bg-accent/10 text-accent rounded-full border border-accent/20">
                 Digital Experience
               </span>
-              <span className="flex items-center gap-2 text-sm text-primary-foreground/50">
-                <Calendar className="w-4 h-4" />
-                Holiday 2014 – Q1 2015
-              </span>
             </div>
 
             {/* Main headline - Matt Boston style */}
