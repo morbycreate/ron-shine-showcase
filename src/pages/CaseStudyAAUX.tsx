@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { ArrowLeft, Target, Users, Layers, Palette, BookOpen, Workflow } from "lucide-react";
 import { Link } from "react-router-dom";
-import aaUxTeam from "@/assets/aa-ux-team.png";
+import aaUxHero from "@/assets/aa-ux-hero.png";
 import aaGuiKits from "@/assets/aa-gui-kits.jpg";
 import aaMobile1 from "@/assets/aa-mobile-1.jpg";
 import aaMobile2 from "@/assets/aa-mobile-2.jpg";
@@ -90,8 +90,8 @@ const CaseStudyAAUX = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src={aaUxTeam} 
-            alt="American Airlines UX Team" 
+            src={aaUxHero} 
+            alt="American Airlines UX"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
