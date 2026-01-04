@@ -5,6 +5,7 @@ import aaPreview from "@/assets/aa-preview.png";
 import fossilLeadershipPreview from "@/assets/fossil-leadership-preview.jpg";
 import aiPrototypingHero from "@/assets/ai-prototyping-hero.png";
 import slalomPreview from "@/assets/slalom-preview.png";
+import sabreHero from "@/assets/sabre-hero.png";
 import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
 import attLogo from "@/assets/logos/att.png";
 import jaguarsLogo from "@/assets/logos/jaguars-full.png";
@@ -54,6 +55,15 @@ const Work = () => {
         "Built a scalable experience capability driving $60M in pipeline and scaling the team from 2 to 10 in one year.",
       image: slalomPreview,
       link: "/slalom",
+      size: "small",
+    },
+    {
+      title: "Sabre Corporation Brand Transformation",
+      category: "Leadership",
+      description:
+        "Helped Sabre evolve from a legacy travel company into a modern enterprise technology platform.",
+      image: sabreHero,
+      link: "/sabre",
       size: "small",
     },
   ];
