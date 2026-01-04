@@ -47,10 +47,10 @@ const Work = () => {
       size: "small",
     },
     {
-      title: "AI-Powered Prototyping",
-      category: "AI-Powered Design",
+      title: "AI as a Force Multiplier",
+      category: "Point of View",
       description:
-        "Turning ambiguity into working experiences—fast. Using AI as a creative accelerator to build testable prototypes in hours.",
+        "AI doesn't replace designers—it removes the repetitive work so teams can invest in strategy, storytelling, and solving harder problems.",
       image: aiPrototypingHero,
       link: "/ai-prototyping",
       size: "large",
