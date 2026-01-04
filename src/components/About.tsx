@@ -22,14 +22,18 @@ const About = () => {
         {/* Section intro */}
         <div className="max-w-4xl mb-16">
           <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-            Career Highlights
+            A VP-Level Operator
           </p>
           
-          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
-            Driving Results
+          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-8">
+            I Lead Through
             <br />
-            <span className="text-outline">That Matter</span>
+            <span className="text-outline">Ambiguity</span>
           </h2>
+          
+          <p className="text-primary-foreground/60 text-xl leading-relaxed max-w-2xl">
+            I scale teams, systems, and outcomes. I'm not a hands-off creative—I'm an operator who delivers measurable impact.
+          </p>
         </div>
 
         {/* Accomplishments list */}
