@@ -1,7 +1,14 @@
 import { useEffect } from "react";
 import { ArrowLeft, Target, Users, Layers, Briefcase, TrendingUp, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
-import sabrePreview from "@/assets/sabre-preview.png";
+import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
+import attLogo from "@/assets/logos/att.png";
+import jaguarsLogo from "@/assets/logos/jaguars-full.png";
+import sabreLogo from "@/assets/logos/sabre.png";
+import firehouseSubsLogo from "@/assets/logos/firehouse-subs.png";
+import nikeLogo from "@/assets/logos/nike.png";
+import awsLogo from "@/assets/logos/aws.png";
+import citiLogo from "@/assets/logos/citi.png";
 
 const CaseStudySlalom = () => {
   useEffect(() => {
@@ -293,6 +300,36 @@ const CaseStudySlalom = () => {
             <p className="text-primary-foreground/60 leading-relaxed text-lg">
               Elevated Slalom's position as a serious experience partner capable of winning and delivering enterprise-scale work for Fortune 500 clients across complex, regulated industries.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Clients Section */}
+      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
+        <div className="container mx-auto px-6">
+          <p className="text-accent font-medium tracking-wide mb-8 text-sm">
+            The brands that trusted me to do the work.
+          </p>
+
+          <div className="flex flex-wrap items-center gap-8 md:gap-12">
+            {[
+              { name: "American Airlines", logo: americanAirlinesLogo },
+              { name: "AT&T", logo: attLogo },
+              { name: "Jacksonville Jaguars", logo: jaguarsLogo },
+              { name: "Sabre", logo: sabreLogo },
+              { name: "Firehouse Subs", logo: firehouseSubsLogo },
+              { name: "Nike", logo: nikeLogo },
+              { name: "AWS", logo: awsLogo },
+              { name: "Citi", logo: citiLogo },
+            ].map((client) => (
+              <div key={client.name}>
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="h-20 md:h-24 w-auto object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
