@@ -78,9 +78,9 @@ const Work = () => {
         {/* Section header - Matt Boston style */}
         <div className="mb-16">
           <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
-            My Portfolio of
+            My
             <br />
-            <span className="text-outline">Creative Work</span>
+            <span className="text-outline">Experience</span>
           </h2>
         </div>
 
