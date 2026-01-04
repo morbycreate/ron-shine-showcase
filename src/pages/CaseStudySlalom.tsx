@@ -10,6 +10,15 @@ import firehouseSubsLogo from "@/assets/logos/firehouse-subs.png";
 import nikeLogo from "@/assets/logos/nike.png";
 import awsLogo from "@/assets/logos/aws.png";
 import citiLogo from "@/assets/logos/citi.png";
+import polarisLogo from "@/assets/logos/polaris.png";
+import mayoClinicLogo from "@/assets/logos/mayo-clinic.png";
+import goldmanSachsLogo from "@/assets/logos/goldman-sachs.png";
+import purinaLogo from "@/assets/logos/purina.png";
+import nasdaqLogo from "@/assets/logos/nasdaq.png";
+import marsLogo from "@/assets/logos/mars.png";
+import threeMlogo from "@/assets/logos/3m.png";
+import ameripriseLogo from "@/assets/logos/ameriprise.png";
+import amazonLogo from "@/assets/logos/amazon.png";
 
 const CaseStudySlalom = () => {
   useEffect(() => {
@@ -331,6 +340,15 @@ const CaseStudySlalom = () => {
               { name: "Nike", logo: nikeLogo },
               { name: "AWS", logo: awsLogo },
               { name: "Citi", logo: citiLogo },
+              { name: "Polaris", logo: polarisLogo },
+              { name: "Mayo Clinic", logo: mayoClinicLogo },
+              { name: "Goldman Sachs", logo: goldmanSachsLogo },
+              { name: "Purina", logo: purinaLogo },
+              { name: "Nasdaq", logo: nasdaqLogo },
+              { name: "Mars", logo: marsLogo },
+              { name: "3M", logo: threeMlogo },
+              { name: "Ameriprise", logo: ameripriseLogo },
+              { name: "Amazon", logo: amazonLogo },
             ].map((client) => (
               <div key={client.name}>
                 <img 
