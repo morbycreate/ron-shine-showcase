@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 import fossilLogo from "@/assets/logos/fossil.png";
 import toryBurchLogo from "@/assets/logos/tory-burch.png";
 import nikeLogo from "@/assets/logos/nike.png";
+import fossil2upDesktop from "@/assets/fossil-2up-desktop.png";
+import fossilWatchbuilderTablet from "@/assets/fossil-watchbuilder-tablet.png";
+import fossilWatchbuilderMobile from "@/assets/fossil-watchbuilder-mobile.png";
+import fossilDefenderTablets from "@/assets/fossil-defender-tablets.png";
+import fossilHpDevices from "@/assets/fossil-hp-devices.png";
+import fossilMobile3up from "@/assets/fossil-mobile-3up.png";
 
 const CaseStudyFossilLeadership = () => {
   useEffect(() => {
@@ -242,6 +248,44 @@ const CaseStudyFossilLeadership = () => {
                     </li>
                   ))}
                 </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Image Gallery */}
+      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mb-16">
+            <p className="text-accent font-medium tracking-wide mb-4 text-sm">
+              Work Samples
+            </p>
+            <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
+              The Digital
+              <br />
+              <span className="text-outline">Experience.</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { src: fossil2upDesktop, alt: "Fossil website desktop and laptop mockups" },
+              { src: fossilWatchbuilderTablet, alt: "Fossil Design-A-Watch tablet experience" },
+              { src: fossilWatchbuilderMobile, alt: "Fossil Design-A-Watch mobile experience" },
+              { src: fossilDefenderTablets, alt: "Fossil Defender tablet screens" },
+              { src: fossilHpDevices, alt: "Fossil homepage on laptop and mobile" },
+              { src: fossilMobile3up, alt: "Fossil mobile app screens" },
+            ].map((image, index) => (
+              <div 
+                key={index}
+                className="group overflow-hidden rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 hover:border-accent/30 transition-colors duration-300"
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.alt}
+                  className="w-full h-auto object-contain"
+                />
               </div>
             ))}
           </div>
