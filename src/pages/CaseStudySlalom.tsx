@@ -337,7 +337,7 @@ const CaseStudySlalom = () => {
                 <img 
                   src={client.logo} 
                   alt={client.name} 
-                  className="h-20 md:h-24 w-auto object-contain"
+                  className="h-40 md:h-48 w-auto object-contain"
                 />
               </div>
             ))}
