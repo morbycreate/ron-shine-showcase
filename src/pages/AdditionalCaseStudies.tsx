@@ -12,6 +12,7 @@ import hasbroPreview from "@/assets/hasbro-preview-new.webp";
 import hudsonEnergyPreview from "@/assets/hudson-warehouse.jpeg";
 import aiPrototypingHero from "@/assets/ai-prototyping-hero.png";
 import fossilLeadershipPreview from "@/assets/fossil-leadership-preview.jpg";
+import sabreHero from "@/assets/sabre-hero.png";
 
 const AdditionalCaseStudies = () => {
   useEffect(() => {
@@ -98,6 +99,14 @@ const AdditionalCaseStudies = () => {
         "Built a scalable experience capability driving $60M in pipeline and scaling the team from 2 to 10 in one year.",
       image: aaUxTeam,
       link: "/slalom",
+    },
+    {
+      title: "Sabre Corporation Brand Transformation",
+      category: "Leadership",
+      description:
+        "Helped Sabre evolve from a legacy travel company into a modern enterprise technology platform.",
+      image: sabreHero,
+      link: "/sabre",
     },
     {
       title: "Design-A-Watch App",
