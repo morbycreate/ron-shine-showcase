@@ -27,7 +27,7 @@ const Contact = () => {
           </h2>
 
           {/* Testimonials - Blue background cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <div className="p-6 md:p-8 bg-accent rounded-2xl">
               <blockquote className="text-accent-foreground/90 text-base md:text-lg italic leading-relaxed mb-6">
                 "His ability to listen deeply, synthesize ideas, and articulate a vision with clarity and creativity is unmatched."
@@ -61,6 +61,18 @@ const Contact = () => {
                   MH
                 </div>
                 <p className="text-accent-foreground font-medium">Mary H.</p>
+              </div>
+            </div>
+
+            <div className="p-6 md:p-8 bg-accent rounded-2xl">
+              <blockquote className="text-accent-foreground/90 text-base md:text-lg italic leading-relaxed mb-6">
+                "Ron doesn't just lead—he empowers. His mantra, 'I want to set each of you up to win,' wasn't just words; it was the foundation of a team that thrived."
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent-foreground/20 flex items-center justify-center text-accent-foreground font-bold text-sm">
+                  PS
+                </div>
+                <p className="text-accent-foreground font-medium">Pete S.</p>
               </div>
             </div>
           </div>
