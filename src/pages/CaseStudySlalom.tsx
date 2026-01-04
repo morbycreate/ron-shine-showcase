@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { ArrowLeft, Target, Users, Layers, Briefcase, TrendingUp, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import slalomHero from "@/assets/slalom-hero.png";
 import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
 import attLogo from "@/assets/logos/att.png";
 import jaguarsLogo from "@/assets/logos/jaguars-full.png";
@@ -9,13 +10,6 @@ import firehouseSubsLogo from "@/assets/logos/firehouse-subs.png";
 import nikeLogo from "@/assets/logos/nike.png";
 import awsLogo from "@/assets/logos/aws.png";
 import citiLogo from "@/assets/logos/citi.png";
-import slalomHudson from "@/assets/slalom-hudson-mock.png";
-import slalomThr from "@/assets/slalom-thr.webp";
-import slalomWsp from "@/assets/slalom-wsp.png";
-import slalomMolecular from "@/assets/slalom-molecular.png";
-import slalomNewco from "@/assets/slalom-newco.png";
-import slalomAshley from "@/assets/slalom-ashley.png";
-import slalomHighland from "@/assets/slalom-highland.png";
 
 const CaseStudySlalom = () => {
   useEffect(() => {
@@ -93,10 +87,15 @@ const CaseStudySlalom = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-        {/* Background */}
+        {/* Background Image */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-primary to-primary" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent" />
+          <img 
+            src={slalomHero} 
+            alt="Slalom Create" 
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/50" />
         </div>
 
         <div className="relative container mx-auto px-6 pt-32 pb-24">
