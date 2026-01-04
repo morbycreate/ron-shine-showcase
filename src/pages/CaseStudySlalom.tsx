@@ -322,7 +322,7 @@ const CaseStudySlalom = () => {
             </h2>
           </div>
 
-          <div className="flex flex-wrap items-center gap-8 md:gap-12 mb-16">
+          <div className="flex flex-wrap items-center gap-8 md:gap-12">
             {[
               { name: "American Airlines", logo: americanAirlinesLogo },
               { name: "AT&T", logo: attLogo },
@@ -338,28 +338,6 @@ const CaseStudySlalom = () => {
                   src={client.logo} 
                   alt={client.name} 
                   className="h-20 md:h-24 w-auto object-contain"
-                />
-              </div>
-            ))}
-          </div>
-
-          <div className="columns-1 md:columns-3 gap-6 space-y-6">
-            {[
-              { src: slalomHudson, alt: "Hudson Energy EdgePower Dashboard" },
-              { src: slalomThr, alt: "Texas Health Resources Digital Experience" },
-              { src: slalomWsp, alt: "WSP Data Transformation Portal" },
-              { src: slalomMolecular, alt: "Molecular Designs & Streamline Scientific" },
-              { src: slalomNewco, alt: "NewCo Flex Forward Mobile Experience" },
-              { src: slalomAshley, alt: "Ashley Stewart E-commerce Platform" },
-            ].map((image) => (
-              <div
-                key={image.alt}
-                className="group overflow-hidden rounded-2xl bg-primary-foreground/[0.03] border border-primary-foreground/10 hover:border-accent/30 transition-all duration-300 break-inside-avoid"
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-auto object-contain"
                 />
               </div>
             ))}
