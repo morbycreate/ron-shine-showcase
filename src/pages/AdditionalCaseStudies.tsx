@@ -11,6 +11,7 @@ import thrPreview from "@/assets/thr-preview-new.png";
 import hasbroPreview from "@/assets/hasbro-preview-new.webp";
 import hudsonEnergyPreview from "@/assets/hudson-warehouse.jpeg";
 import aiPrototypingHero from "@/assets/ai-prototyping-hero.png";
+import fossilLeadershipPreview from "@/assets/fossil-leadership-preview.jpg";
 
 const AdditionalCaseStudies = () => {
   useEffect(() => {
@@ -54,7 +55,7 @@ const AdditionalCaseStudies = () => {
       category: "Leadership",
       description:
         "Led full digital replatform driving 23% YoY e-commerce lift and L2 'Digital Genius' recognition.",
-      image: fossilSitePreview,
+      image: fossilLeadershipPreview,
       link: "/fossil-leadership",
     },
     {
