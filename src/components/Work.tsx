@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import aaUxTeam from "@/assets/aa-ux-team.png";
+import aaUxHero from "@/assets/aa-ux-hero.png";
 import aaPreview from "@/assets/aa-preview.png";
 import fossilLeadershipPreview from "@/assets/fossil-leadership-preview.jpg";
 import aiPrototypingHero from "@/assets/ai-prototyping-hero.png";
@@ -35,7 +35,7 @@ const Work = () => {
       category: "Experience Design",
       description:
         "Scaled UX team from 3 to 30+, establishing design systems, governance, and operating models for enterprise delivery.",
-      image: aaUxTeam,
+      image: aaUxHero,
       link: "/aa-ux-organization",
       size: "small",
     },
