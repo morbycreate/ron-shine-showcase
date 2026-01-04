@@ -9,9 +9,9 @@ const CaseStudyAIPrototyping = () => {
   }, []);
 
   const metrics = [
-    { label: "Speed", value: "Hours", icon: Clock },
-    { label: "From Concept", value: "To Prototype", icon: Zap },
-    { label: "Confidence", value: "Before Code", icon: Target },
+    { label: "UX Teams", value: "Transformed", icon: Zap },
+    { label: "Exploration", value: "Accelerated", icon: Clock },
+    { label: "Impact", value: "Amplified", icon: Target },
   ];
 
   const toolkit = [
@@ -58,10 +58,10 @@ const CaseStudyAIPrototyping = () => {
   ];
 
   const benefits = [
-    { icon: Clock, title: "Speed", description: "Concepts become clickable in hours" },
-    { icon: Target, title: "Clarity", description: "Stakeholders react to real experiences, not slides" },
-    { icon: TrendingUp, title: "Confidence", description: "Decisions are grounded in interaction, not assumption" },
-    { icon: Rocket, title: "Momentum", description: "Teams move forward instead of stalling" },
+    { icon: Clock, title: "Speed", description: "Concepts become clickable in hours, not weeks" },
+    { icon: Target, title: "Strategy", description: "More time for insight, creativity, and collaboration" },
+    { icon: TrendingUp, title: "Engagement", description: "Personalized experiences that drive retention" },
+    { icon: Rocket, title: "Execution", description: "Production-quality assets without traditional overhead" },
   ];
 
   return (
@@ -96,20 +96,20 @@ const CaseStudyAIPrototyping = () => {
             {/* Meta info */}
             <div className="flex flex-wrap items-center gap-4 mb-8 opacity-0 animate-fade-up">
               <span className="px-4 py-1.5 text-xs font-medium bg-accent/10 text-accent rounded-full border border-accent/20">
-                AI-Powered Design
+                Point of View
               </span>
             </div>
 
             {/* Main headline */}
             <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[7rem] font-bold leading-[0.95] mb-8 opacity-0 animate-fade-up stagger-1">
-              <span className="text-primary-foreground">AI-Powered</span>
+              <span className="text-primary-foreground">AI as a</span>
               <br />
-              <span className="text-outline">Prototyping</span>
+              <span className="text-outline">Force Multiplier</span>
             </h1>
 
             <p className="text-primary-foreground/60 text-xl md:text-2xl max-w-2xl leading-relaxed opacity-0 animate-fade-up stagger-2">
-              Turning ambiguity into working experiences—
-              <span className="text-accent font-medium"> fast.</span>
+              The real value isn't that AI replaces designers—it removes the repetitive work so teams can spend more time on
+              <span className="text-accent font-medium"> strategy, storytelling, and solving harder problems.</span>
             </p>
           </div>
         </div>
@@ -142,48 +142,69 @@ const CaseStudyAIPrototyping = () => {
         </div>
       </section>
 
-      {/* Challenge Section */}
+      {/* AI Transformation Section */}
       <section className="py-24 md:py-32 bg-primary">
         <div className="container mx-auto px-6">
+          <div className="max-w-4xl mb-16">
+            <p className="text-accent font-medium tracking-wide mb-4 text-sm">
+              The Reality
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
+              AI is already
+              <br />
+              <span className="text-outline">transforming teams.</span>
+            </h2>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-            {/* Challenge */}
-            <div>
-              <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-                The Challenge
-              </p>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
-                Clarity
-                <br />
-                <span className="text-outline">lags behind.</span>
-              </h2>
+            {/* Creative Tools */}
+            <div className="bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-8 hover:border-accent/30 transition-colors duration-300">
+              <h3 className="font-display text-2xl font-bold text-primary-foreground mb-6">Creative Acceleration</h3>
               <div className="space-y-5 text-primary-foreground/60 text-lg leading-relaxed">
                 <p>
-                  Teams move fast—but clarity often lags. Ideas get stuck in decks. Alignment takes too long. Momentum fades before anything real exists.
+                  Tools like <strong className="text-primary-foreground">Figma and Adobe Firefly</strong> are speeding up exploration—turning sketches into wireframes or mockups in seconds and generating design variations instantly.
                 </p>
-                <p className="text-primary-foreground font-medium">
-                  The problem: How do you explore ideas, validate direction, and build confidence before committing engineering time?
+                <p>
+                  <strong className="text-primary-foreground">Airbnb</strong> uses AI to turn product requirements into working prototypes within hours, completely changing how fast teams can test ideas.
                 </p>
               </div>
             </div>
 
-            {/* Approach */}
-            <div>
-              <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-                The Approach
-              </p>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
-                AI as
-                <br />
-                <span className="text-outline">accelerator.</span>
-              </h2>
+            {/* UX Personalization */}
+            <div className="bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-8 hover:border-accent/30 transition-colors duration-300">
+              <h3 className="font-display text-2xl font-bold text-primary-foreground mb-6">UX Personalization</h3>
               <div className="space-y-5 text-primary-foreground/60 text-lg leading-relaxed">
                 <p>
-                  I use AI as a creative accelerator—not a shortcut.
+                  Companies like <strong className="text-primary-foreground">Spotify and Netflix</strong> use AI to personalize every surface—artwork, playlists, recommendations—based on real behavior.
                 </p>
                 <p>
-                  By combining strategic thinking, AI-assisted prototyping, and automation, I turn early ideas into <strong className="text-primary-foreground">tangible, testable experiences in days instead of weeks.</strong>
+                  This dramatically improves <strong className="text-primary-foreground">engagement and retention</strong>. And Adobe's AI helps teams produce production-quality imagery, storyboards, and campaign assets without traditional shoots.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* My Role Section */}
+      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-accent font-medium tracking-wide mb-4 text-sm">
+              My Role as a Leader
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
+              Speeding execution,
+              <br />
+              <span className="text-outline">investing in creativity.</span>
+            </h2>
+            <div className="space-y-6 text-primary-foreground/60 text-xl leading-relaxed">
+              <p>
+                My role as a leader is to help teams use AI as a <strong className="text-accent">force multiplier</strong>: speeding up the execution so we can invest more energy in the creativity, insight, and collaboration that actually move the business forward.
+              </p>
+              <p className="text-primary-foreground text-2xl font-display">
+                AI doesn't replace designers—it removes the repetitive work so teams can spend more time on strategy, storytelling, and solving harder problems.
+              </p>
             </div>
           </div>
         </div>
@@ -229,13 +250,16 @@ const CaseStudyAIPrototyping = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mb-16">
             <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-              Selected Work
+              This POV in Action
             </p>
             <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
-              Prototype
+              Rapid
               <br />
-              <span className="text-outline">gallery.</span>
+              <span className="text-outline">prototyping.</span>
             </h2>
+            <p className="text-primary-foreground/60 text-lg mt-6 max-w-2xl">
+              These prototypes demonstrate how AI accelerates the journey from ambiguity to testable experience—concepts built in hours, not weeks.
+            </p>
           </div>
 
           <div className="space-y-8">
