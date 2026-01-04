@@ -15,10 +15,6 @@ const Contact = () => {
 
       <div className="relative container mx-auto px-6">
         <div className="max-w-4xl">
-          {/* Section header */}
-          <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-            Get In Touch
-          </p>
           
           <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-8">
             See what others
