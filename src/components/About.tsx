@@ -25,15 +25,9 @@ const About = () => {
             A VP-Level Operator
           </p>
           
-          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-8">
-            I Lead Through
-            <br />
-            <span className="text-outline">Ambiguity</span>
-          </h2>
-          
-          <p className="text-primary-foreground/60 text-xl leading-relaxed max-w-2xl">
+          <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
             I scale teams, systems, and outcomes. I'm not a hands-off creative—I'm an operator who delivers measurable impact.
-          </p>
+          </h2>
         </div>
 
         {/* Accomplishments list */}
