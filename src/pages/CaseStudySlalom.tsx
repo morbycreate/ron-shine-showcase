@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 import slalomHero from "@/assets/slalom-hero.png";
 import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
 import attLogo from "@/assets/logos/att.png";
-import jaguarsLogo from "@/assets/logos/jaguars-full.png";
-import sabreLogo from "@/assets/logos/sabre.png";
-import firehouseSubsLogo from "@/assets/logos/firehouse-subs.png";
 import nikeLogo from "@/assets/logos/nike.png";
 import awsLogo from "@/assets/logos/aws.png";
 import citiLogo from "@/assets/logos/citi.png";
@@ -19,6 +16,13 @@ import marsLogo from "@/assets/logos/mars.png";
 import threeMlogo from "@/assets/logos/3m.png";
 import ameripriseLogo from "@/assets/logos/ameriprise.png";
 import amazonLogo from "@/assets/logos/amazon.png";
+import virginVoyagesLogo from "@/assets/logos/virgin-voyages.png";
+import spectrumLogo from "@/assets/logos/spectrum.png";
+import wellsFargoLogo from "@/assets/logos/wells-fargo.png";
+import hertzLogo from "@/assets/logos/hertz.png";
+import unitedHealthcareLogo from "@/assets/logos/united-healthcare.png";
+import bluecrossBlueshieldLogo from "@/assets/logos/bluecross-blueshield.png";
+import humanaLogo from "@/assets/logos/humana.png";
 
 const CaseStudySlalom = () => {
   useEffect(() => {
@@ -346,6 +350,13 @@ const CaseStudySlalom = () => {
               { name: "3M", logo: threeMlogo },
               { name: "Ameriprise", logo: ameripriseLogo },
               { name: "Amazon", logo: amazonLogo },
+              { name: "Virgin Voyages", logo: virginVoyagesLogo },
+              { name: "Spectrum", logo: spectrumLogo },
+              { name: "Wells Fargo", logo: wellsFargoLogo },
+              { name: "Hertz", logo: hertzLogo },
+              { name: "United Healthcare", logo: unitedHealthcareLogo },
+              { name: "BlueCross BlueShield", logo: bluecrossBlueshieldLogo },
+              { name: "Humana", logo: humanaLogo },
             ].map((client) => (
               <div key={client.name}>
                 <img 
