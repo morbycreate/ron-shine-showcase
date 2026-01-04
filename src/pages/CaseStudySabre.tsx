@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { ArrowLeft, Target, Users, Layers, Briefcase, TrendingUp, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import sabreLogo from "@/assets/logos/sabre.png";
+import sabreHero from "@/assets/sabre-hero.png";
 
 const CaseStudySabre = () => {
   useEffect(() => {
@@ -79,10 +80,15 @@ const CaseStudySabre = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-        {/* Background */}
+        {/* Background Image */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-primary to-primary" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent" />
+          <img 
+            src={sabreHero} 
+            alt="Sabre network visualization" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-primary/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent" />
         </div>
 
         <div className="relative container mx-auto px-6 pt-32 pb-24">
