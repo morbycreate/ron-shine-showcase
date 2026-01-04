@@ -344,6 +344,13 @@ const CaseStudyFossilLeadership = () => {
             </div>
           </div>
 
+          <div className="max-w-3xl mx-auto bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-10 text-center mb-6">
+            <h3 className="font-display text-2xl font-bold text-primary-foreground mb-4">Design A Watch</h3>
+            <p className="text-primary-foreground/60 leading-relaxed text-lg">
+              By collaborating with product owners, merchandisers, watch designers, and developers, we created a solution that took personalization even further — the new Design A Watch experience allowed customers to customize every detail, from bezel to strap.
+            </p>
+          </div>
+
           <div className="max-w-3xl mx-auto bg-primary-foreground/[0.03] border border-primary-foreground/10 rounded-2xl p-10 text-center">
             <h3 className="font-display text-2xl font-bold text-primary-foreground mb-4">Scalable Foundation</h3>
             <p className="text-primary-foreground/60 leading-relaxed text-lg">
