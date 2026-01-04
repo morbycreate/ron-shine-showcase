@@ -10,6 +10,7 @@ import fossilWatchbuilderMobile from "@/assets/fossil-watchbuilder-mobile.png";
 import fossilDefenderTablets from "@/assets/fossil-defender-tablets.png";
 import fossilHpDevices from "@/assets/fossil-hp-devices.png";
 import fossilMobile3up from "@/assets/fossil-mobile-3up.png";
+import fossilHeroWatch from "@/assets/fossil-hero-watch.jpg";
 
 const CaseStudyFossilLeadership = () => {
   useEffect(() => {
@@ -98,8 +99,12 @@ const CaseStudyFossilLeadership = () => {
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-primary to-primary" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent" />
+          <img 
+            src={fossilHeroWatch} 
+            alt="Fossil watch detail" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/50" />
         </div>
 
         <div className="relative container mx-auto px-6 pt-32 pb-24">
