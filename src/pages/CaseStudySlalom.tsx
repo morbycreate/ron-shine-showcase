@@ -334,9 +334,6 @@ const CaseStudySlalom = () => {
             {[
               { name: "American Airlines", logo: americanAirlinesLogo },
               { name: "AT&T", logo: attLogo },
-              { name: "Jacksonville Jaguars", logo: jaguarsLogo },
-              { name: "Sabre", logo: sabreLogo },
-              { name: "Firehouse Subs", logo: firehouseSubsLogo },
               { name: "Nike", logo: nikeLogo },
               { name: "AWS", logo: awsLogo },
               { name: "Citi", logo: citiLogo },
