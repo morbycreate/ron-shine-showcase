@@ -50,6 +50,14 @@ const AdditionalCaseStudies = () => {
       link: "/fossil",
     },
     {
+      title: "Fossil Group Digital Transformation",
+      category: "Leadership",
+      description:
+        "Led full digital replatform driving 23% YoY e-commerce lift and L2 'Digital Genius' recognition.",
+      image: fossilSitePreview,
+      link: "/fossil-leadership",
+    },
+    {
       title: "Hasbro PULSE Microsite",
       category: "Digital Experience",
       description:
