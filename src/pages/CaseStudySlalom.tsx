@@ -311,47 +311,14 @@ const CaseStudySlalom = () => {
         </div>
       </section>
 
-      {/* Clients Section */}
-      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
-        <div className="container mx-auto px-6">
-          <p className="text-accent font-medium tracking-wide mb-8 text-sm">
-            The brands that trusted me to do the work.
-          </p>
-
-          <div className="flex flex-wrap items-center gap-8 md:gap-12">
-            {[
-              { name: "American Airlines", logo: americanAirlinesLogo },
-              { name: "AT&T", logo: attLogo },
-              { name: "Jacksonville Jaguars", logo: jaguarsLogo },
-              { name: "Sabre", logo: sabreLogo },
-              { name: "Firehouse Subs", logo: firehouseSubsLogo },
-              { name: "Nike", logo: nikeLogo },
-              { name: "AWS", logo: awsLogo },
-              { name: "Citi", logo: citiLogo },
-            ].map((client) => (
-              <div key={client.name}>
-                <img 
-                  src={client.logo} 
-                  alt={client.name} 
-                  className="h-20 md:h-24 w-auto object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Image Gallery */}
       <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mb-16">
-            <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-              Work Samples
-            </p>
             <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
-              Client
+              Brands
               <br />
-              <span className="text-outline">Deliverables</span>
+              <span className="text-outline">Supported</span>
             </h2>
           </div>
 
@@ -372,6 +339,32 @@ const CaseStudySlalom = () => {
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-auto object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Clients Section */}
+      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-wrap items-center gap-8 md:gap-12">
+            {[
+              { name: "American Airlines", logo: americanAirlinesLogo },
+              { name: "AT&T", logo: attLogo },
+              { name: "Jacksonville Jaguars", logo: jaguarsLogo },
+              { name: "Sabre", logo: sabreLogo },
+              { name: "Firehouse Subs", logo: firehouseSubsLogo },
+              { name: "Nike", logo: nikeLogo },
+              { name: "AWS", logo: awsLogo },
+              { name: "Citi", logo: citiLogo },
+            ].map((client) => (
+              <div key={client.name}>
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="h-20 md:h-24 w-auto object-contain"
                 />
               </div>
             ))}
