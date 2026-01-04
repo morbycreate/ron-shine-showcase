@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import aaUxTeam from "@/assets/aa-ux-team.png";
 import aaPreview from "@/assets/aa-preview.png";
-import fossilSitePreview from "@/assets/fossil-site-preview.png";
+import fossilLeadershipPreview from "@/assets/fossil-leadership-preview.jpg";
 import aiPrototypingHero from "@/assets/ai-prototyping-hero.png";
 import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
 import attLogo from "@/assets/logos/att.png";
@@ -38,12 +38,12 @@ const Work = () => {
       size: "small",
     },
     {
-      title: "Fossil.com Redesign",
-      category: "Digital Experience",
+      title: "Fossil Group Digital Transformation",
+      category: "Leadership",
       description:
-        "Modernized Fossil's digital presence with 23% YoY e-commerce growth and 'Digital Genius' recognition.",
-      image: fossilSitePreview,
-      link: "/fossil",
+        "Led full digital replatform driving 23% YoY e-commerce lift and L2 'Digital Genius' recognition.",
+      image: fossilLeadershipPreview,
+      link: "/fossil-leadership",
       size: "small",
     },
     {
