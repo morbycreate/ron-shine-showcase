@@ -325,7 +325,7 @@ const CaseStudySlalom = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="columns-1 md:columns-3 gap-6 space-y-6">
             {[
               { src: slalomHudson, alt: "Hudson Energy EdgePower Dashboard" },
               { src: slalomThr, alt: "Texas Health Resources Digital Experience" },
@@ -336,7 +336,7 @@ const CaseStudySlalom = () => {
             ].map((image) => (
               <div
                 key={image.alt}
-                className="group overflow-hidden rounded-2xl bg-primary-foreground/[0.03] border border-primary-foreground/10 hover:border-accent/30 transition-all duration-300"
+                className="group overflow-hidden rounded-2xl bg-primary-foreground/[0.03] border border-primary-foreground/10 hover:border-accent/30 transition-all duration-300 break-inside-avoid"
               >
                 <img
                   src={image.src}
