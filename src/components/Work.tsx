@@ -56,16 +56,16 @@ const Work = () => {
       link: "/slalom",
       size: "small",
     },
-    {
-      title: "AI as a Force Multiplier",
-      category: "Point of View",
-      description:
-        "AI doesn't replace designers—it removes the repetitive work so teams can invest in strategy, storytelling, and solving harder problems.",
-      image: aiPrototypingHero,
-      link: "/ai-prototyping",
-      size: "large",
-    },
   ];
+
+  const pointOfView = {
+    title: "AI as a Force Multiplier",
+    category: "Point of View",
+    description:
+      "AI doesn't replace designers—it removes the repetitive work so teams can invest in strategy, storytelling, and solving harder problems.",
+    image: aiPrototypingHero,
+    link: "/ai-prototyping",
+  };
 
   const clientLogos = [
     { name: "American Airlines", logo: americanAirlinesLogo },
@@ -161,6 +161,49 @@ const Work = () => {
             className="inline-flex items-center gap-2 text-accent font-bold hover:text-accent/80 transition-colors duration-300 text-lg"
           >
             <span className="hover-underline">View Additional Case Studies</span>
+          </Link>
+        </div>
+
+        {/* Point of View Section */}
+        <div className="mt-20 pt-12 border-t border-primary-foreground/10">
+          <div className="mb-12">
+            <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
+              Point of
+              <br />
+              <span className="text-outline">View</span>
+            </h2>
+          </div>
+
+          <Link to={pointOfView.link}>
+            <div className="group relative overflow-hidden rounded-xl card-hover">
+              <div className="relative overflow-hidden aspect-[4/3] md:aspect-[21/9]">
+                <img
+                  src={pointOfView.image}
+                  alt={pointOfView.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+                
+                <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
+                  <span className="inline-block w-fit px-3 py-1 text-xs font-medium text-primary-foreground bg-primary-foreground/10 backdrop-blur-sm rounded-full mb-4">
+                    {pointOfView.category}
+                  </span>
+                  
+                  <h3 className="font-display font-bold text-primary-foreground mb-2 text-2xl md:text-4xl">
+                    {pointOfView.title}
+                  </h3>
+                  
+                  <p className="text-primary-foreground/60 text-sm md:text-base max-w-xl">
+                    {pointOfView.description}
+                  </p>
+
+                  <div className="mt-4 flex items-center gap-2 text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="text-sm font-medium">Read More</span>
+                    <ArrowUpRight className="w-4 h-4" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </Link>
         </div>
 
