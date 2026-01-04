@@ -3,6 +3,14 @@ import { ArrowLeft, Target, Users, Layers, Briefcase, TrendingUp, Globe } from "
 import { Link } from "react-router-dom";
 import sabreLogo from "@/assets/logos/sabre.png";
 import sabreHero from "@/assets/sabre-hero.png";
+import sabreHome1 from "@/assets/sabre-home-1.jpeg";
+import sabreHome2 from "@/assets/sabre-home-2.jpg";
+import sabreWorkspace from "@/assets/sabre-workspace.png";
+import sabreInsights from "@/assets/sabre-insights.png";
+import sabreBrandPortal from "@/assets/sabre-brand-portal.png";
+import sabreTypography from "@/assets/sabre-typography.png";
+import sabreImagery from "@/assets/sabre-imagery.png";
+import sabreWriting from "@/assets/sabre-writing.png";
 
 const CaseStudySabre = () => {
   useEffect(() => {
@@ -280,6 +288,43 @@ const CaseStudySabre = () => {
             <p className="text-primary-foreground/60 leading-relaxed text-lg">
               Transformed Sabre's digital presence from fragmented business unit experiences into a cohesive enterprise technology brand, enabling clearer market positioning and accelerated go-to-market execution.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Gallery */}
+      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mb-16">
+            <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
+              Work
+              <br />
+              <span className="text-outline">Samples</span>
+            </h2>
+          </div>
+
+          <div className="columns-1 sm:columns-2 lg:columns-4 gap-4 space-y-4">
+            {[
+              { src: sabreHome1, alt: "Sabre Corporate Website" },
+              { src: sabreBrandPortal, alt: "Sabre Brand Portal" },
+              { src: sabreHome2, alt: "Sabre Website Redesign" },
+              { src: sabreTypography, alt: "Sabre Typography Guidelines" },
+              { src: sabreWorkspace, alt: "Sabre Red Workspace" },
+              { src: sabreImagery, alt: "Sabre Imagery Guidelines" },
+              { src: sabreInsights, alt: "Sabre Insights Blog" },
+              { src: sabreWriting, alt: "Sabre Writing Guidelines" },
+            ].map((image) => (
+              <div
+                key={image.alt}
+                className="group overflow-hidden rounded-xl bg-primary-foreground/[0.03] border border-primary-foreground/10 hover:border-accent/30 transition-all duration-300 break-inside-avoid"
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
