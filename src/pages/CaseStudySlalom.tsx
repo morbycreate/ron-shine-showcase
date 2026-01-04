@@ -311,7 +311,7 @@ const CaseStudySlalom = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
+      {/* Brands Supported Section */}
       <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mb-16">
@@ -320,6 +320,27 @@ const CaseStudySlalom = () => {
               <br />
               <span className="text-outline">Supported</span>
             </h2>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-8 md:gap-12 mb-16">
+            {[
+              { name: "American Airlines", logo: americanAirlinesLogo },
+              { name: "AT&T", logo: attLogo },
+              { name: "Jacksonville Jaguars", logo: jaguarsLogo },
+              { name: "Sabre", logo: sabreLogo },
+              { name: "Firehouse Subs", logo: firehouseSubsLogo },
+              { name: "Nike", logo: nikeLogo },
+              { name: "AWS", logo: awsLogo },
+              { name: "Citi", logo: citiLogo },
+            ].map((client) => (
+              <div key={client.name}>
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="h-20 md:h-24 w-auto object-contain"
+                />
+              </div>
+            ))}
           </div>
 
           <div className="columns-1 md:columns-3 gap-6 space-y-6">
@@ -339,32 +360,6 @@ const CaseStudySlalom = () => {
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-auto object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Clients Section */}
-      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-wrap items-center gap-8 md:gap-12">
-            {[
-              { name: "American Airlines", logo: americanAirlinesLogo },
-              { name: "AT&T", logo: attLogo },
-              { name: "Jacksonville Jaguars", logo: jaguarsLogo },
-              { name: "Sabre", logo: sabreLogo },
-              { name: "Firehouse Subs", logo: firehouseSubsLogo },
-              { name: "Nike", logo: nikeLogo },
-              { name: "AWS", logo: awsLogo },
-              { name: "Citi", logo: citiLogo },
-            ].map((client) => (
-              <div key={client.name}>
-                <img 
-                  src={client.logo} 
-                  alt={client.name} 
-                  className="h-20 md:h-24 w-auto object-contain"
                 />
               </div>
             ))}
