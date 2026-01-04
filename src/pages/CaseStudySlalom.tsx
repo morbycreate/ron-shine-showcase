@@ -9,6 +9,13 @@ import firehouseSubsLogo from "@/assets/logos/firehouse-subs.png";
 import nikeLogo from "@/assets/logos/nike.png";
 import awsLogo from "@/assets/logos/aws.png";
 import citiLogo from "@/assets/logos/citi.png";
+import slalomHudson from "@/assets/slalom-hudson-mock.png";
+import slalomThr from "@/assets/slalom-thr.webp";
+import slalomWsp from "@/assets/slalom-wsp.png";
+import slalomMolecular from "@/assets/slalom-molecular.png";
+import slalomNewco from "@/assets/slalom-newco.png";
+import slalomAshley from "@/assets/slalom-ashley.png";
+import slalomHighland from "@/assets/slalom-highland.png";
 
 const CaseStudySlalom = () => {
   useEffect(() => {
@@ -300,6 +307,44 @@ const CaseStudySlalom = () => {
             <p className="text-primary-foreground/60 leading-relaxed text-lg">
               Elevated Slalom's position as a serious experience partner capable of winning and delivering enterprise-scale work for Fortune 500 clients across complex, regulated industries.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Gallery */}
+      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mb-16">
+            <p className="text-accent font-medium tracking-wide mb-4 text-sm">
+              Work Samples
+            </p>
+            <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
+              Client
+              <br />
+              <span className="text-outline">Deliverables</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { src: slalomHudson, alt: "Hudson Energy EdgePower Dashboard" },
+              { src: slalomThr, alt: "Texas Health Resources Digital Experience" },
+              { src: slalomWsp, alt: "WSP Data Transformation Portal" },
+              { src: slalomMolecular, alt: "Molecular Designs & Streamline Scientific" },
+              { src: slalomNewco, alt: "NewCo Flex Forward Mobile Experience" },
+              { src: slalomAshley, alt: "Ashley Stewart E-commerce Platform" },
+            ].map((image) => (
+              <div
+                key={image.alt}
+                className="group overflow-hidden rounded-2xl bg-primary-foreground/[0.03] border border-primary-foreground/10 hover:border-accent/30 transition-all duration-300"
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
