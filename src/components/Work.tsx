@@ -154,9 +154,7 @@ const Work = () => {
         {/* Section header - Matt Boston style */}
         <div className="mb-16">
           <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
-            My
-            <br />
-            <span className="text-outline">Experience</span>
+            My <span className="text-outline">Experience</span>
           </h2>
           <span className="text-accent text-sm font-medium tracking-widest uppercase mt-4 block">Organization and Enterprise Leadership</span>
         </div>
