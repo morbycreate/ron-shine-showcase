@@ -123,15 +123,15 @@ const CaseStudySlalom = () => {
 
             {/* Main headline */}
             <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[7rem] font-bold leading-[0.95] mb-8 opacity-0 animate-fade-up stagger-1">
-              <span className="text-primary-foreground">Director,</span>
+              <span className="text-primary-foreground">Building a</span>
               <br />
-              <span className="text-outline">Global Creative</span>
+              <span className="text-outline">scalable experience</span>
               <br />
-              <span className="text-accent">& Digital Services</span>
+              <span className="text-accent">capability</span>
             </h1>
 
             <p className="text-primary-foreground/60 text-xl md:text-2xl max-w-2xl leading-relaxed opacity-0 animate-fade-up stagger-2">
-              Building a credible, scalable experience capability to win and deliver
+              To win and deliver
               <span className="text-accent font-medium"> enterprise-scale work for Fortune 500 clients.</span>
             </p>
           </div>
