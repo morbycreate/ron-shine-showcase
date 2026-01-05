@@ -86,11 +86,11 @@ const CaseStudyFossilLeadership = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary/90 backdrop-blur-md border-b border-primary-foreground/10">
         <div className="container mx-auto px-6 py-4">
           <Link 
-            to="/case-studies"
+            to="/#work"
             className="group inline-flex items-center gap-3 text-primary-foreground/60 hover:text-accent transition-colors duration-300"
           >
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-2 transition-transform duration-300" />
-            <span className="hover-underline text-sm font-medium">Back to Case Studies</span>
+            <span className="hover-underline text-sm font-medium">Back to Experience</span>
           </Link>
         </div>
       </header>
@@ -385,25 +385,6 @@ const CaseStudyFossilLeadership = () => {
         </div>
       </section>
 
-      {/* Next Case Study CTA */}
-      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-            Continue Exploring
-          </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
-            View More
-            <br />
-            <span className="text-outline">Case Studies</span>
-          </h2>
-          <Link 
-            to="/case-studies"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-accent-foreground rounded-full font-medium hover:bg-accent/90 transition-colors duration-300"
-          >
-            See All Work
-          </Link>
-        </div>
-      </section>
     </div>
   );
 };
