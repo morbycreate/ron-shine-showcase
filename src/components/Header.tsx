@@ -83,12 +83,12 @@ const Header = () => {
 
         {/* Full Screen Mobile/Desktop Menu Overlay */}
         <div
-          className={`fixed inset-0 bg-primary z-40 transition-all duration-500 ${
+          className={`fixed inset-0 z-40 transition-all duration-500 ${
             isMobileMenuOpen
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           }`}
-          style={{ top: "0" }}
+          style={{ top: "0", backgroundColor: "hsl(220 15% 8%)" }}
         >
           <div className="container mx-auto px-6 py-6">
             <div className="flex items-center justify-between mb-20">
