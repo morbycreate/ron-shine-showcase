@@ -103,16 +103,17 @@ const CaseStudyCitibank = () => {
 
             {/* Main headline */}
             <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[7rem] font-bold leading-[0.95] mb-8 opacity-0 animate-fade-up stagger-1">
-              <span className="text-primary-foreground">UX Lead /</span>
+              <span className="text-primary-foreground">Enabled secure,</span>
               <br />
-              <span className="text-outline">Creative Director</span>
+              <span className="text-outline">scalable digital</span>
               <br />
-              <span className="text-accent">U.S. Credit Cards</span>
+              <span className="text-accent">self-service</span>
             </h1>
 
             <p className="text-primary-foreground/60 text-xl md:text-2xl max-w-2xl leading-relaxed opacity-0 animate-fade-up stagger-2">
-              Modernizing digital banking for
-              <span className="text-accent font-medium"> 25M+ customers at national scale.</span>
+              For
+              <span className="text-accent font-medium"> 25M+ consumer accounts</span>
+              <span className="text-primary-foreground/60"> at national scale.</span>
             </p>
           </div>
         </div>
