@@ -108,16 +108,17 @@ const CaseStudyFinancialServices = () => {
 
             {/* Main headline */}
             <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[7rem] font-bold leading-[0.95] mb-8 opacity-0 animate-fade-up stagger-1">
-              <span className="text-primary-foreground">Director,</span>
+              <span className="text-primary-foreground">Turning ambiguity</span>
               <br />
-              <span className="text-outline">Experience Design</span>
+              <span className="text-outline">into confident</span>
               <br />
-              <span className="text-accent">Financial Services</span>
+              <span className="text-accent">execution</span>
             </h1>
 
             <p className="text-primary-foreground/60 text-xl md:text-2xl max-w-2xl leading-relaxed opacity-0 animate-fade-up stagger-2">
-              Enterprise product & experience strategy for
-              <span className="text-accent font-medium"> Goldman Sachs, Wells Fargo, and Ameriprise.</span>
+              For
+              <span className="text-accent font-medium"> enterprise financial platforms</span>
+              <span className="text-primary-foreground/60"> at Goldman Sachs, Wells Fargo, and Ameriprise.</span>
             </p>
           </div>
         </div>
