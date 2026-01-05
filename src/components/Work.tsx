@@ -102,14 +102,24 @@ const Work = () => {
     },
   ];
 
-  const pointOfView = {
-    title: "AI as a Force Multiplier",
-    category: "Point of View",
-    description:
-      "AI doesn't replace designers—it removes the repetitive work so teams can invest in strategy, storytelling, and solving harder problems.",
-    image: aiPrototypingHero,
-    link: "/ai-prototyping",
-  };
+  const pointsOfView = [
+    {
+      title: "AI as a Force Multiplier",
+      category: "Point of View",
+      description:
+        "AI doesn't replace designers—it removes the repetitive work so teams can invest in strategy, storytelling, and solving harder problems.",
+      image: aiPrototypingHero,
+      link: "/ai-prototyping",
+    },
+    {
+      title: "Know Your Why",
+      category: "Point of View",
+      description:
+        "People don't buy what you do. They buy why you do it. The why is what makes you worth choosing.",
+      image: null,
+      link: "/articles/know-your-why",
+    },
+  ];
 
   const clientLogos = [
     { name: "American Airlines", logo: americanAirlinesLogo },
@@ -283,37 +293,45 @@ const Work = () => {
             </h2>
           </div>
 
-          <Link to={pointOfView.link}>
-            <div className="group relative overflow-hidden rounded-xl card-hover">
-              <div className="relative overflow-hidden aspect-[4/3] md:aspect-[21/9]">
-                <img
-                  src={pointOfView.image}
-                  alt={pointOfView.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
-                
-                <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
-                  <span className="inline-block w-fit px-3 py-1 text-xs font-medium text-primary-foreground bg-primary-foreground/10 backdrop-blur-sm rounded-full mb-4">
-                    {pointOfView.category}
-                  </span>
-                  
-                  <h3 className="font-display font-bold text-primary-foreground mb-2 text-2xl md:text-4xl">
-                    {pointOfView.title}
-                  </h3>
-                  
-                  <p className="text-primary-foreground/60 text-sm md:text-base max-w-xl">
-                    {pointOfView.description}
-                  </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {pointsOfView.map((pov) => (
+              <Link key={pov.title} to={pov.link}>
+                <div className="group relative overflow-hidden rounded-xl card-hover h-full">
+                  <div className="relative overflow-hidden aspect-[4/3]">
+                    {pov.image ? (
+                      <img
+                        src={pov.image}
+                        alt={pov.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-accent/20 via-primary to-primary" />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+                    
+                    <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
+                      <span className="inline-block w-fit px-3 py-1 text-xs font-medium text-primary-foreground bg-primary-foreground/10 backdrop-blur-sm rounded-full mb-4">
+                        {pov.category}
+                      </span>
+                      
+                      <h3 className="font-display font-bold text-primary-foreground mb-2 text-xl md:text-2xl">
+                        {pov.title}
+                      </h3>
+                      
+                      <p className="text-primary-foreground/60 text-sm md:text-base max-w-xl">
+                        {pov.description}
+                      </p>
 
-                  <div className="mt-4 flex items-center gap-2 text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span className="text-sm font-medium">Read More</span>
-                    <ArrowUpRight className="w-4 h-4" />
+                      <div className="mt-4 flex items-center gap-2 text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span className="text-sm font-medium">Read More</span>
+                        <ArrowUpRight className="w-4 h-4" />
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </Link>
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Clients section */}
