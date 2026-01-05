@@ -6,6 +6,7 @@ import fossilLeadershipPreview from "@/assets/fossil-leadership-preview.jpg";
 import aiPrototypingHero from "@/assets/ai-prototyping-hero.png";
 import slalomHero from "@/assets/slalom-hero.png";
 import sabreHero from "@/assets/sabre-hero.png";
+import goldmanSachsLogo from "@/assets/logos/goldman-sachs.png";
 import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
 import attLogo from "@/assets/logos/att.png";
 import jaguarsLogo from "@/assets/logos/jaguars-full.png";
@@ -82,6 +83,15 @@ const Work = () => {
         "Unified digital experience for 30M customers across 25+ credit card brands and strategic partners.",
       image: citiLogo,
       link: "/the-associates",
+      size: "small",
+    },
+    {
+      title: "Financial Services Strategy",
+      category: "Leadership",
+      description:
+        "Enterprise product & experience strategy for Goldman Sachs, Wells Fargo, and Ameriprise.",
+      image: goldmanSachsLogo,
+      link: "/financial-services",
       size: "small",
     },
   ];

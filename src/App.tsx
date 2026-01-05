@@ -20,6 +20,7 @@ import CaseStudyFossilLeadership from "./pages/CaseStudyFossilLeadership";
 import CaseStudySabre from "./pages/CaseStudySabre";
 import CaseStudyCitibank from "./pages/CaseStudyCitibank";
 import CaseStudyAssociates from "./pages/CaseStudyAssociates";
+import CaseStudyFinancialServices from "./pages/CaseStudyFinancialServices";
 import AdditionalCaseStudies from "./pages/AdditionalCaseStudies";
 const queryClient = new QueryClient();
 
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/sabre" element={<CaseStudySabre />} />
           <Route path="/citibank" element={<CaseStudyCitibank />} />
           <Route path="/the-associates" element={<CaseStudyAssociates />} />
+          <Route path="/financial-services" element={<CaseStudyFinancialServices />} />
           <Route path="/case-studies" element={<AdditionalCaseStudies />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
