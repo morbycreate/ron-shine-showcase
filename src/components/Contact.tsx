@@ -19,7 +19,7 @@ const Contact = () => {
           <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-8">
             See what others
             <br />
-            <span className="text-outline">think of me.</span>
+            <span className="text-outline">have to say</span>
           </h2>
 
           {/* Testimonials - Blue background cards */}
