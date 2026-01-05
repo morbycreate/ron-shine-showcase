@@ -198,7 +198,7 @@ const CaseStudySlalom = () => {
               </h2>
               <div className="space-y-5 text-primary-foreground/60 text-lg leading-relaxed">
                 <p>
-                  Slalom needed to elevate its UX and digital experience offering across regions—while supporting complex, <strong className="text-primary-foreground">regulated clients</strong> and accelerating growth.
+                  Slalom needed to elevate its creative and digital experience offering across regions—while supporting complex, <strong className="text-primary-foreground">regulated clients</strong> and accelerating growth.
                 </p>
               </div>
             </div>
