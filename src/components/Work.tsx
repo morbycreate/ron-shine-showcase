@@ -74,7 +74,7 @@ const Work = () => {
         "Modernized digital banking for 25M+ customers, unifying 8 card portfolios with secure self-service at national scale.",
       image: citiLogo,
       link: "/citibank",
-      size: "small",
+      size: "third",
     },
     {
       title: "The Associates Consumer Credit",
@@ -83,7 +83,7 @@ const Work = () => {
         "Unified digital experience for 30M customers across 25+ credit card brands and strategic partners.",
       image: citiLogo,
       link: "/the-associates",
-      size: "small",
+      size: "third",
     },
     {
       title: "Financial Services Strategy",
@@ -92,7 +92,7 @@ const Work = () => {
         "Enterprise product & experience strategy for Goldman Sachs, Wells Fargo, and Ameriprise.",
       image: goldmanSachsLogo,
       link: "/financial-services",
-      size: "small",
+      size: "third",
     },
   ];
 
@@ -133,12 +133,14 @@ const Work = () => {
         </div>
 
         {/* Projects grid - Masonry style */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-6 gap-6">
           {projects.map((project, index) => {
             const isLarge = project.size === "large";
+            const isThird = project.size === "third";
+            const colSpan = isLarge ? "md:col-span-6" : isThird ? "md:col-span-2" : "md:col-span-3";
             
             const CardContent = (
-              <div className={`group relative overflow-hidden rounded-xl card-hover ${isLarge ? "md:col-span-2" : ""}`}>
+              <div className={`group relative overflow-hidden rounded-xl card-hover`}>
                 {/* Image Background */}
                 <div className={`relative overflow-hidden ${isLarge ? "aspect-[4/3] md:aspect-[21/9]" : "aspect-[4/3]"}`}>
                   <img
@@ -156,7 +158,7 @@ const Work = () => {
                       {project.category}
                     </span>
                     
-                    <h3 className={`font-display font-bold text-primary-foreground mb-2 ${isLarge ? "text-2xl md:text-4xl" : "text-xl md:text-2xl"}`}>
+                    <h3 className={`font-display font-bold text-primary-foreground mb-2 ${isLarge ? "text-2xl md:text-4xl" : isThird ? "text-lg md:text-xl" : "text-xl md:text-2xl"}`}>
                       {project.title}
                     </h3>
                     
@@ -180,12 +182,12 @@ const Work = () => {
               <Link
                 key={project.title}
                 to={project.link}
-                className={isLarge ? "md:col-span-2" : ""}
+                className={colSpan}
               >
                 {CardContent}
               </Link>
             ) : (
-              <div key={project.title} className={isLarge ? "md:col-span-2" : ""}>
+              <div key={project.title} className={colSpan}>
                 {CardContent}
               </div>
             );
