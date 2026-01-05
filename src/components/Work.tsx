@@ -26,6 +26,7 @@ import ameripriseColorLogo from "@/assets/logos/ameriprise-color.png";
 import nasdaqColorLogo from "@/assets/logos/nasdaq-color.png";
 import goldmanSachsColorLogo from "@/assets/logos/goldman-sachs-color.png";
 import knowYourWhyHero from "@/assets/know-your-why-hero.png";
+import financeLogos from "@/assets/finance-logos.png";
 
 const Work = () => {
   const projects = [
@@ -97,7 +98,7 @@ const Work = () => {
       category: "Leadership",
       description:
         "Enterprise product & experience strategy for Goldman Sachs, Wells Fargo, and Ameriprise.",
-      image: goldmanSachsLogo,
+      image: financeLogos,
       link: "/financial-services",
       size: "third",
     },
