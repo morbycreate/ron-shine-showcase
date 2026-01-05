@@ -22,6 +22,7 @@ import CaseStudyCitibank from "./pages/CaseStudyCitibank";
 import CaseStudyAssociates from "./pages/CaseStudyAssociates";
 import CaseStudyFinancialServices from "./pages/CaseStudyFinancialServices";
 import AdditionalCaseStudies from "./pages/AdditionalCaseStudies";
+import ArticleKnowYourWhy from "./pages/ArticleKnowYourWhy";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="/the-associates" element={<CaseStudyAssociates />} />
           <Route path="/financial-services" element={<CaseStudyFinancialServices />} />
           <Route path="/case-studies" element={<AdditionalCaseStudies />} />
+          <Route path="/articles/know-your-why" element={<ArticleKnowYourWhy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
