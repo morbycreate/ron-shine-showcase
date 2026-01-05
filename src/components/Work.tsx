@@ -20,6 +20,7 @@ import wtaLogo from "@/assets/logos/wta.png";
 import pgaTourLogo from "@/assets/logos/pga-tour.png";
 import citiLogo from "@/assets/logos/citi.png";
 import citiHero from "@/assets/citi-hero.jpeg";
+import associatesHero from "@/assets/associates-hero.jpeg";
 
 const Work = () => {
   const projects = [
@@ -82,7 +83,7 @@ const Work = () => {
       category: "Leadership",
       description:
         "Unified digital experience for 30M customers across 25+ credit card brands and strategic partners.",
-      image: citiLogo,
+      image: associatesHero,
       link: "/the-associates",
       size: "third",
     },
