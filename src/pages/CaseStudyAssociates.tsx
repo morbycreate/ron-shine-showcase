@@ -105,16 +105,17 @@ const CaseStudyAssociates = () => {
 
             {/* Main headline */}
             <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[7rem] font-bold leading-[0.95] mb-8 opacity-0 animate-fade-up stagger-1">
-              <span className="text-primary-foreground">UX Lead /</span>
+              <span className="text-primary-foreground">Unified digital</span>
               <br />
-              <span className="text-outline">Creative Director</span>
+              <span className="text-outline">experience for</span>
               <br />
-              <span className="text-accent">Consumer Credit</span>
+              <span className="text-accent">30M customers</span>
             </h1>
 
             <p className="text-primary-foreground/60 text-xl md:text-2xl max-w-2xl leading-relaxed opacity-0 animate-fade-up stagger-2">
-              Unified digital experience for
-              <span className="text-accent font-medium"> 30M customers across 25+ credit card brands.</span>
+              Across
+              <span className="text-accent font-medium"> 25+ credit card brands</span>
+              <span className="text-primary-foreground/60"> and strategic partners.</span>
             </p>
           </div>
         </div>
