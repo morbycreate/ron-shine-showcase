@@ -119,6 +119,14 @@ const Work = () => {
       image: null,
       link: "/articles/know-your-why",
     },
+    {
+      title: "Trust Still Moves People",
+      category: "Point of View",
+      description:
+        "AI is transforming the world, but people don't move forward because of technology alone—they move because they trust.",
+      image: null,
+      link: "/articles/ai-trust",
+    },
   ];
 
   const clientLogos = [
@@ -293,7 +301,7 @@ const Work = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {pointsOfView.map((pov) => (
               <Link key={pov.title} to={pov.link}>
                 <div className="group relative overflow-hidden rounded-xl card-hover h-full">
