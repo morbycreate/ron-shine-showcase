@@ -132,7 +132,7 @@ const Work = () => {
             <br />
             <span className="text-outline">Experience</span>
           </h2>
-          <span className="text-accent text-sm font-medium tracking-widest uppercase mt-4 block">Leadership</span>
+          <span className="text-accent text-sm font-medium tracking-widest uppercase mt-4 block">Organization and Enterprise Leadership</span>
         </div>
 
         {/* Projects grid - Masonry style */}
