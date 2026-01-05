@@ -155,6 +155,17 @@ const CaseStudyFinancialServices = () => {
         </div>
       </section>
 
+      {/* Introduction */}
+      <section className="py-24 md:py-32 bg-primary border-b border-primary-foreground/10">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl">
+            <p className="text-primary-foreground/80 text-xl md:text-2xl leading-relaxed">
+              As a consulting leader at Slalom, I led enterprise experience strategy engagements for Goldman Sachs, Wells Fargo, and Ameriprise—helping executive teams define and de-risk the future of banking and investing. My work focused on platform-level product thinking, end-to-end customer journeys, and responsible application of AI across digital, service, and human touchpoints. Operating in highly regulated environments, I aligned product, technology, operations, and risk teams around clear experience strategy—reducing uncertainty, accelerating decision-making, and enabling confident execution.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* The Mandate & Challenge */}
       <section className="py-24 md:py-32 bg-primary">
         <div className="container mx-auto px-6">
