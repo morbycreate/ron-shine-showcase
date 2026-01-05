@@ -119,16 +119,16 @@ const CaseStudyFossilLeadership = () => {
 
             {/* Main headline */}
             <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[7rem] font-bold leading-[0.95] mb-8 opacity-0 animate-fade-up stagger-1">
-              <span className="text-primary-foreground">Senior Director,</span>
+              <span className="text-primary-foreground">Replatforming</span>
               <br />
-              <span className="text-outline">Digital &</span>
+              <span className="text-outline">Fossil's digital</span>
               <br />
-              <span className="text-accent">Experience Design</span>
+              <span className="text-accent">ecosystem</span>
             </h1>
 
             <p className="text-primary-foreground/60 text-xl md:text-2xl max-w-2xl leading-relaxed opacity-0 animate-fade-up stagger-2">
-              Modernizing Fossil's digital ecosystem and unlocking growth
-              <span className="text-accent font-medium"> through experience-led transformation.</span>
+              For
+              <span className="text-accent font-medium"> scale, speed, and personalization.</span>
             </p>
           </div>
         </div>
