@@ -78,7 +78,7 @@ const Work = () => {
     },
     {
       title: "Citibank U.S. Credit Cards",
-      category: "Leadership",
+      category: "Financial",
       description:
         "Modernized digital banking for 25M+ customers, unifying 8 card portfolios with secure self-service at national scale.",
       image: citiHero,
@@ -87,7 +87,7 @@ const Work = () => {
     },
     {
       title: "The Associates Consumer Credit",
-      category: "Leadership",
+      category: "Financial",
       description:
         "Unified digital experience for 30M customers across 25+ credit card brands and strategic partners.",
       image: associatesHero,
@@ -96,7 +96,7 @@ const Work = () => {
     },
     {
       title: "Financial Services Strategy",
-      category: "Leadership",
+      category: "Financial",
       description:
         "Enterprise product & experience strategy for Goldman Sachs, Wells Fargo, and Ameriprise.",
       image: financeLogos,
