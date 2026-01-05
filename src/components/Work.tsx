@@ -33,7 +33,7 @@ const Work = () => {
   const projects = [
     {
       title: "American Airlines Digital Transformation",
-      category: "Digital Experience",
+      category: "Leadership",
       description:
         "Led eight development teams to transform AA's entire digital ecosystem—launched globally in a single day.",
       image: aaPreview,
