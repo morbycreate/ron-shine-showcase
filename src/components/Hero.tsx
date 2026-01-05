@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Tagline - More refined with better measure */}
           <div className="max-w-lg opacity-0 animate-fade-up stagger-2">
             <p className="text-primary-foreground/50 text-base md:text-lg leading-relaxed font-light">
-              I don't just design things—I build the conditions for success. Scaling teams, systems, and outcomes with measurable impact.
+              I lead from vision to execution—scaling teams, systems, and delivery to create real, measurable impact.
             </p>
           </div>
 
