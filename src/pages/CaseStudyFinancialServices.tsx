@@ -10,11 +10,6 @@ const CaseStudyFinancialServices = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const metrics = [
-    { label: "Financial Institutions", value: "3", icon: Briefcase },
-    { label: "Role", value: "Director", icon: Users },
-    { label: "Focus", value: "Enterprise", icon: Globe },
-  ];
 
   const clientLogos = [
     { name: "Goldman Sachs", logo: goldmanSachsLogo },
@@ -136,24 +131,6 @@ const CaseStudyFinancialServices = () => {
         </div>
       </section>
 
-      {/* Metrics Strip */}
-      <section className="py-12 border-y border-primary-foreground/10 bg-primary">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {metrics.map((metric) => (
-              <div key={metric.label} className="flex items-center gap-5 group">
-                <div className="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center group-hover:bg-accent/20 transition-colors duration-300">
-                  <metric.icon className="w-7 h-7 text-accent" />
-                </div>
-                <div>
-                  <p className="text-3xl md:text-4xl font-display font-bold text-primary-foreground">{metric.value}</p>
-                  <p className="text-sm text-primary-foreground/50">{metric.label}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Introduction */}
       <section className="py-24 md:py-32 bg-primary border-b border-primary-foreground/10">
