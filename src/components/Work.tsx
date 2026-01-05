@@ -19,6 +19,7 @@ import toryBurchLogo from "@/assets/logos/tory-burch.png";
 import wtaLogo from "@/assets/logos/wta.png";
 import pgaTourLogo from "@/assets/logos/pga-tour.png";
 import citiLogo from "@/assets/logos/citi.png";
+import citiHero from "@/assets/citi-hero.jpeg";
 
 const Work = () => {
   const projects = [
@@ -72,7 +73,7 @@ const Work = () => {
       category: "Leadership",
       description:
         "Modernized digital banking for 25M+ customers, unifying 8 card portfolios with secure self-service at national scale.",
-      image: citiLogo,
+      image: citiHero,
       link: "/citibank",
       size: "third",
     },

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { ArrowLeft, Target, Users, CreditCard, Shield, Globe, Briefcase } from "lucide-react";
 import { Link } from "react-router-dom";
 import citiLogo from "@/assets/logos/citi.png";
+import citiHero from "@/assets/citi-hero.jpeg";
 
 const CaseStudyCitibank = () => {
   useEffect(() => {
@@ -79,8 +80,13 @@ const CaseStudyCitibank = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-        {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#003B70] via-[#00529B] to-[#003B70]">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src={citiHero} 
+            alt="Citibank" 
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-primary/60" />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent" />
         </div>
