@@ -75,6 +75,15 @@ const Work = () => {
       link: "/citibank",
       size: "small",
     },
+    {
+      title: "The Associates Consumer Credit",
+      category: "Leadership",
+      description:
+        "Unified digital experience for 30M customers across 25+ credit card brands and strategic partners.",
+      image: citiLogo,
+      link: "/the-associates",
+      size: "small",
+    },
   ];
 
   const pointOfView = {
