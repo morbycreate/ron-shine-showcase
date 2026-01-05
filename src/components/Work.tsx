@@ -295,9 +295,7 @@ const Work = () => {
         <div className="mt-20 pt-12 border-t border-primary-foreground/10">
           <div className="mb-12">
             <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
-              Point of
-              <br />
-              <span className="text-outline">View</span>
+              Point of <span className="text-outline">View</span>
             </h2>
           </div>
 
