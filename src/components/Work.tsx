@@ -66,6 +66,15 @@ const Work = () => {
       link: "/sabre",
       size: "small",
     },
+    {
+      title: "Citibank U.S. Credit Cards",
+      category: "Leadership",
+      description:
+        "Modernized digital banking for 25M+ customers, unifying 8 card portfolios with secure self-service at national scale.",
+      image: citiLogo,
+      link: "/citibank",
+      size: "small",
+    },
   ];
 
   const pointOfView = {
