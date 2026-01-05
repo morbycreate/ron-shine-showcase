@@ -127,6 +127,7 @@ const Work = () => {
       <div className="container mx-auto px-6">
         {/* Section header - Matt Boston style */}
         <div className="mb-16">
+          <span className="text-accent text-sm font-medium tracking-widest uppercase mb-4 block">Leadership</span>
           <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
             My
             <br />
