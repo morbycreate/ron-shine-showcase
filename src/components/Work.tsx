@@ -137,7 +137,74 @@ const Work = () => {
 
         {/* Projects grid - Masonry style */}
         <div className="grid md:grid-cols-6 gap-6">
-          {projects.map((project, index) => {
+          {projects.slice(0, 5).map((project, index) => {
+            const isLarge = project.size === "large";
+            const isThird = project.size === "third";
+            const colSpan = isLarge ? "md:col-span-6" : isThird ? "md:col-span-2" : "md:col-span-3";
+            
+            const CardContent = (
+              <div className={`group relative overflow-hidden rounded-xl card-hover`}>
+                {/* Image Background */}
+                <div className={`relative overflow-hidden ${isLarge ? "aspect-[4/3] md:aspect-[21/9]" : "aspect-[4/3]"}`}>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  {/* Dark overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+                  
+                  {/* Content overlay */}
+                  <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
+                    {/* Category badge */}
+                    <span className="inline-block w-fit px-3 py-1 text-xs font-medium text-primary-foreground bg-primary-foreground/10 backdrop-blur-sm rounded-full mb-4">
+                      {project.category}
+                    </span>
+                    
+                    <h3 className={`font-display font-bold text-primary-foreground mb-2 ${isLarge ? "text-2xl md:text-4xl" : isThird ? "text-lg md:text-xl" : "text-xl md:text-2xl"}`}>
+                      {project.title}
+                    </h3>
+                    
+                    <p className="text-primary-foreground/60 text-sm md:text-base max-w-xl">
+                      {project.description}
+                    </p>
+
+                    {/* Arrow indicator */}
+                    {project.link && (
+                      <div className="mt-4 flex items-center gap-2 text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span className="text-sm font-medium">View Project</span>
+                        <ArrowUpRight className="w-4 h-4" />
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+
+            return project.link ? (
+              <Link
+                key={project.title}
+                to={project.link}
+                className={colSpan}
+              >
+                {CardContent}
+              </Link>
+            ) : (
+              <div key={project.title} className={colSpan}>
+                {CardContent}
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Financial Services Subheadline */}
+        <div className="mt-12 mb-8">
+          <span className="text-accent text-sm font-medium tracking-widest uppercase">Experience Leading Financial Platforms at Enterprise Scale</span>
+        </div>
+
+        {/* Financial Projects grid */}
+        <div className="grid md:grid-cols-6 gap-6">
+          {projects.slice(5).map((project, index) => {
             const isLarge = project.size === "large";
             const isThird = project.size === "third";
             const colSpan = isLarge ? "md:col-span-6" : isThird ? "md:col-span-2" : "md:col-span-3";
