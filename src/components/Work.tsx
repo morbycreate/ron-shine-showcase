@@ -25,6 +25,7 @@ import wellsFargoColorLogo from "@/assets/logos/wells-fargo-color.png";
 import ameripriseColorLogo from "@/assets/logos/ameriprise-color.png";
 import nasdaqColorLogo from "@/assets/logos/nasdaq-color.png";
 import goldmanSachsColorLogo from "@/assets/logos/goldman-sachs-color.png";
+import knowYourWhyHero from "@/assets/know-your-why-hero.png";
 
 const Work = () => {
   const projects = [
@@ -116,7 +117,7 @@ const Work = () => {
       category: "Point of View",
       description:
         "People don't buy what you do. They buy why you do it. The why is what makes you worth choosing.",
-      image: null,
+      image: knowYourWhyHero,
       link: "/articles/know-your-why",
     },
     {
