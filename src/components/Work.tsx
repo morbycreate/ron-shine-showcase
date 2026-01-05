@@ -42,7 +42,7 @@ const Work = () => {
     },
     {
       title: "Building AA's First UX Organization",
-      category: "Experience Design",
+      category: "Leadership",
       description:
         "Scaled UX team from 3 to 30+, establishing design systems, governance, and operating models for enterprise delivery.",
       image: aaUxHero,
