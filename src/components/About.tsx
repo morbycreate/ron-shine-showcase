@@ -21,8 +21,8 @@ const About = () => {
       <div className="relative container mx-auto px-6">
         {/* Section intro */}
         <div className="max-w-4xl mb-16">
-          <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
-            I lead from vision to execution—scaling teams, systems, and delivery to create real, measurable impact.
+          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
+            Proven Business <span className="text-outline">Impact</span>
           </h2>
         </div>
 
