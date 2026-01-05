@@ -192,9 +192,9 @@ const CaseStudySlalom = () => {
                 The Challenge
               </p>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-8">
-                Elevate UX
+                Elevate
                 <br />
-                <span className="text-outline">across regions.</span>
+                <span className="text-outline">Global offerings.</span>
               </h2>
               <div className="space-y-5 text-primary-foreground/60 text-lg leading-relaxed">
                 <p>
