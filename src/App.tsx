@@ -18,6 +18,7 @@ import CaseStudyAAUX from "./pages/CaseStudyAAUX";
 import CaseStudySlalom from "./pages/CaseStudySlalom";
 import CaseStudyFossilLeadership from "./pages/CaseStudyFossilLeadership";
 import CaseStudySabre from "./pages/CaseStudySabre";
+import CaseStudyCitibank from "./pages/CaseStudyCitibank";
 import AdditionalCaseStudies from "./pages/AdditionalCaseStudies";
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/slalom" element={<CaseStudySlalom />} />
           <Route path="/fossil-leadership" element={<CaseStudyFossilLeadership />} />
           <Route path="/sabre" element={<CaseStudySabre />} />
+          <Route path="/citibank" element={<CaseStudyCitibank />} />
           <Route path="/case-studies" element={<AdditionalCaseStudies />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
