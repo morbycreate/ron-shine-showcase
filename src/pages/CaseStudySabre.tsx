@@ -118,10 +118,6 @@ const CaseStudySabre = () => {
               <span className="text-accent">Vision and Alignment</span>
             </h1>
 
-            <p className="text-primary-foreground/60 text-xl md:text-2xl max-w-2xl leading-relaxed opacity-0 animate-fade-up stagger-2">
-              At
-              <span className="text-accent font-medium"> Sabre Corporation.</span>
-            </p>
           </div>
         </div>
 
