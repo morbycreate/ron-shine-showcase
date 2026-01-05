@@ -21,12 +21,8 @@ const About = () => {
       <div className="relative container mx-auto px-6">
         {/* Section intro */}
         <div className="max-w-4xl mb-16">
-          <p className="text-accent font-medium tracking-wide mb-4 text-sm">
-            A VP-Level Operator
-          </p>
-          
           <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
-            I scale teams, systems, and outcomes. I'm not a hands-off creative—I'm an operator who delivers measurable impact.
+            I lead from vision to execution—scaling teams, systems, and delivery to create real, measurable impact.
           </h2>
         </div>
 
