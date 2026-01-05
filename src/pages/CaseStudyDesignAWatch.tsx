@@ -325,28 +325,6 @@ const CaseStudyDesignAWatch = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-primary border-t border-primary-foreground/10">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div>
-              <h3 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-3">
-                Want to see more?
-              </h3>
-              <p className="text-primary-foreground/60">
-                Explore other projects from my portfolio.
-              </p>
-            </div>
-            <Link 
-              to="/case-studies"
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-accent text-primary font-semibold rounded-full hover:bg-accent/90 transition-colors duration-300"
-            >
-              View All Case Studies
-              <ArrowLeft className="w-4 h-4 rotate-180 group-hover:translate-x-2 transition-transform duration-300" />
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="py-12 border-t border-primary-foreground/10 bg-primary">

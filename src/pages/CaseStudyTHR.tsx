@@ -72,11 +72,11 @@ const CaseStudyTHR = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary/90 backdrop-blur-md border-b border-primary-foreground/10">
         <div className="container mx-auto px-6 py-4">
           <Link 
-            to="/case-studies"
+            to="/#work"
             className="group inline-flex items-center gap-3 text-primary-foreground/60 hover:text-accent transition-colors duration-300"
           >
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-2 transition-transform duration-300" />
-            <span className="hover-underline text-sm font-medium">Back to Case Studies</span>
+            <span className="hover-underline text-sm font-medium">Back to Experience</span>
           </Link>
         </div>
       </header>
@@ -372,18 +372,6 @@ const CaseStudyTHR = () => {
         </div>
       </section>
 
-      {/* Back to Work CTA */}
-      <section className="py-16 bg-primary border-t border-primary-foreground/10">
-        <div className="container mx-auto px-6 text-center">
-          <Link 
-            to="/case-studies"
-            className="group inline-flex items-center gap-3 text-primary-foreground font-medium text-lg hover:text-accent transition-colors duration-300"
-          >
-            <ArrowLeft className="w-5 h-5 group-hover:-translate-x-2 transition-transform duration-300" />
-            <span className="hover-underline">View More Case Studies</span>
-          </Link>
-        </div>
-      </section>
     </div>
   );
 };
