@@ -21,6 +21,10 @@ import pgaTourLogo from "@/assets/logos/pga-tour.png";
 import citiLogo from "@/assets/logos/citi.png";
 import citiHero from "@/assets/citi-hero.jpeg";
 import associatesHero from "@/assets/associates-hero.jpeg";
+import wellsFargoColorLogo from "@/assets/logos/wells-fargo-color.png";
+import ameripriseColorLogo from "@/assets/logos/ameriprise-color.png";
+import nasdaqColorLogo from "@/assets/logos/nasdaq-color.png";
+import goldmanSachsColorLogo from "@/assets/logos/goldman-sachs-color.png";
 
 const Work = () => {
   const projects = [
@@ -120,6 +124,10 @@ const Work = () => {
     { name: "WTA", logo: wtaLogo },
     { name: "PGA Tour", logo: pgaTourLogo },
     { name: "Citi", logo: citiLogo },
+    { name: "Wells Fargo", logo: wellsFargoColorLogo },
+    { name: "Ameriprise", logo: ameripriseColorLogo },
+    { name: "Nasdaq", logo: nasdaqColorLogo },
+    { name: "Goldman Sachs", logo: goldmanSachsColorLogo },
   ];
 
   return (
