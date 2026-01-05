@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { ArrowLeft, Target, Users, Layers, Briefcase, TrendingUp, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
-import slalomHero from "@/assets/slalom-hero.png";
+import slalomCreate from "@/assets/slalom-create.png";
 import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
 import attLogo from "@/assets/logos/att.png";
 import nikeLogo from "@/assets/logos/nike.png";
@@ -103,7 +103,7 @@ const CaseStudySlalom = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src={slalomHero} 
+            src={slalomCreate} 
             alt="Slalom Create" 
             className="w-full h-full object-cover object-right"
           />

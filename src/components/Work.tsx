@@ -4,7 +4,7 @@ import aaUxHero from "@/assets/aa-ux-hero.png";
 import aaPreview from "@/assets/aa-preview.png";
 import fossilLeadershipPreview from "@/assets/fossil-leadership-preview.jpg";
 import aiPrototypingHero from "@/assets/ai-prototyping-hero.png";
-import slalomHero from "@/assets/slalom-hero.png";
+import slalomCreate from "@/assets/slalom-create.png";
 import sabreHero from "@/assets/sabre-hero.png";
 import goldmanSachsLogo from "@/assets/logos/goldman-sachs.png";
 import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
@@ -63,7 +63,7 @@ const Work = () => {
       category: "Leadership",
       description:
         "Built a scalable experience capability driving $60M in pipeline and scaling the team from 2 to 10 in one year.",
-      image: slalomHero,
+      image: slalomCreate,
       link: "/slalom",
       size: "small",
     },
