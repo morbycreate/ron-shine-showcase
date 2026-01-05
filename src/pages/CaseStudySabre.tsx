@@ -111,16 +111,17 @@ const CaseStudySabre = () => {
 
             {/* Main headline */}
             <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[7rem] font-bold leading-[0.95] mb-8 opacity-0 animate-fade-up stagger-1">
-              <span className="text-primary-foreground">Director,</span>
+              <span className="text-primary-foreground">Leading enterprise</span>
               <br />
-              <span className="text-outline">Brand / Creative</span>
+              <span className="text-outline">transformation through</span>
               <br />
-              <span className="text-accent">/ Digital</span>
+              <span className="text-accent">experience vision</span>
             </h1>
 
             <p className="text-primary-foreground/60 text-xl md:text-2xl max-w-2xl leading-relaxed opacity-0 animate-fade-up stagger-2">
-              Helping Sabre evolve from a legacy travel company into a
-              <span className="text-accent font-medium"> modern enterprise technology platform.</span>
+              And
+              <span className="text-accent font-medium"> alignment</span>
+              <span className="text-primary-foreground/60"> at Sabre Corporation.</span>
             </p>
           </div>
         </div>
