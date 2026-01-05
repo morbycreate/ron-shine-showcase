@@ -27,6 +27,7 @@ import nasdaqColorLogo from "@/assets/logos/nasdaq-color.png";
 import goldmanSachsColorLogo from "@/assets/logos/goldman-sachs-color.png";
 import knowYourWhyHero from "@/assets/know-your-why-hero.png";
 import financeLogos from "@/assets/finance-logos.png";
+import aiTrustHero from "@/assets/ai-trust-hero.png";
 
 const Work = () => {
   const projects = [
@@ -126,7 +127,7 @@ const Work = () => {
       category: "Point of View",
       description:
         "AI is transforming the world, but people don't move forward because of technology alone—they move because they trust.",
-      image: null,
+      image: aiTrustHero,
       link: "/articles/ai-trust",
     },
   ];
