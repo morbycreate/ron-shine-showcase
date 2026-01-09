@@ -80,6 +80,36 @@ const CaseStudySabreComms = () => {
         </div>
       </section>
 
+      {/* Content Strategy Principles */}
+      <section className="py-16 px-6 border-b border-white/10">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+            This Is What Great Content Strategy Is Made Of
+          </h2>
+          <ol className="grid md:grid-cols-2 gap-4">
+            {[
+              "Start With Purpose (Not Output)",
+              "Be Audience-Led, Not Channel-Led",
+              "Clarity Beats Clever",
+              "Strategy Before Storytelling",
+              "Design for Reuse and Scale",
+              "Respect the Moment of Use",
+              "Consistency Builds Trust",
+              "Measure What Matters",
+              "Governance Enables Creativity",
+              "Great Content Feels Human"
+            ].map((item, index) => (
+              <li key={index} className="flex items-start gap-4 p-4 bg-white/5 rounded-xl">
+                <span className="flex-shrink-0 w-8 h-8 bg-red-500/20 text-red-400 rounded-full flex items-center justify-center text-sm font-bold">
+                  {index + 1}
+                </span>
+                <span className="text-white/90 text-lg">{item}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       {/* Image Gallery */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-6xl">
