@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, ChevronDown } from "lucide-react";
 import thrPreview from "@/assets/thr-preview-new.png";
 
+// Custom purple accent for this page
+const purpleAccent = "rgb(168, 85, 247)"; // Modern violet-500
+
 const Overview = () => {
   const accomplishments = [
     "Led the enterprise redesign of AA.com, supporting American Airlines' first major rebrand in 40+ years and contributing to an +11.4 lift in YouGov Brand Buzz.",
@@ -18,7 +21,7 @@ const Overview = () => {
   };
 
   return (
-    <div className="min-h-screen bg-primary">
+    <div className="min-h-screen bg-primary" style={{ "--page-accent": purpleAccent } as React.CSSProperties}>
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary/80 backdrop-blur-md border-b border-border/10">
         <div className="max-w-7xl mx-auto px-6 py-4">
@@ -40,7 +43,7 @@ const Overview = () => {
           <div 
             className="absolute inset-0 opacity-10"
             style={{
-              backgroundImage: `radial-gradient(circle at 70% 30%, hsl(var(--accent)) 0%, transparent 50%)`,
+              backgroundImage: `radial-gradient(circle at 70% 30%, ${purpleAccent} 0%, transparent 50%)`,
             }}
           />
         </div>
@@ -50,8 +53,8 @@ const Overview = () => {
           <div className="max-w-5xl mx-auto lg:mx-0">
             {/* Eyebrow */}
             <div className="flex items-center gap-4 mb-12 opacity-0 animate-fade-up">
-              <div className="w-12 h-px bg-accent" />
-              <p className="text-accent/90 text-xs uppercase tracking-[0.25em] font-medium">
+              <div className="w-12 h-px" style={{ backgroundColor: purpleAccent }} />
+              <p className="text-xs uppercase tracking-[0.25em] font-medium" style={{ color: purpleAccent }}>
                 15+ Years in UX Leadership
               </p>
             </div>
@@ -65,12 +68,12 @@ const Overview = () => {
                 strategist.
               </span>
               <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold">
-                <span className="text-accent">Design</span>{" "}
+                <span style={{ color: purpleAccent }}>Design</span>{" "}
                 <span className="text-outline">leader.</span>
               </span>
               <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold">
                 <span className="text-primary-foreground">Culture</span>{" "}
-                <span className="text-outline-accent">Builder.</span>
+                <span className="text-outline" style={{ WebkitTextStrokeColor: purpleAccent }}>Builder.</span>
               </span>
             </h1>
 
@@ -85,7 +88,8 @@ const Overview = () => {
             <div className="mt-16 flex items-center gap-8 opacity-0 animate-fade-up stagger-3">
               <button
                 onClick={scrollToExperience}
-                className="group flex items-center gap-3 text-primary-foreground hover:text-accent transition-colors duration-500"
+                className="group flex items-center gap-3 text-primary-foreground transition-colors duration-500"
+                style={{ "--hover-color": purpleAccent } as React.CSSProperties}
               >
                 <span className="text-sm font-medium tracking-wide">View Work</span>
                 <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform duration-300" />
@@ -116,7 +120,7 @@ const Overview = () => {
           <div 
             className="absolute inset-0"
             style={{
-              backgroundImage: `radial-gradient(circle at 30% 50%, hsl(var(--accent)) 0%, transparent 50%)`,
+              backgroundImage: `radial-gradient(circle at 30% 50%, ${purpleAccent} 0%, transparent 50%)`,
             }}
           />
         </div>
@@ -137,7 +141,14 @@ const Overview = () => {
                   key={index}
                   className="flex gap-4 items-start group"
                 >
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center text-accent font-display font-bold text-sm group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300">
+                  <span 
+                    className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-display font-bold text-sm transition-all duration-300"
+                    style={{ 
+                      backgroundColor: `${purpleAccent}15`, 
+                      borderColor: `${purpleAccent}50`, 
+                      borderWidth: '1px',
+                      color: purpleAccent 
+                    }}>
                     {index + 1}
                   </span>
                   <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed pt-0.5">
@@ -174,10 +185,10 @@ const Overview = () => {
                 />
               </div>
               <div className="p-6">
-                <span className="text-sm text-accent font-medium uppercase tracking-wider">
+                <span className="text-sm font-medium uppercase tracking-wider" style={{ color: purpleAccent }}>
                   Digital Experience
                 </span>
-                <h3 className="text-2xl font-bold mt-2 text-primary-foreground group-hover:text-accent transition-colors">
+                <h3 className="text-2xl font-bold mt-2 text-primary-foreground transition-colors group-hover:opacity-80">
                   Texas Health Resources Website Redesign
                 </h3>
                 <p className="text-primary-foreground/60 mt-2">
