@@ -62,10 +62,10 @@ const Overview = () => {
             {/* Main headline */}
             <h1 className="font-display leading-[0.95] mb-10 opacity-0 animate-fade-up stagger-1">
               <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-primary-foreground">
-                Experience
+                Chief Creative
               </span>
               <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-outline">
-                strategist.
+                & Brand Leader.
               </span>
               <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold">
                 <span style={{ color: purpleAccent }}>Design</span>{" "}
