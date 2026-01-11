@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, ChevronDown } from "lucide-react";
 import thrPreview from "@/assets/thr-preview-new.png";
+import sabreAssetsCollage from "@/assets/sabre-assets-collage.png";
 
 // Custom purple accent for this page
 const purpleAccent = "rgb(168, 85, 247)"; // Modern violet-500
@@ -172,32 +173,62 @@ const Overview = () => {
             </h2>
           </div>
 
-          {/* THR Preview Card */}
-          <Link
-            to="/texas-health"
-            className="group block max-w-2xl"
-          >
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5">
-              <div className="aspect-[16/10] overflow-hidden">
-                <img
-                  src={thrPreview}
-                  alt="Texas Health Resources Website Redesign"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
-                />
+          {/* Case Study Preview Cards */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
+            {/* Sabre Brand Preview Card */}
+            <Link
+              to="/sabre-brand"
+              className="group block"
+            >
+              <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5">
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src={sabreAssetsCollage}
+                    alt="Sabre Brand Transformation"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="text-sm font-medium uppercase tracking-wider" style={{ color: purpleAccent }}>
+                    Brand & Creative
+                  </span>
+                  <h3 className="text-2xl font-bold mt-2 text-primary-foreground transition-colors group-hover:opacity-80">
+                    Sharpening a Sabre's Edge
+                  </h3>
+                  <p className="text-primary-foreground/60 mt-2">
+                    Modernized a 30-year-old global brand to reflect the company's transformation from legacy systems to reimagining travel.
+                  </p>
+                </div>
               </div>
-              <div className="p-6">
-                <span className="text-sm font-medium uppercase tracking-wider" style={{ color: purpleAccent }}>
-                  Digital Experience
-                </span>
-                <h3 className="text-2xl font-bold mt-2 text-primary-foreground transition-colors group-hover:opacity-80">
-                  Texas Health Resources Website Redesign
-                </h3>
-                <p className="text-primary-foreground/60 mt-2">
-                  Redesigned the digital ecosystem for one of the largest faith-based nonprofit health systems in the US.
-                </p>
+            </Link>
+
+            {/* THR Preview Card */}
+            <Link
+              to="/texas-health"
+              className="group block"
+            >
+              <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5">
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src={thrPreview}
+                    alt="Texas Health Resources Website Redesign"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="text-sm font-medium uppercase tracking-wider" style={{ color: purpleAccent }}>
+                    Digital Experience
+                  </span>
+                  <h3 className="text-2xl font-bold mt-2 text-primary-foreground transition-colors group-hover:opacity-80">
+                    Texas Health Resources Website Redesign
+                  </h3>
+                  <p className="text-primary-foreground/60 mt-2">
+                    Redesigned the digital ecosystem for one of the largest faith-based nonprofit health systems in the US.
+                  </p>
+                </div>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
