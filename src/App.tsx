@@ -17,6 +17,7 @@ import CaseStudyDesignAWatch from "./pages/CaseStudyDesignAWatch";
 import CaseStudyAIPrototyping from "./pages/CaseStudyAIPrototyping";
 import CaseStudyAAUX from "./pages/CaseStudyAAUX";
 import CaseStudySlalom from "./pages/CaseStudySlalom";
+import CaseStudySlalomCreative from "./pages/CaseStudySlalomCreative";
 import CaseStudyFossilLeadership from "./pages/CaseStudyFossilLeadership";
 import CaseStudySabre from "./pages/CaseStudySabre";
 import CaseStudySabreComms from "./pages/CaseStudySabreComms";
@@ -50,6 +51,7 @@ const App = () => (
           <Route path="/ai-prototyping" element={<CaseStudyAIPrototyping />} />
           <Route path="/aa-ux-organization" element={<CaseStudyAAUX />} />
           <Route path="/slalom" element={<CaseStudySlalom />} />
+          <Route path="/slalom-creative" element={<CaseStudySlalomCreative />} />
           <Route path="/fossil-leadership" element={<CaseStudyFossilLeadership />} />
           <Route path="/sabre" element={<CaseStudySabre />} />
           <Route path="/sabre-communications" element={<CaseStudySabreComms />} />
