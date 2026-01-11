@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CaseStudyDefender from "./pages/CaseStudyDefender";
 import CaseStudyAA from "./pages/CaseStudyAA";
+import CaseStudyAARebrand from "./pages/CaseStudyAARebrand";
 import CaseStudyTHR from "./pages/CaseStudyTHR";
 import CaseStudyFossil from "./pages/CaseStudyFossil";
 import CaseStudyHasbro from "./pages/CaseStudyHasbro";
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/defender" element={<CaseStudyDefender />} />
           <Route path="/american-airlines" element={<CaseStudyAA />} />
+          <Route path="/aa-rebrand" element={<CaseStudyAARebrand />} />
           <Route path="/texas-health" element={<CaseStudyTHR />} />
           <Route path="/fossil" element={<CaseStudyFossil />} />
           <Route path="/hasbro" element={<CaseStudyHasbro />} />
