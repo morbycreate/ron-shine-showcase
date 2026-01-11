@@ -61,10 +61,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        teal: {
-          DEFAULT: "hsl(200 100% 50%)",
-          light: "hsl(200 100% 60%)",
-          dark: "hsl(200 100% 40%)",
+        purple: {
+          DEFAULT: "hsl(270 100% 60%)",
+          light: "hsl(280 100% 70%)",
+          dark: "hsl(260 100% 50%)",
         },
         navy: {
           DEFAULT: "hsl(220 15% 8%)",
