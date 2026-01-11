@@ -7,10 +7,11 @@ const purpleAccent = "rgb(168, 85, 247)"; // Modern violet-500
 
 const Overview = () => {
   const accomplishments = [
-    "Led the enterprise redesign of AA.com, supporting American Airlines' first major rebrand in 40+ years and contributing to an +11.4 lift in YouGov Brand Buzz.",
-    "Drove $60M in pipeline by building and leading experience capabilities for Fortune 500 clients across industries (Slalom).",
-    "Delivered a 23% YoY e-commerce lift through full-funnel UX and platform optimization, contributing to industry recognition as a digital leader (Fossil).",
-    "Built and scaled UX organizations (3 → 30; 2 → 10), establishing design systems, governance, and operating models that enabled enterprise delivery at scale (American Airlines, Slalom).",
+    "Built Slalom's Global Creative & Digital Services capability from inception, generating $60M in new pipeline within six months",
+    "Led American Airlines' enterprise rebrand and brand system evolution, contributing to +11.4 YouGov Buzz, the strongest gain in the airline category",
+    "Drove 23% YoY e-commerce growth at Fossil through improved product storytelling, PDP optimization, and retail-aligned experience design",
+    "Scaled creative and experience teams from 2 → 10 and 3 → 30+, supporting enterprise and global consulting environments",
+    "Established enterprise-wide brand standards, governance models, and design systems adopted across regions and business units",
   ];
 
   const scrollToExperience = () => {
