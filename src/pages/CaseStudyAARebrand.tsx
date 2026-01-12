@@ -19,6 +19,14 @@ import aaPriorityCheckin from "@/assets/aa-priority-checkin.png";
 import aaVisionSlide from "@/assets/aa-vision-slide.png";
 import aaVisualIdOverview from "@/assets/aa-visual-id-overview.png";
 import aaTallSign from "@/assets/aa-tall-sign.png";
+import aaAds from "@/assets/aa-ads.png";
+import aaBrochure from "@/assets/aa-brochure.png";
+import aaContest from "@/assets/aa-contest.png";
+import aaDigitalSign from "@/assets/aa-digital-sign.png";
+import aaMenu from "@/assets/aa-menu.png";
+import aaPossibilities from "@/assets/aa-possibilities.png";
+import aaSignage from "@/assets/aa-signage.png";
+import aaSubway from "@/assets/aa-subway.png";
 
 // Custom purple accent for this page
 const purpleAccent = "rgb(168, 85, 247)";
@@ -320,6 +328,62 @@ const CaseStudyAARebrand = () => {
               <img
                 src={aaTallSign}
                 alt="Airport tall sign advertising"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaAds}
+                alt="American Airlines advertising campaign"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaBrochure}
+                alt="American Airlines brochure design"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaContest}
+                alt="What Do You See contest campaign"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaDigitalSign}
+                alt="Airport digital signage"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaMenu}
+                alt="In-flight food menu design"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaPossibilities}
+                alt="World of possibilities campaign"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaSignage}
+                alt="Airport wayfinding signage system"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaSubway}
+                alt="Subway advertising campaign"
                 className="w-full h-auto object-contain"
               />
             </div>
