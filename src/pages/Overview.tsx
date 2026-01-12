@@ -1,10 +1,26 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, ChevronDown } from "lucide-react";
+import { ArrowLeft, ChevronDown, Mail, ArrowRight } from "lucide-react";
 import thrPreview from "@/assets/thr-preview-new.png";
 import sabreAssetsCollage from "@/assets/sabre-assets-collage.png";
 import aaHero from "@/assets/aa-hero.png";
 import slalomPreview from "@/assets/slalom-preview.png";
 import fossilPreview from "@/assets/fossil-site-preview.png";
+import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
+import attLogo from "@/assets/logos/att.png";
+import jaguarsLogo from "@/assets/logos/jaguars-full.png";
+import sabreLogo from "@/assets/logos/sabre.png";
+import firehouseSubsLogo from "@/assets/logos/firehouse-subs.png";
+import nikeLogo from "@/assets/logos/nike.png";
+import awsLogo from "@/assets/logos/aws.png";
+import fossilLogo from "@/assets/logos/fossil.png";
+import toryBurchLogo from "@/assets/logos/tory-burch.png";
+import wtaLogo from "@/assets/logos/wta.png";
+import pgaTourLogo from "@/assets/logos/pga-tour.png";
+import citiLogo from "@/assets/logos/citi.png";
+import wellsFargoColorLogo from "@/assets/logos/wells-fargo-color.png";
+import ameripriseColorLogo from "@/assets/logos/ameriprise-color.png";
+import nasdaqColorLogo from "@/assets/logos/nasdaq-color.png";
+import goldmanSachsColorLogo from "@/assets/logos/goldman-sachs-color.png";
 
 // Custom purple accent for this page
 const purpleAccent = "rgb(168, 85, 247)"; // Modern violet-500
@@ -16,6 +32,25 @@ const Overview = () => {
     "Drove 23% YoY e-commerce growth at Fossil through improved product storytelling, PDP optimization, and retail-aligned experience design",
     "Scaled creative and experience teams from 2 → 10 and 3 → 30+, supporting enterprise and global consulting environments",
     "Established enterprise-wide brand standards, governance models, and design systems adopted across regions and business units",
+  ];
+
+  const clientLogos = [
+    { name: "American Airlines", logo: americanAirlinesLogo },
+    { name: "AT&T", logo: attLogo },
+    { name: "Jacksonville Jaguars", logo: jaguarsLogo },
+    { name: "Sabre", logo: sabreLogo },
+    { name: "Firehouse Subs", logo: firehouseSubsLogo },
+    { name: "Nike", logo: nikeLogo },
+    { name: "AWS", logo: awsLogo },
+    { name: "Fossil", logo: fossilLogo },
+    { name: "Tory Burch", logo: toryBurchLogo },
+    { name: "WTA", logo: wtaLogo },
+    { name: "PGA Tour", logo: pgaTourLogo },
+    { name: "Citi", logo: citiLogo },
+    { name: "Wells Fargo", logo: wellsFargoColorLogo },
+    { name: "Ameriprise", logo: ameripriseColorLogo },
+    { name: "Nasdaq", logo: nasdaqColorLogo },
+    { name: "Goldman Sachs", logo: goldmanSachsColorLogo },
   ];
 
   const scrollToExperience = () => {
@@ -312,6 +347,126 @@ const Overview = () => {
                 </div>
               </div>
             </Link>
+          </div>
+
+          {/* Clients section */}
+          <div className="mt-16 pt-12 border-t border-primary-foreground/10">
+            <p className="font-medium tracking-wide mb-8 text-sm" style={{ color: purpleAccent }}>
+              The brands that trusted me to do the work.
+            </p>
+
+            <div className="flex flex-wrap items-center gap-8 md:gap-12">
+              {clientLogos.map((client) => (
+                <div key={client.name}>
+                  <img 
+                    src={client.logo} 
+                    alt={client.name} 
+                    className="h-20 md:h-24 w-auto object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-24 md:py-32 bg-primary relative overflow-hidden">
+        {/* Background accent */}
+        <div className="absolute inset-0 opacity-10">
+          <div 
+            className="absolute bottom-0 left-0 w-full h-1/2"
+            style={{
+              backgroundImage: `radial-gradient(ellipse at 50% 100%, ${purpleAccent} 0%, transparent 60%)`,
+            }}
+          />
+        </div>
+
+        <div className="relative container mx-auto px-6">
+          <div className="max-w-4xl">
+            
+            <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-8">
+              See what others
+              <br />
+              <span className="text-outline">have to say</span>
+            </h2>
+
+            {/* Testimonials - Purple background cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+              <div className="p-6 md:p-8 rounded-2xl" style={{ backgroundColor: purpleAccent }}>
+                <blockquote className="text-white/90 text-base md:text-lg italic leading-relaxed mb-6">
+                  "His ability to listen deeply, synthesize ideas, and articulate a vision with clarity and creativity is unmatched."
+                </blockquote>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-sm">
+                    GT
+                  </div>
+                  <p className="text-white font-medium">Gabrielle T.</p>
+                </div>
+              </div>
+
+              <div className="p-6 md:p-8 rounded-2xl" style={{ backgroundColor: purpleAccent }}>
+                <blockquote className="text-white/90 text-base md:text-lg italic leading-relaxed mb-6">
+                  "Ron doesn't just direct teams, he inspires them. His ability to seamlessly blend strategic vision with creative execution is unmatched, and he has an incredible knack for turning complex challenges into elegant, impactful solutions."
+                </blockquote>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-sm">
+                    GL
+                  </div>
+                  <p className="text-white font-medium">Greg L.</p>
+                </div>
+              </div>
+
+              <div className="p-6 md:p-8 rounded-2xl" style={{ backgroundColor: purpleAccent }}>
+                <blockquote className="text-white/90 text-base md:text-lg italic leading-relaxed mb-6">
+                  "His ability to take a complex, multi-layered topic, distill it to its core essence, and craft a concept that resonates—from C-suite executives to end users—is truly unmatched."
+                </blockquote>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-sm">
+                    MH
+                  </div>
+                  <p className="text-white font-medium">Mary H.</p>
+                </div>
+              </div>
+
+              <div className="p-6 md:p-8 rounded-2xl" style={{ backgroundColor: purpleAccent }}>
+                <blockquote className="text-white/90 text-base md:text-lg italic leading-relaxed mb-6">
+                  "Ron doesn't just lead—he empowers. His mantra, 'I want to set each of you up to win,' wasn't just words; it was the foundation of a team that thrived."
+                </blockquote>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-sm">
+                    PS
+                  </div>
+                  <p className="text-white font-medium">Pete S.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact info below testimonials */}
+            <p className="text-primary-foreground/60 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
+              Looking for experience design leadership, platform modernization, or UX strategy?
+              I'd love to hear about your challenges and explore how we can work together.
+            </p>
+
+            {/* Contact CTA - Large email link */}
+            <a
+              href="mailto:ronbrissette@gmail.com"
+              className="group inline-flex items-center gap-4"
+            >
+              <span 
+                className="flex items-center justify-center w-16 h-16 rounded-full text-white group-hover:scale-110 transition-transform duration-300"
+                style={{ backgroundColor: purpleAccent }}
+              >
+                <Mail className="w-6 h-6" />
+              </span>
+              <div>
+                <p className="text-primary-foreground/50 text-sm mb-1">Email me at</p>
+                <p className="font-display text-2xl md:text-3xl font-bold text-primary-foreground group-hover:opacity-80 transition-colors duration-300 flex items-center gap-2">
+                  ronbrissette@gmail.com
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
