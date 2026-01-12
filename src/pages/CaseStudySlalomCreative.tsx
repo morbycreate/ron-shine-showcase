@@ -15,6 +15,7 @@ import slalomAshleyBrand from "@/assets/slalom-ashley-brand.png";
 import slalomNewco from "@/assets/slalom-newco.png";
 import ashleyHero from "@/assets/ashley-hero.png";
 import ashleyBagMockup from "@/assets/ashley-bag-mockup.png";
+import ashleyLogo from "@/assets/ashley-logo.png";
 import newcoFlexibility from "@/assets/newco-flexibility.png";
 import newcoVideo from "@/assets/newco-video.png";
 import newcoPpt from "@/assets/newco-ppt.png";
@@ -148,6 +149,7 @@ const CaseStudySlalomCreative = () => {
       image: slalomAshleyDevices,
       imageAlt: "Ashley Stewart website across devices",
       additionalImages: [
+        { src: ashleyLogo, alt: "Ashley Stewart logo" },
         { src: slalomAshleyBrand, alt: "Ashley Stewart brand collateral" },
         { src: ashleyHero, alt: "Ashley Stewart campaign models" },
         { src: ashleyBagMockup, alt: "Ashley Stewart tag and bag mockup" }
