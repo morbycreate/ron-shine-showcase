@@ -127,10 +127,9 @@ const CaseStudySlalomCreative = () => {
         "Modern brand system for future vision",
         "Partnership with brand leadership and fashion creative director"
       ],
-      image: slalomAshley,
-      imageAlt: "Ashley Stewart brand elevation",
+      image: slalomAshleyDevices,
+      imageAlt: "Ashley Stewart website across devices",
       additionalImages: [
-        { src: slalomAshleyDevices, alt: "Ashley Stewart website across devices" },
         { src: slalomAshleyBrand, alt: "Ashley Stewart brand collateral" }
       ],
       reverse: true
