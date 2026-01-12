@@ -13,6 +13,10 @@ import slalomAshley from "@/assets/slalom-ashley.png";
 import slalomAshleyDevices from "@/assets/slalom-ashley-devices.png";
 import slalomAshleyBrand from "@/assets/slalom-ashley-brand.png";
 import slalomNewco from "@/assets/slalom-newco.png";
+import newcoFlexibility from "@/assets/newco-flexibility.png";
+import newcoVideo from "@/assets/newco-video.png";
+import newcoPpt from "@/assets/newco-ppt.png";
+import newcoBanner from "@/assets/newco-banner.png";
 
 const purpleAccent = "rgb(168, 85, 247)";
 
@@ -164,7 +168,13 @@ const CaseStudySlalomCreative = () => {
         "Gathering campaign for meaningful activities and events"
       ],
       image: slalomNewco,
-      imageAlt: "NewCo Flex Forward campaign"
+      imageAlt: "NewCo Flex Forward campaign",
+      additionalImages: [
+        { src: newcoFlexibility, alt: "NewCo Flex Forward flexibility poster" },
+        { src: newcoVideo, alt: "NewCo Flex Forward video mockup" },
+        { src: newcoPpt, alt: "NewCo PowerPoint presentation cover" },
+        { src: newcoBanner, alt: "NewCo Flex Forward banner" }
+      ]
     }
   ];
 
