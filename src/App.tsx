@@ -30,6 +30,7 @@ import ArticleKnowYourWhy from "./pages/ArticleKnowYourWhy";
 import ArticleAITrust from "./pages/ArticleAITrust";
 import Overview from "./pages/Overview";
 import CaseStudyOrviumHR from "./pages/CaseStudyOrviumHR";
+import CaseStudyFirehouseSubs from "./pages/CaseStudyFirehouseSubs";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -65,6 +66,7 @@ const App = () => (
           <Route path="/articles/ai-trust" element={<ArticleAITrust />} />
           <Route path="/overview" element={<Overview />} />
           <Route path="/orviumhr" element={<CaseStudyOrviumHR />} />
+          <Route path="/firehouse-subs" element={<CaseStudyFirehouseSubs />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
