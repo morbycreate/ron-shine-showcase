@@ -6,6 +6,7 @@ import aaHero from "@/assets/aa-hero.png";
 import slalomPreview from "@/assets/slalom-preview.png";
 import fossilPreview from "@/assets/fossil-site-preview.png";
 import orviumhrBanner from "@/assets/orviumhr-banner.png";
+import firehouseInterior from "@/assets/firehouse-interior.jpg";
 import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
 import attLogo from "@/assets/logos/att.png";
 import jaguarsLogo from "@/assets/logos/jaguars-full.png";
@@ -371,6 +372,33 @@ const Overview = () => {
                   </h3>
                   <p className="text-primary-foreground/60 mt-2 text-sm">
                     Reframed HR company from transactional vendor to strategic partner.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Firehouse Subs Preview Card */}
+            <Link
+              to="/firehouse-subs"
+              className="group block"
+            >
+              <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5">
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src={firehouseInterior}
+                    alt="Firehouse Subs Brand Identity"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="text-sm font-medium uppercase tracking-wider" style={{ color: purpleAccent }}>
+                    Brand Identity
+                  </span>
+                  <h3 className="text-xl font-bold mt-2 text-primary-foreground transition-colors group-hover:opacity-80">
+                    Firehouse Subs Original Brand
+                  </h3>
+                  <p className="text-primary-foreground/60 mt-2 text-sm">
+                    Designed the original brand identity for the now 1,200+ location franchise.
                   </p>
                 </div>
               </div>
