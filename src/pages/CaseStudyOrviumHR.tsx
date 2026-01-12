@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import orviumhrBanner from "@/assets/orviumhr-banner.png";
 import orviumhrConcepts04 from "@/assets/orviumhr-concepts-04.png";
-import orviumhrConceptsBanner from "@/assets/orviumhr-concepts-banner.png";
+import orviumhrAd from "@/assets/orviumhr-ad.png";
 import orviumhrGraphic from "@/assets/orviumhr-graphic.jpg";
 
 const purpleAccent = "rgb(168, 85, 247)";
@@ -166,8 +166,8 @@ const CaseStudyOrviumHR = () => {
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
               <img 
-                src={orviumhrConceptsBanner} 
-                alt="OrviumHR Brand Banner" 
+                src={orviumhrAd} 
+                alt="OrviumHR Campaign - The difference between hiring and building" 
                 className="w-full h-auto"
               />
             </div>
