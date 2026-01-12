@@ -3,8 +3,7 @@ import { ArrowLeft, Award, TrendingUp, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import aaHero from "@/assets/aa-hero.png";
 import aaWebsites from "@/assets/aa-websites.png";
-import aaMobile1 from "@/assets/aa-mobile-1.jpg";
-import aaMobile2 from "@/assets/aa-mobile-2.jpg";
+import aaAppIphoneMock from "@/assets/aa-app-iphone-mock.png";
 import aaKiosk from "@/assets/aa-kiosk.png";
 import aaGateSign from "@/assets/aa-gate-sign.png";
 import aaEnvironments from "@/assets/aa-environments.jpg";
@@ -291,15 +290,8 @@ const CaseStudyAARebrand = () => {
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
               <img
-                src={aaMobile1}
-                alt="AA mobile app - booking"
-                className="w-full h-auto object-contain"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
-              <img
-                src={aaMobile2}
-                alt="AA mobile app - flight status"
+                src={aaAppIphoneMock}
+                alt="AA mobile app iPhone mockups"
                 className="w-full h-auto object-contain"
               />
             </div>
