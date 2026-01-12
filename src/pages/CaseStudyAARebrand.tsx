@@ -18,6 +18,7 @@ import aaPlanePainted from "@/assets/aa-plane-painted.png";
 import aaPriorityCheckin from "@/assets/aa-priority-checkin.png";
 import aaVisionSlide from "@/assets/aa-vision-slide.png";
 import aaVisualIdOverview from "@/assets/aa-visual-id-overview.png";
+import aaTallSign from "@/assets/aa-tall-sign.png";
 
 // Custom purple accent for this page
 const purpleAccent = "rgb(168, 85, 247)";
@@ -312,6 +313,13 @@ const CaseStudyAARebrand = () => {
               <img
                 src={aaGateSign}
                 alt="Gate display signage"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaTallSign}
+                alt="Airport tall sign advertising"
                 className="w-full h-auto object-contain"
               />
             </div>
