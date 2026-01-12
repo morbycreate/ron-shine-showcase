@@ -201,67 +201,6 @@ const CaseStudyAARebrand = () => {
         </div>
       </section>
 
-      {/* Image Gallery - Digital */}
-      <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mb-16">
-            <p className="font-medium tracking-wide mb-4 text-sm" style={{ color: purpleAccent }}>
-              Digital Transformation
-            </p>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
-              Every screen.
-              <br />
-              <span className="text-outline">One experience.</span>
-            </h2>
-          </div>
-
-          {/* Full width websites */}
-          <div className="mb-8 overflow-hidden rounded-2xl border border-primary-foreground/10">
-            <img
-              src={aaWebsites}
-              alt="American Airlines website redesign"
-              className="w-full h-auto"
-            />
-          </div>
-
-          {/* 2-column mobile */}
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
-              <img
-                src={aaMobile1}
-                alt="AA mobile app - booking"
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
-              <img
-                src={aaMobile2}
-                alt="AA mobile app - flight status"
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-
-          {/* Kiosk and gate */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
-              <img
-                src={aaKiosk}
-                alt="Airport check-in kiosk"
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
-              <img
-                src={aaGateSign}
-                alt="Gate display signage"
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Image Gallery - Brand System */}
       <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
         <div className="container mx-auto px-6">
@@ -338,6 +277,41 @@ const CaseStudyAARebrand = () => {
               <img
                 src={aaEnvironments}
                 alt="Airport environment design"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaWebsites}
+                alt="American Airlines website redesign"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaMobile1}
+                alt="AA mobile app - booking"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaMobile2}
+                alt="AA mobile app - flight status"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaKiosk}
+                alt="Airport check-in kiosk"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaGateSign}
+                alt="Gate display signage"
                 className="w-full h-auto object-contain"
               />
             </div>
