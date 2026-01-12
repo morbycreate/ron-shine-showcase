@@ -4,6 +4,7 @@ import thrPreview from "@/assets/thr-preview-new.png";
 import sabreAssetsCollage from "@/assets/sabre-assets-collage.png";
 import aaHero from "@/assets/aa-hero.png";
 import slalomPreview from "@/assets/slalom-preview.png";
+import fossilPreview from "@/assets/fossil-site-preview.png";
 
 // Custom purple accent for this page
 const purpleAccent = "rgb(168, 85, 247)"; // Modern violet-500
@@ -176,7 +177,7 @@ const Overview = () => {
           </div>
 
           {/* Case Study Preview Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl">
             {/* Slalom Creative Preview Card */}
             <Link
               to="/slalom-creative"
@@ -280,6 +281,33 @@ const Overview = () => {
                   </h3>
                   <p className="text-primary-foreground/60 mt-2 text-sm">
                     Redesigned the digital ecosystem for one of the largest faith-based nonprofit health systems.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Fossil Preview Card */}
+            <Link
+              to="/fossil"
+              className="group block"
+            >
+              <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5">
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src={fossilPreview}
+                    alt="Fossil.com Redesign"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="text-sm font-medium uppercase tracking-wider" style={{ color: purpleAccent }}>
+                    E-Commerce
+                  </span>
+                  <h3 className="text-xl font-bold mt-2 text-primary-foreground transition-colors group-hover:opacity-80">
+                    Fossil.com Redesign
+                  </h3>
+                  <p className="text-primary-foreground/60 mt-2 text-sm">
+                    Replatformed Fossil's digital ecosystem, driving 23% YoY e-commerce growth.
                   </p>
                 </div>
               </div>
