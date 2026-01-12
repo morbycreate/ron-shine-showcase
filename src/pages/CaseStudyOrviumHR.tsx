@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import orviumhrBanner from "@/assets/orviumhr-banner.png";
-import orviumhrLogo from "@/assets/orviumhr-logo.png";
+import orviumhrConcepts04 from "@/assets/orviumhr-concepts-04.png";
+import orviumhrConceptsBanner from "@/assets/orviumhr-concepts-banner.png";
 import orviumhrGraphic from "@/assets/orviumhr-graphic.jpg";
 
 const purpleAccent = "rgb(168, 85, 247)";
@@ -152,15 +153,24 @@ const CaseStudyOrviumHR = () => {
         </div>
       </section>
 
-      {/* Logo Section */}
+      {/* Concepts Section */}
       <section className="py-16 bg-primary border-t border-primary-foreground/10">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto">
-            <img 
-              src={orviumhrLogo} 
-              alt="OrviumHR Logo" 
-              className="w-full h-auto"
-            />
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img 
+                src={orviumhrConcepts04} 
+                alt="OrviumHR Campaign Concept - We see the invisible in people" 
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img 
+                src={orviumhrConceptsBanner} 
+                alt="OrviumHR Brand Banner" 
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
