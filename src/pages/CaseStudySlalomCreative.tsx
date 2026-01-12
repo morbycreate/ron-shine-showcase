@@ -6,6 +6,7 @@ import slalomHero from "@/assets/slalom-hero.png";
 import slalomMolecular from "@/assets/slalom-molecular.png";
 import slalomAshley from "@/assets/slalom-ashley.png";
 import slalomAshleyDevices from "@/assets/slalom-ashley-devices.png";
+import slalomAshleyBrand from "@/assets/slalom-ashley-brand.png";
 import slalomNewco from "@/assets/slalom-newco.png";
 
 const purpleAccent = "rgb(168, 85, 247)";
@@ -129,7 +130,8 @@ const CaseStudySlalomCreative = () => {
       image: slalomAshley,
       imageAlt: "Ashley Stewart brand elevation",
       additionalImages: [
-        { src: slalomAshleyDevices, alt: "Ashley Stewart website across devices" }
+        { src: slalomAshleyDevices, alt: "Ashley Stewart website across devices" },
+        { src: slalomAshleyBrand, alt: "Ashley Stewart brand collateral" }
       ],
       reverse: true
     },
