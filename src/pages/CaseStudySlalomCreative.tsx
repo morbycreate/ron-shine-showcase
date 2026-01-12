@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import slalomHero from "@/assets/slalom-hero.png";
 import slalomMolecular from "@/assets/slalom-molecular.png";
 import slalomAshley from "@/assets/slalom-ashley.png";
+import slalomAshleyDevices from "@/assets/slalom-ashley-devices.png";
 import slalomNewco from "@/assets/slalom-newco.png";
 
 const purpleAccent = "rgb(168, 85, 247)";
@@ -16,10 +17,11 @@ interface MiniCaseStudyProps {
   whatWeDid: string[];
   image: string;
   imageAlt: string;
+  additionalImages?: { src: string; alt: string }[];
   reverse?: boolean;
 }
 
-const MiniCaseStudy = ({ title, tagline, description, whatWeDid, image, imageAlt, reverse }: MiniCaseStudyProps) => (
+const MiniCaseStudy = ({ title, tagline, description, whatWeDid, image, imageAlt, additionalImages, reverse }: MiniCaseStudyProps) => (
   <section className="py-20 border-b border-white/10">
     <div className="container mx-auto px-6 lg:px-12">
       <div className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-start ${reverse ? 'lg:flex-row-reverse' : ''}`}>
@@ -60,14 +62,25 @@ const MiniCaseStudy = ({ title, tagline, description, whatWeDid, image, imageAlt
           </div>
         </div>
         
-        {/* Image Placeholder */}
+        {/* Images */}
         <div className={`${reverse ? 'lg:order-1' : ''}`}>
-          <div className="rounded-lg overflow-hidden border border-white/10 bg-white/5">
-            <img 
-              src={image} 
-              alt={imageAlt}
-              className="w-full h-auto object-cover"
-            />
+          <div className="flex flex-col gap-6">
+            <div className="rounded-lg overflow-hidden border border-white/10 bg-white/5">
+              <img 
+                src={image} 
+                alt={imageAlt}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            {additionalImages?.map((img, index) => (
+              <div key={index} className="rounded-lg overflow-hidden border border-white/10 bg-white/5">
+                <img 
+                  src={img.src} 
+                  alt={img.alt}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -115,6 +128,9 @@ const CaseStudySlalomCreative = () => {
       ],
       image: slalomAshley,
       imageAlt: "Ashley Stewart brand elevation",
+      additionalImages: [
+        { src: slalomAshleyDevices, alt: "Ashley Stewart website across devices" }
+      ],
       reverse: true
     },
     {
