@@ -284,13 +284,6 @@ const CaseStudyAARebrand = () => {
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
               <img
-                src={aaEnvironments}
-                alt="Airport environment design"
-                className="w-full h-auto object-contain"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
-              <img
                 src={aaWebsites}
                 alt="American Airlines website redesign"
                 className="w-full h-auto object-contain"
