@@ -10,6 +10,14 @@ import aaGateSign from "@/assets/aa-gate-sign.png";
 import aaEnvironments from "@/assets/aa-environments.jpg";
 import aaGuiKits from "@/assets/aa-gui-kits.jpg";
 import aaLogo from "@/assets/logos/american-airlines.png";
+import aaFlightSymbol from "@/assets/aa-flight-symbol.png";
+import aaFood from "@/assets/aa-food.png";
+import aaKiosksRebrand from "@/assets/aa-kiosks-rebrand.jpg";
+import aaLogoNew from "@/assets/aa-logo.png";
+import aaPlanePainted from "@/assets/aa-plane-painted.png";
+import aaPriorityCheckin from "@/assets/aa-priority-checkin.png";
+import aaVisionSlide from "@/assets/aa-vision-slide.png";
+import aaVisualIdOverview from "@/assets/aa-visual-id-overview.png";
 
 // Custom purple accent for this page
 const purpleAccent = "rgb(168, 85, 247)";
@@ -254,7 +262,7 @@ const CaseStudyAARebrand = () => {
         </div>
       </section>
 
-      {/* Image Gallery - Environmental */}
+      {/* Image Gallery - Brand System */}
       <section className="py-24 md:py-32 bg-primary border-t border-primary-foreground/10">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mb-16">
@@ -268,19 +276,69 @@ const CaseStudyAARebrand = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+          {/* 3-column grid */}
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 bg-white">
               <img
-                src={aaEnvironments}
-                alt="Airport environment design"
-                className="w-full h-auto"
+                src={aaFlightSymbol}
+                alt="American Airlines flight symbol"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 bg-white">
+              <img
+                src={aaLogoNew}
+                alt="American Airlines logo"
+                className="w-full h-auto object-contain"
               />
             </div>
             <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
               <img
-                src={aaGuiKits}
-                alt="Brand GUI kits and standards"
-                className="w-full h-auto"
+                src={aaVisionSlide}
+                alt="Brand vision statement"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaVisualIdOverview}
+                alt="Visual identity system overview"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaPlanePainted}
+                alt="Aircraft livery painting"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaFood}
+                alt="Branded food packaging"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaKiosksRebrand}
+                alt="Check-in kiosks"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaPriorityCheckin}
+                alt="Priority check-in environment"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-primary-foreground/10">
+              <img
+                src={aaEnvironments}
+                alt="Airport environment design"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>
