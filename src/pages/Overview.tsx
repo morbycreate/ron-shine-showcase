@@ -5,6 +5,7 @@ import sabreAssetsCollage from "@/assets/sabre-assets-collage.png";
 import aaHero from "@/assets/aa-hero.png";
 import slalomPreview from "@/assets/slalom-preview.png";
 import fossilPreview from "@/assets/fossil-site-preview.png";
+import orviumhrBanner from "@/assets/orviumhr-banner.png";
 import americanAirlinesLogo from "@/assets/logos/american-airlines.png";
 import attLogo from "@/assets/logos/att.png";
 import jaguarsLogo from "@/assets/logos/jaguars-full.png";
@@ -343,6 +344,33 @@ const Overview = () => {
                   </h3>
                   <p className="text-primary-foreground/60 mt-2 text-sm">
                     Replatformed Fossil's digital ecosystem, driving 23% YoY e-commerce growth.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* OrviumHR Preview Card */}
+            <Link
+              to="/orviumhr"
+              className="group block"
+            >
+              <div className="overflow-hidden rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5">
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src={orviumhrBanner}
+                    alt="OrviumHR Brand Strategy"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="text-sm font-medium uppercase tracking-wider" style={{ color: purpleAccent }}>
+                    Brand Strategy
+                  </span>
+                  <h3 className="text-xl font-bold mt-2 text-primary-foreground transition-colors group-hover:opacity-80">
+                    OrviumHR Brand Transformation
+                  </h3>
+                  <p className="text-primary-foreground/60 mt-2 text-sm">
+                    Reframed HR company from transactional vendor to strategic partner.
                   </p>
                 </div>
               </div>
