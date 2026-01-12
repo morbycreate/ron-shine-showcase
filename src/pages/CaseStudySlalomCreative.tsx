@@ -4,6 +4,11 @@ import { ArrowLeft } from "lucide-react";
 // Placeholder imports - replace with actual images
 import slalomHero from "@/assets/slalom-hero.png";
 import slalomMolecular from "@/assets/slalom-molecular.png";
+import streamlinePyramid from "@/assets/streamline-pyramid.png";
+import streamlineBc from "@/assets/streamline-bc.png";
+import streamlineCards from "@/assets/streamline-cards.png";
+import streamlineDisplay from "@/assets/streamline-display.png";
+import streamlineLogo from "@/assets/streamline-logo.png";
 import slalomAshley from "@/assets/slalom-ashley.png";
 import slalomAshleyDevices from "@/assets/slalom-ashley-devices.png";
 import slalomAshleyBrand from "@/assets/slalom-ashley-brand.png";
@@ -109,7 +114,14 @@ const CaseStudySlalomCreative = () => {
         "Tone and voice guidelines"
       ],
       image: slalomMolecular,
-      imageAlt: "Streamline Scientific brand identity"
+      imageAlt: "Streamline Scientific brand identity",
+      additionalImages: [
+        { src: streamlineLogo, alt: "Streamline Scientific logo" },
+        { src: streamlinePyramid, alt: "Streamline Scientific brand strategy pyramid" },
+        { src: streamlineBc, alt: "Streamline Scientific business cards" },
+        { src: streamlineCards, alt: "Streamline Scientific marketing collateral" },
+        { src: streamlineDisplay, alt: "Streamline Scientific trade show display" }
+      ]
     },
     {
       title: "Ashley Stewart",
